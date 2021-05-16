@@ -1,4 +1,5 @@
 const DB = require("../../common/inMemoryDb");
+const taskService = require("../tasks/task.service");
 const User = require("./user.model");
 
 const getAll = async () => DB.userDB;
@@ -14,6 +15,7 @@ const del = async (id) => {
   const userIndex = DB.userDB.findIndex((user) => user.id === id);
   if (userIndex !== -1) {
     DB.userDB.splice(userIndex, 1);
+    await taskService.clearTaskUser(id);
     return 204;
   };
 

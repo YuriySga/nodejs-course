@@ -1,5 +1,6 @@
 const DB = require("../../common/inMemoryDb");
 const Column = require("../columns/column.model");
+const taskService = require("../tasks/task.service");
 const Board = require("./board.model");
 
 const getAll = async () => DB.boardDB;
@@ -19,7 +20,12 @@ const create = async (board) => {
 const del = async (id) => {
   const boardIndex = DB.boardDB.findIndex(board => board.id === id);
   if (boardIndex !== -1) {
-    DB.boardDB.splice(boardIndex, 1);
+    const deletedBoard = DB.boardDB.splice(boardIndex, 1);
+    const boardTasks = await taskService.getAll(deletedBoard[0].id);
+
+    if (boardTasks) {
+      boardTasks.map(task=>taskService.del(task.id));
+    };
 
     return 204;
   };
