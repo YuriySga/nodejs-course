@@ -9,21 +9,21 @@ const User = require("./user.model");
 
 /**
  * Returns the array of all Users
- * @returns {User[]}
+ * @returns {Promise<User[]>} Return all Users
  */
 const getAll = async () => DB.userDB;
 
 /**
  * Returns the User on id
- * @param {string} id
- * @returns {User}
+ * @param {string} id User id
+ * @returns {Promise<User>} Return User
  */
 const get = async (id) => DB.userDB.find(user=>user.id === id);
 
 /**
  * Create the User in data base
- * @param {User} user
- * @returns {get} Return get function
+ * @param {User} user new User params
+ * @returns {Promise<get>} Return get function
  */
 const create = async (user) => {
   const newUser = new User(user);
@@ -33,8 +33,8 @@ const create = async (user) => {
 
 /**
  * Delete User on id
- * @param {string} id
- * @returns {number} return status code
+ * @param {string} id User id
+ * @returns {Promise<number>} return status code
  */
 const del = async (id) => {
   const userIndex = DB.userDB.findIndex((user) => user.id === id);
@@ -49,8 +49,8 @@ const del = async (id) => {
 
 /** update
  * Update User in data base
- * @param {User} user
- * @returns {undefined | create} Return undefined or "create" user function
+ * @param {User} user User data
+ * @returns {Promise<undefined | create>} Return undefined or "create" user function
  */
 const update = async (user) => del(user.id)
   .then(status => {    

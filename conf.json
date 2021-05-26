@@ -1,8 +1,16 @@
 {
     "plugins": [],
+    "opts": {
+        "template": "node_modules/docdash"
+    },
     "recurseDepth": 10,
     "source": {
-        "include": ["./src/resources/users", "./src/resources/tasks"],
+        "include": [
+            "./src/resources/users",
+            "./src/resources/tasks",
+            "./src/resources/boards",
+            "./src/resources/columns"
+        ],
         "includePattern": ".+\\.js(doc|x)?$",
         "excludePattern": "(^|\\/|\\\\)_"
     },

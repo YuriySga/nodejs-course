@@ -8,22 +8,22 @@ const Task = require("./task.model");
 
 /**
  * Returns the array of all Tasks on board id
- * @param {string} boardId 
- * @returns {Task[]}
+ * @param {string} boardId Board id
+ * @returns {Promise<Task[]>} Return all Task
  */
 const getAll = async (boardId) => DB.taskDB.filter(task => task.boardId === boardId);
 
 /**
  * Returns the Task on id
- * @param {string} taskId
- * @returns {Task}
+ * @param {string} taskId Task id
+ * @returns {Promise<Task>} Return Task
  */
 const get = async (taskId) => DB.taskDB.find(task => task.id === taskId);
 
 /**
  * Create the Task in data base
- * @param {Task} task
- * @returns {get} Return get function
+ * @param {Task} task New Task params
+ * @returns {Promise<get>} Return get function
  */
 const create = async (task) => {
   const newTask = new Task(task)
@@ -33,8 +33,8 @@ const create = async (task) => {
 
 /**
  * Delete Task on id
- * @param {string} id
- * @returns {number} return status code
+ * @param {string} id Task id
+ * @returns {Promise<number>} return status code
  */
 const del = async id => {
   const taskIndex = DB.taskDB.findIndex((task) => task.id === id);
@@ -48,8 +48,8 @@ const del = async id => {
 
 /** update
  * Update Task in data base
- * @param {Task} taskData
- * @returns {undefined | create} Return undefined or "create" task function
+ * @param {Task} taskData Task data
+ * @returns {Promise<undefined | create>} Return undefined or "create" task function
  */
 const update = async taskData => 
    del(taskData.id)
@@ -63,8 +63,8 @@ const update = async taskData =>
 
 /** clear
  * clearing tasks from the user
- * @param {string} userId
- * @returns {undefined | create} Return undefined or "create" task function
+ * @param {string} userId userId
+ * @returns {Promise<undefined | create>} Return undefined or "create" task function
  */    
 const clearTaskUser = async userId => {
   const userTasks = DB.taskDB.filter(task => task.userId === userId);
