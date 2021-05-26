@@ -47,7 +47,6 @@ const del = async (id) => {
   return 404;  
 };
 
-
 /** update
  * Update User in data base
  * @param {User} user
