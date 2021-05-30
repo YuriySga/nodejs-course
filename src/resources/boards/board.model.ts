@@ -11,14 +11,14 @@ export class Board {
   id?: string;
 
   title: string;
-
+  
   columns: Column[];
 
     constructor({
       id = randomUUID(),
       title = 'Board TITLE',
       columns = [new Column()],
-    } = {}) {
+    }: IBoard) {
       this.id = id;
       this.title = title;
       this.columns = columns;

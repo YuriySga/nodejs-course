@@ -1,10 +1,8 @@
 import { taskDB } from '../../common/inMemoryDb';
 import { ITask, Task } from './task.model';
 
-export const getAll = async (boardId: string) => taskDB.filter(task => task.boardId === boardId);
-
+export const getAll = async (boardId: string): Promise<Task[]> => taskDB.filter(task => task.boardId === boardId);
 export const get = async (id: string): Promise<Task | undefined> => taskDB.find(task => task.id === id);
-
 export const create = async (task: ITask): Promise<Task | undefined>  => {
   const newTask = new Task(task);
   taskDB.push(newTask);
@@ -21,7 +19,7 @@ export const del = async (id: string): Promise<number> => {
   return 404;  
 };
 
-export const update = async (taskData: ITask): Promise<any> => 
+export const update = async (taskData: ITask): Promise<undefined | Task> => 
    del(taskData.id!)
     .then(status => {    
       if (status === 204) {
@@ -31,7 +29,7 @@ export const update = async (taskData: ITask): Promise<any> =>
       return undefined;
     });
 
-export const clearTaskUser = async (userId: string) => {
+export const clearTaskUser = async (userId: string): Promise<void> => {
   const userTasks = taskDB.filter(task => task.userId === userId);
   userTasks.map(task => update({...task, userId: null}));
 };

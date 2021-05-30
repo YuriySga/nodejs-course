@@ -3,11 +3,8 @@ import { Board, IBoard } from './board.model';
 import * as taskService from '../tasks/task.service';
 import {boardDB} from '../../common/inMemoryDb';
 
-
 export const getAll = async (): Promise<Board[]> => boardDB;
-
 export const get = async (id: string): Promise<Board | undefined> => boardDB.find(board=>board.id === id);
-
 export const create = async (board: IBoard): Promise<Board | undefined> => {
   const newBoard = new Board(
     {
@@ -19,7 +16,7 @@ export const create = async (board: IBoard): Promise<Board | undefined> => {
   return get(newBoard.id!);
 }
 
-export const del = async (id: string): Promise<number>=> {
+export const del = async (id: string): Promise<number> => {
   const boardIndex = boardDB.findIndex(board => board.id === id);
   if (boardIndex !== -1) {
     const deletedBoard = boardDB.splice(boardIndex, 1);
@@ -35,7 +32,7 @@ export const del = async (id: string): Promise<number>=> {
   return 404;  
 };
 
-export const update = async (board: Board): Promise<any> => del(board.id!)
+export const update = async (board: Board): Promise<undefined | Board> => del(board.id!)
   .then(status => {
     if (status === 404) {
       return undefined;

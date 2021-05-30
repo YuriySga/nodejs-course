@@ -1,12 +1,11 @@
 import express, { NextFunction, Request, Response } from "express";
 import swaggerUI from 'swagger-ui-express';
+import path from 'path';
+import YAML from 'yamljs';
 
 import boardRouter from "./resources/boards/board.router";
 import taskRouter from './resources/tasks/task.router';
-import userRouter from './resources/users/user.router';
- 
-const path = require('path');
-const YAML = require('yamljs'); 
+import userRouter from './resources/users/user.router'; 
 
 interface IReqParams {
   originalUrl: string
