@@ -3,9 +3,7 @@ import { clearTaskUser } from "../tasks/task.service";
 import { User, IUser } from "./user.model";
 
 export const getAll = async (): Promise<User[]> => userDB;
-
 export const get = async (id: string) => userDB.find(user => user.id === id);
-
 export const create = async (user: IUser): Promise<User | undefined> => {
   const newUser = new User(user);
   userDB.push(newUser);

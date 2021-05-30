@@ -3,7 +3,6 @@ import path from 'path';
 
 export const { PORT } = process.env;
 
-
 dotenv.config({
   path: path.join(__dirname, '../../.env')
 });
