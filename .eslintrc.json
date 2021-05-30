@@ -11,18 +11,30 @@
     "ecmaVersion": 2021,
     "ecmaFeatures": {
       "impliedStrict": true
-    }
+    },
+    "project": ["./tsconfig.json"]
   },
   "settings": {
-    "noInlineConfig": true
+    "noInlineConfig": true,
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ts", ".json", ".node", ".d.ts"],
+        "tryExtensions": [".js", ".json", ".node"],
+        "allowModules": ["electron"]
+      },
+      "typescript": {}
+    }
   },
+  "plugins": ["@typescript-eslint"],
   "extends": [
     "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:node/recommended",
-    "airbnb-base",
+    "airbnb-typescript/base",
     "prettier"
   ],
   "rules": {
+    "node/no-missing-import": "off",
     "import/extensions": "off",
     "linebreak-style": "off",
     "node/no-unsupported-features/es-syntax": "off",
