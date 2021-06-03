@@ -19,6 +19,7 @@ taskRouter.route('/:id').get(async (req: Request, res: Response) => {
     res.json(task);
   } else {
     res.sendStatus(404);
+    // res.status(404);
   }  
 });
 
@@ -40,6 +41,7 @@ taskRouter.route('/').post(async (req: Request, res: Response) => {
 taskRouter.route('/:id').delete(async (req: Request, res: Response) => {
   tasksService.del(req.params['id']!)
     .then(status => res.sendStatus(status));
+    // .then(status => res.status(status));
 });
 
 taskRouter.route('/:id').put(async (req: Request, res: Response) => {
@@ -60,6 +62,7 @@ taskRouter.route('/:id').put(async (req: Request, res: Response) => {
 
    } else {
      res.sendStatus(400);
+    // res.status(400);
    }
 });
 

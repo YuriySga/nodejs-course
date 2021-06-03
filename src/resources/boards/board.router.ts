@@ -35,6 +35,7 @@ boardRouter.route('/').post(async (req: Request, res: Response) => {
 boardRouter.route('/:id').delete<GetParams>(async (req: Request, res: Response) => {
   boardsService.del(req.params['id']!)
     .then(status => res.sendStatus(status));
+    // .then(status => res.status(status));
 });
 
 boardRouter.route('/:id').put<GetParams>(async (req: Request, res: Response) => {
@@ -49,6 +50,7 @@ boardRouter.route('/:id').put<GetParams>(async (req: Request, res: Response) => 
 
    } else {     
      res.sendStatus(400).send('Bad request');
+     // res.status(400).send('Bad request');
    }
 });
 
