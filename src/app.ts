@@ -33,7 +33,7 @@ app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 app.use('/boards/:boardId/tasks', taskRouter);
 
-app.use((_err: Errback, _req: Request, res: Response, next: NextFunction) => {
+app.use((_err: Errback, _req: Request, res: Response, next: NextFunction): void => {
   res.status(500);
   next();
 });
@@ -41,4 +41,3 @@ app.use((_err: Errback, _req: Request, res: Response, next: NextFunction) => {
 process.on('uncaughtException', uncaughtException);
 
 process.on('unhandledRejection', loggerUnhandledRejection);
-
