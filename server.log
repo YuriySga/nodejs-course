@@ -1,4 +1,12 @@
-Time: 21:12:33
+Time: 22:35:26
+      unhandledRejection:
+     reason: Error
+
+Time: 22:48:49
+      unhandledRejection:
+     reason: Error
+
+Time: 22:50:46
      Method: GET
      Url: /users
      fullUrl: http://localhost:4000/users
@@ -7,7 +15,7 @@ Time: 21:12:33
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:12:33
+Time: 22:50:46
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/users
@@ -16,16 +24,25 @@ Time: 21:12:33
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:12:33
+Time: 22:50:46
      Method: GET
-     Url: /bf12f1fa-6a50-4759-9f0d-8d496b894940
-     fullUrl: http://localhost:4000/users/bf12f1fa-6a50-4759-9f0d-8d496b894940
-     Request params: {"id":"bf12f1fa-6a50-4759-9f0d-8d496b894940"}
+     Url: /b9f374e3-2ba4-41c1-80cc-d1a3de70af96
+     fullUrl: http://localhost:4000/users/b9f374e3-2ba4-41c1-80cc-d1a3de70af96
+     Request params: {"id":"b9f374e3-2ba4-41c1-80cc-d1a3de70af96"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:12:38
+Time: 22:50:46
+     Method: DELETE
+     Url: /b9f374e3-2ba4-41c1-80cc-d1a3de70af96
+     fullUrl: http://localhost:4000/users/b9f374e3-2ba4-41c1-80cc-d1a3de70af96
+     Request params: {"id":"b9f374e3-2ba4-41c1-80cc-d1a3de70af96"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:50:46
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/users
@@ -34,7 +51,16 @@ Time: 21:12:38
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:12:43
+Time: 22:50:46
+     Method: DELETE
+     Url: /0e144caf-a28f-4fc9-b5f5-5d3e3c454eb9
+     fullUrl: http://localhost:4000/users/0e144caf-a28f-4fc9-b5f5-5d3e3c454eb9
+     Request params: {"id":"0e144caf-a28f-4fc9-b5f5-5d3e3c454eb9"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:50:46
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/users
@@ -43,124 +69,61 @@ Time: 21:12:43
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:12:43
+Time: 22:50:46
      Method: PUT
-     Url: /fd954e8e-bea0-42c6-8c19-21a1f073ab8d
-     fullUrl: http://localhost:4000/users/fd954e8e-bea0-42c6-8c19-21a1f073ab8d
-     Request params: {"id":"fd954e8e-bea0-42c6-8c19-21a1f073ab8d"}
-     Request body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"fd954e8e-bea0-42c6-8c19-21a1f073ab8d"}
+     Url: /59671e79-f05b-4c74-a0dd-195e4fcdf36f
+     fullUrl: http://localhost:4000/users/59671e79-f05b-4c74-a0dd-195e4fcdf36f
+     Request params: {"id":"59671e79-f05b-4c74-a0dd-195e4fcdf36f"}
+     Request body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"59671e79-f05b-4c74-a0dd-195e4fcdf36f"}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:12:43
+Time: 22:50:46
      Method: GET
-     Url: /fd954e8e-bea0-42c6-8c19-21a1f073ab8d
-     fullUrl: http://localhost:4000/users/fd954e8e-bea0-42c6-8c19-21a1f073ab8d
-     Request params: {"id":"fd954e8e-bea0-42c6-8c19-21a1f073ab8d"}
+     Url: /59671e79-f05b-4c74-a0dd-195e4fcdf36f
+     fullUrl: http://localhost:4000/users/59671e79-f05b-4c74-a0dd-195e4fcdf36f
+     Request params: {"id":"59671e79-f05b-4c74-a0dd-195e4fcdf36f"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:12:48
-     Method: POST
-     Url: /
-     fullUrl: http://localhost:4000/users
-     Request params: {}
-     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
-     Request query: {}
-     Responded with status 201
-     Agent: undefined
-Time: 21:12:53
-     Method: POST
-     Url: /
-     fullUrl: http://localhost:4000/users
-     Request params: {}
-     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
-     Request query: {}
-     Responded with status 201
-     Agent: undefined
-Time: 21:12:53
-     Method: POST
-     Url: /
-     fullUrl: http://localhost:4000/boards
-     Request params: {}
-     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-     Request query: {}
-     Responded with status 201
-     Agent: undefined
-Time: 21:12:53
-     Method: POST
-     Url: /
-     fullUrl: http://localhost:4000/boards/0167e2e5-dc2f-41d4-98c9-21743a8a8cf3/tasks
-     Request params: {"boardId":"0167e2e5-dc2f-41d4-98c9-21743a8a8cf3"}
-     Request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"918a887f-ae6c-4d05-bfcb-937e2ff61ce2","boardId":"0167e2e5-dc2f-41d4-98c9-21743a8a8cf3"}
-     Request query: {}
-     Responded with status 201
-     Agent: undefined
-Time: 21:12:53
-     Method: POST
-     Url: /
-     fullUrl: http://localhost:4000/boards/0167e2e5-dc2f-41d4-98c9-21743a8a8cf3/tasks
-     Request params: {"boardId":"0167e2e5-dc2f-41d4-98c9-21743a8a8cf3"}
-     Request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"918a887f-ae6c-4d05-bfcb-937e2ff61ce2","boardId":"0167e2e5-dc2f-41d4-98c9-21743a8a8cf3"}
-     Request query: {}
-     Responded with status 201
-     Agent: undefined
-Time: 21:12:58
-     Method: POST
-     Url: /
-     fullUrl: http://localhost:4000/boards
-     Request params: {}
-     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-     Request query: {}
-     Responded with status 201
-     Agent: undefined
-Time: 21:12:59
-     Method: GET
-     Url: /
-     fullUrl: http://localhost:4000/boards
-     Request params: {}
-     Request body: {}
-     Request query: {}
-     Responded with status 200
-     Agent: undefined
-Time: 21:12:59
-     Method: GET
-     Url: /
-     fullUrl: http://localhost:4000/boards
-     Request params: {}
-     Request body: {}
-     Request query: {}
-     Responded with status 200
-     Agent: undefined
-Time: 21:12:59
-     Method: GET
-     Url: /86a548c7-38bc-4817-ae6a-fa6692a6781e
-     fullUrl: http://localhost:4000/boards/86a548c7-38bc-4817-ae6a-fa6692a6781e
-     Request params: {"id":"86a548c7-38bc-4817-ae6a-fa6692a6781e"}
-     Request body: {}
-     Request query: {}
-     Responded with status 200
-     Agent: undefined
-Time: 21:12:59
-     Method: POST
-     Url: /
-     fullUrl: http://localhost:4000/boards
-     Request params: {}
-     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-     Request query: {}
-     Responded with status 201
-     Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: DELETE
-     Url: /26e6589b-d624-44f3-a31a-bc9eda7771af
-     fullUrl: http://localhost:4000/boards/26e6589b-d624-44f3-a31a-bc9eda7771af
-     Request params: {"id":"26e6589b-d624-44f3-a31a-bc9eda7771af"}
+     Url: /59671e79-f05b-4c74-a0dd-195e4fcdf36f
+     fullUrl: http://localhost:4000/users/59671e79-f05b-4c74-a0dd-195e4fcdf36f
+     Request params: {"id":"59671e79-f05b-4c74-a0dd-195e4fcdf36f"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/users
+     Request params: {}
+     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:50:46
+     Method: DELETE
+     Url: /46fffe6a-abd6-4c90-8b67-8a306a43fa25
+     fullUrl: http://localhost:4000/users/46fffe6a-abd6-4c90-8b67-8a306a43fa25
+     Request params: {"id":"46fffe6a-abd6-4c90-8b67-8a306a43fa25"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:50:46
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/users
+     Request params: {}
+     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:50:46
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/boards
@@ -169,34 +132,169 @@ Time: 21:12:59
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards/7cf2eefa-bcf4-4dd4-a3a9-e7351aef2c0f/tasks
+     Request params: {"boardId":"7cf2eefa-bcf4-4dd4-a3a9-e7351aef2c0f"}
+     Request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"59f8d4d2-1c6a-42db-b524-b34703888d19","boardId":"7cf2eefa-bcf4-4dd4-a3a9-e7351aef2c0f"}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:50:46
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards/7cf2eefa-bcf4-4dd4-a3a9-e7351aef2c0f/tasks
+     Request params: {"boardId":"7cf2eefa-bcf4-4dd4-a3a9-e7351aef2c0f"}
+     Request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"59f8d4d2-1c6a-42db-b524-b34703888d19","boardId":"7cf2eefa-bcf4-4dd4-a3a9-e7351aef2c0f"}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:50:46
+     Method: DELETE
+     Url: /59f8d4d2-1c6a-42db-b524-b34703888d19
+     fullUrl: http://localhost:4000/users/59f8d4d2-1c6a-42db-b524-b34703888d19
+     Request params: {"id":"59f8d4d2-1c6a-42db-b524-b34703888d19"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:50:46
+     Method: GET
+     Url: /714459fd-49a1-4c14-858c-0a93fec6c279
+     fullUrl: http://localhost:4000/boards/7cf2eefa-bcf4-4dd4-a3a9-e7351aef2c0f/tasks/714459fd-49a1-4c14-858c-0a93fec6c279
+     Request params: {"boardId":"7cf2eefa-bcf4-4dd4-a3a9-e7351aef2c0f","id":"714459fd-49a1-4c14-858c-0a93fec6c279"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:50:46
+     Method: GET
+     Url: /6642aa46-53df-45ee-a0bf-19f4be54eeb3
+     fullUrl: http://localhost:4000/boards/7cf2eefa-bcf4-4dd4-a3a9-e7351aef2c0f/tasks/6642aa46-53df-45ee-a0bf-19f4be54eeb3
+     Request params: {"boardId":"7cf2eefa-bcf4-4dd4-a3a9-e7351aef2c0f","id":"6642aa46-53df-45ee-a0bf-19f4be54eeb3"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:50:46
+     Method: DELETE
+     Url: /6642aa46-53df-45ee-a0bf-19f4be54eeb3
+     fullUrl: http://localhost:4000/boards/7cf2eefa-bcf4-4dd4-a3a9-e7351aef2c0f/tasks/6642aa46-53df-45ee-a0bf-19f4be54eeb3
+     Request params: {"boardId":"7cf2eefa-bcf4-4dd4-a3a9-e7351aef2c0f","id":"6642aa46-53df-45ee-a0bf-19f4be54eeb3"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:50:46
+     Method: DELETE
+     Url: /714459fd-49a1-4c14-858c-0a93fec6c279
+     fullUrl: http://localhost:4000/boards/7cf2eefa-bcf4-4dd4-a3a9-e7351aef2c0f/tasks/714459fd-49a1-4c14-858c-0a93fec6c279
+     Request params: {"boardId":"7cf2eefa-bcf4-4dd4-a3a9-e7351aef2c0f","id":"714459fd-49a1-4c14-858c-0a93fec6c279"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:50:46
+     Method: DELETE
+     Url: /7cf2eefa-bcf4-4dd4-a3a9-e7351aef2c0f
+     fullUrl: http://localhost:4000/boards/7cf2eefa-bcf4-4dd4-a3a9-e7351aef2c0f
+     Request params: {"id":"7cf2eefa-bcf4-4dd4-a3a9-e7351aef2c0f"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:50:46
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:50:46
+     Method: GET
+     Url: /
+     fullUrl: http://localhost:4000/boards
+     Request params: {}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:50:46
+     Method: GET
+     Url: /
+     fullUrl: http://localhost:4000/boards
+     Request params: {}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:50:46
+     Method: GET
+     Url: /2db3f73d-0883-428f-8536-21a61053ae65
+     fullUrl: http://localhost:4000/boards/2db3f73d-0883-428f-8536-21a61053ae65
+     Request params: {"id":"2db3f73d-0883-428f-8536-21a61053ae65"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:50:46
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:50:46
+     Method: DELETE
+     Url: /0eade625-13ab-46ed-93d9-98b449cd22e3
+     fullUrl: http://localhost:4000/boards/0eade625-13ab-46ed-93d9-98b449cd22e3
+     Request params: {"id":"0eade625-13ab-46ed-93d9-98b449cd22e3"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:50:46
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:50:46
      Method: PUT
-     Url: /b75b0e0c-991c-4ea5-afd2-dd6b9446e8f5
-     fullUrl: http://localhost:4000/boards/b75b0e0c-991c-4ea5-afd2-dd6b9446e8f5
-     Request params: {"id":"b75b0e0c-991c-4ea5-afd2-dd6b9446e8f5"}
-     Request body: {"id":"b75b0e0c-991c-4ea5-afd2-dd6b9446e8f5","title":"Autotest updated board","columns":[{"id":"e902473f-cbe4-4934-92e0-decdcae689fd","title":"Backlog","order":1},{"id":"75b032f8-3230-448c-823b-4e511f5319d7","title":"Sprint","order":2}]}
+     Url: /ef509a46-3407-494f-882b-3b24fc865d0b
+     fullUrl: http://localhost:4000/boards/ef509a46-3407-494f-882b-3b24fc865d0b
+     Request params: {"id":"ef509a46-3407-494f-882b-3b24fc865d0b"}
+     Request body: {"id":"ef509a46-3407-494f-882b-3b24fc865d0b","title":"Autotest updated board","columns":[{"id":"ed9999fe-6263-42ac-b917-0a9edf102fb8","title":"Backlog","order":1},{"id":"2325d2b0-13e5-41e7-bda0-8e75246096a1","title":"Sprint","order":2}]}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: GET
-     Url: /b75b0e0c-991c-4ea5-afd2-dd6b9446e8f5
-     fullUrl: http://localhost:4000/boards/b75b0e0c-991c-4ea5-afd2-dd6b9446e8f5
-     Request params: {"id":"b75b0e0c-991c-4ea5-afd2-dd6b9446e8f5"}
+     Url: /ef509a46-3407-494f-882b-3b24fc865d0b
+     fullUrl: http://localhost:4000/boards/ef509a46-3407-494f-882b-3b24fc865d0b
+     Request params: {"id":"ef509a46-3407-494f-882b-3b24fc865d0b"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: DELETE
-     Url: /b75b0e0c-991c-4ea5-afd2-dd6b9446e8f5
-     fullUrl: http://localhost:4000/boards/b75b0e0c-991c-4ea5-afd2-dd6b9446e8f5
-     Request params: {"id":"b75b0e0c-991c-4ea5-afd2-dd6b9446e8f5"}
+     Url: /ef509a46-3407-494f-882b-3b24fc865d0b
+     fullUrl: http://localhost:4000/boards/ef509a46-3407-494f-882b-3b24fc865d0b
+     Request params: {"id":"ef509a46-3407-494f-882b-3b24fc865d0b"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/boards
@@ -205,25 +303,25 @@ Time: 21:12:59
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: DELETE
-     Url: /3118b025-24cf-4f2f-a800-c8d778b522b2
-     fullUrl: http://localhost:4000/boards/3118b025-24cf-4f2f-a800-c8d778b522b2
-     Request params: {"id":"3118b025-24cf-4f2f-a800-c8d778b522b2"}
+     Url: /947fb8c2-eb82-40f3-9b0d-cba19e8f7166
+     fullUrl: http://localhost:4000/boards/947fb8c2-eb82-40f3-9b0d-cba19e8f7166
+     Request params: {"id":"947fb8c2-eb82-40f3-9b0d-cba19e8f7166"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: GET
-     Url: /3118b025-24cf-4f2f-a800-c8d778b522b2
-     fullUrl: http://localhost:4000/boards/3118b025-24cf-4f2f-a800-c8d778b522b2
-     Request params: {"id":"3118b025-24cf-4f2f-a800-c8d778b522b2"}
+     Url: /947fb8c2-eb82-40f3-9b0d-cba19e8f7166
+     fullUrl: http://localhost:4000/boards/947fb8c2-eb82-40f3-9b0d-cba19e8f7166
+     Request params: {"id":"947fb8c2-eb82-40f3-9b0d-cba19e8f7166"}
      Request body: {}
      Request query: {}
      Responded with status 404
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/boards
@@ -232,160 +330,160 @@ Time: 21:12:59
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/8fb5f7e7-6811-4a78-ac53-cec4a886b42b/tasks
-     Request params: {"boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b"}
-     Request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b","userId":null,"columnId":null}
+     fullUrl: http://localhost:4000/boards/08342b9e-b148-42fb-be76-ccc5938b9238/tasks
+     Request params: {"boardId":"08342b9e-b148-42fb-be76-ccc5938b9238"}
+     Request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"08342b9e-b148-42fb-be76-ccc5938b9238","userId":null,"columnId":null}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/8fb5f7e7-6811-4a78-ac53-cec4a886b42b/tasks
-     Request params: {"boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b"}
-     Request body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b","userId":null,"columnId":null}
+     fullUrl: http://localhost:4000/boards/08342b9e-b148-42fb-be76-ccc5938b9238/tasks
+     Request params: {"boardId":"08342b9e-b148-42fb-be76-ccc5938b9238"}
+     Request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"08342b9e-b148-42fb-be76-ccc5938b9238","userId":null,"columnId":null}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/8fb5f7e7-6811-4a78-ac53-cec4a886b42b/tasks
-     Request params: {"boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b"}
-     Request body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b","userId":null,"columnId":null}
+     fullUrl: http://localhost:4000/boards/08342b9e-b148-42fb-be76-ccc5938b9238/tasks
+     Request params: {"boardId":"08342b9e-b148-42fb-be76-ccc5938b9238"}
+     Request body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"08342b9e-b148-42fb-be76-ccc5938b9238","userId":null,"columnId":null}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/8fb5f7e7-6811-4a78-ac53-cec4a886b42b/tasks
-     Request params: {"boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b"}
-     Request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b","userId":null,"columnId":null}
+     fullUrl: http://localhost:4000/boards/08342b9e-b148-42fb-be76-ccc5938b9238/tasks
+     Request params: {"boardId":"08342b9e-b148-42fb-be76-ccc5938b9238"}
+     Request body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"08342b9e-b148-42fb-be76-ccc5938b9238","userId":null,"columnId":null}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/8fb5f7e7-6811-4a78-ac53-cec4a886b42b/tasks
-     Request params: {"boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b"}
-     Request body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b","userId":null,"columnId":null}
+     fullUrl: http://localhost:4000/boards/08342b9e-b148-42fb-be76-ccc5938b9238/tasks
+     Request params: {"boardId":"08342b9e-b148-42fb-be76-ccc5938b9238"}
+     Request body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"08342b9e-b148-42fb-be76-ccc5938b9238","userId":null,"columnId":null}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: GET
-     Url: /c4fbde40-5abb-475c-bf25-63c207682dde
-     fullUrl: http://localhost:4000/boards/8fb5f7e7-6811-4a78-ac53-cec4a886b42b/tasks/c4fbde40-5abb-475c-bf25-63c207682dde
-     Request params: {"boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b","id":"c4fbde40-5abb-475c-bf25-63c207682dde"}
+     Url: /84f7d509-163b-4eb4-b00c-36a19ea15452
+     fullUrl: http://localhost:4000/boards/08342b9e-b148-42fb-be76-ccc5938b9238/tasks/84f7d509-163b-4eb4-b00c-36a19ea15452
+     Request params: {"boardId":"08342b9e-b148-42fb-be76-ccc5938b9238","id":"84f7d509-163b-4eb4-b00c-36a19ea15452"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: GET
-     Url: /56357f79-790d-46e0-9474-79d3ca075a1b
-     fullUrl: http://localhost:4000/boards/8fb5f7e7-6811-4a78-ac53-cec4a886b42b/tasks/56357f79-790d-46e0-9474-79d3ca075a1b
-     Request params: {"boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b","id":"56357f79-790d-46e0-9474-79d3ca075a1b"}
+     Url: /803be413-2cb5-4001-ae78-c05efda43c10
+     fullUrl: http://localhost:4000/boards/08342b9e-b148-42fb-be76-ccc5938b9238/tasks/803be413-2cb5-4001-ae78-c05efda43c10
+     Request params: {"boardId":"08342b9e-b148-42fb-be76-ccc5938b9238","id":"803be413-2cb5-4001-ae78-c05efda43c10"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: GET
-     Url: /fd107ccd-3e29-4807-98ea-398270540ebf
-     fullUrl: http://localhost:4000/boards/8fb5f7e7-6811-4a78-ac53-cec4a886b42b/tasks/fd107ccd-3e29-4807-98ea-398270540ebf
-     Request params: {"boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b","id":"fd107ccd-3e29-4807-98ea-398270540ebf"}
+     Url: /ac11ae33-dae8-4d54-b7a4-60241ebdc2f2
+     fullUrl: http://localhost:4000/boards/08342b9e-b148-42fb-be76-ccc5938b9238/tasks/ac11ae33-dae8-4d54-b7a4-60241ebdc2f2
+     Request params: {"boardId":"08342b9e-b148-42fb-be76-ccc5938b9238","id":"ac11ae33-dae8-4d54-b7a4-60241ebdc2f2"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: GET
-     Url: /9bdc4359-ddbe-423e-a601-0669d1cbccb0
-     fullUrl: http://localhost:4000/boards/8fb5f7e7-6811-4a78-ac53-cec4a886b42b/tasks/9bdc4359-ddbe-423e-a601-0669d1cbccb0
-     Request params: {"boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b","id":"9bdc4359-ddbe-423e-a601-0669d1cbccb0"}
+     Url: /2606e52f-924a-45ce-b74f-d114ce35583e
+     fullUrl: http://localhost:4000/boards/08342b9e-b148-42fb-be76-ccc5938b9238/tasks/2606e52f-924a-45ce-b74f-d114ce35583e
+     Request params: {"boardId":"08342b9e-b148-42fb-be76-ccc5938b9238","id":"2606e52f-924a-45ce-b74f-d114ce35583e"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: GET
-     Url: /5a40ea0b-bbec-4a2a-9b94-18f57ac240e6
-     fullUrl: http://localhost:4000/boards/8fb5f7e7-6811-4a78-ac53-cec4a886b42b/tasks/5a40ea0b-bbec-4a2a-9b94-18f57ac240e6
-     Request params: {"boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b","id":"5a40ea0b-bbec-4a2a-9b94-18f57ac240e6"}
+     Url: /6334e4ac-6a51-46af-a069-b2118c3dc236
+     fullUrl: http://localhost:4000/boards/08342b9e-b148-42fb-be76-ccc5938b9238/tasks/6334e4ac-6a51-46af-a069-b2118c3dc236
+     Request params: {"boardId":"08342b9e-b148-42fb-be76-ccc5938b9238","id":"6334e4ac-6a51-46af-a069-b2118c3dc236"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: DELETE
-     Url: /8fb5f7e7-6811-4a78-ac53-cec4a886b42b
-     fullUrl: http://localhost:4000/boards/8fb5f7e7-6811-4a78-ac53-cec4a886b42b
-     Request params: {"id":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b"}
+     Url: /08342b9e-b148-42fb-be76-ccc5938b9238
+     fullUrl: http://localhost:4000/boards/08342b9e-b148-42fb-be76-ccc5938b9238
+     Request params: {"id":"08342b9e-b148-42fb-be76-ccc5938b9238"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: GET
-     Url: /56357f79-790d-46e0-9474-79d3ca075a1b
-     fullUrl: http://localhost:4000/boards/8fb5f7e7-6811-4a78-ac53-cec4a886b42b/tasks/56357f79-790d-46e0-9474-79d3ca075a1b
-     Request params: {"boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b","id":"56357f79-790d-46e0-9474-79d3ca075a1b"}
+     Url: /84f7d509-163b-4eb4-b00c-36a19ea15452
+     fullUrl: http://localhost:4000/boards/08342b9e-b148-42fb-be76-ccc5938b9238/tasks/84f7d509-163b-4eb4-b00c-36a19ea15452
+     Request params: {"boardId":"08342b9e-b148-42fb-be76-ccc5938b9238","id":"84f7d509-163b-4eb4-b00c-36a19ea15452"}
      Request body: {}
      Request query: {}
      Responded with status 404
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: GET
-     Url: /9bdc4359-ddbe-423e-a601-0669d1cbccb0
-     fullUrl: http://localhost:4000/boards/8fb5f7e7-6811-4a78-ac53-cec4a886b42b/tasks/9bdc4359-ddbe-423e-a601-0669d1cbccb0
-     Request params: {"boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b","id":"9bdc4359-ddbe-423e-a601-0669d1cbccb0"}
+     Url: /6334e4ac-6a51-46af-a069-b2118c3dc236
+     fullUrl: http://localhost:4000/boards/08342b9e-b148-42fb-be76-ccc5938b9238/tasks/6334e4ac-6a51-46af-a069-b2118c3dc236
+     Request params: {"boardId":"08342b9e-b148-42fb-be76-ccc5938b9238","id":"6334e4ac-6a51-46af-a069-b2118c3dc236"}
      Request body: {}
      Request query: {}
      Responded with status 404
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: GET
-     Url: /fd107ccd-3e29-4807-98ea-398270540ebf
-     fullUrl: http://localhost:4000/boards/8fb5f7e7-6811-4a78-ac53-cec4a886b42b/tasks/fd107ccd-3e29-4807-98ea-398270540ebf
-     Request params: {"boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b","id":"fd107ccd-3e29-4807-98ea-398270540ebf"}
+     Url: /2606e52f-924a-45ce-b74f-d114ce35583e
+     fullUrl: http://localhost:4000/boards/08342b9e-b148-42fb-be76-ccc5938b9238/tasks/2606e52f-924a-45ce-b74f-d114ce35583e
+     Request params: {"boardId":"08342b9e-b148-42fb-be76-ccc5938b9238","id":"2606e52f-924a-45ce-b74f-d114ce35583e"}
      Request body: {}
      Request query: {}
      Responded with status 404
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: GET
-     Url: /5a40ea0b-bbec-4a2a-9b94-18f57ac240e6
-     fullUrl: http://localhost:4000/boards/8fb5f7e7-6811-4a78-ac53-cec4a886b42b/tasks/5a40ea0b-bbec-4a2a-9b94-18f57ac240e6
-     Request params: {"boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b","id":"5a40ea0b-bbec-4a2a-9b94-18f57ac240e6"}
+     Url: /803be413-2cb5-4001-ae78-c05efda43c10
+     fullUrl: http://localhost:4000/boards/08342b9e-b148-42fb-be76-ccc5938b9238/tasks/803be413-2cb5-4001-ae78-c05efda43c10
+     Request params: {"boardId":"08342b9e-b148-42fb-be76-ccc5938b9238","id":"803be413-2cb5-4001-ae78-c05efda43c10"}
      Request body: {}
      Request query: {}
      Responded with status 404
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: GET
-     Url: /c4fbde40-5abb-475c-bf25-63c207682dde
-     fullUrl: http://localhost:4000/boards/8fb5f7e7-6811-4a78-ac53-cec4a886b42b/tasks/c4fbde40-5abb-475c-bf25-63c207682dde
-     Request params: {"boardId":"8fb5f7e7-6811-4a78-ac53-cec4a886b42b","id":"c4fbde40-5abb-475c-bf25-63c207682dde"}
+     Url: /ac11ae33-dae8-4d54-b7a4-60241ebdc2f2
+     fullUrl: http://localhost:4000/boards/08342b9e-b148-42fb-be76-ccc5938b9238/tasks/ac11ae33-dae8-4d54-b7a4-60241ebdc2f2
+     Request params: {"boardId":"08342b9e-b148-42fb-be76-ccc5938b9238","id":"ac11ae33-dae8-4d54-b7a4-60241ebdc2f2"}
      Request body: {}
      Request query: {}
      Responded with status 404
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:46
      Method: DELETE
-     Url: /86a548c7-38bc-4817-ae6a-fa6692a6781e
-     fullUrl: http://localhost:4000/boards/86a548c7-38bc-4817-ae6a-fa6692a6781e
-     Request params: {"id":"86a548c7-38bc-4817-ae6a-fa6692a6781e"}
+     Url: /2db3f73d-0883-428f-8536-21a61053ae65
+     fullUrl: http://localhost:4000/boards/2db3f73d-0883-428f-8536-21a61053ae65
+     Request params: {"id":"2db3f73d-0883-428f-8536-21a61053ae65"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:47
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/boards
@@ -394,142 +492,124 @@ Time: 21:12:59
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:47
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/605892a8-440c-437c-978a-a9a5357a26c9/tasks
-     Request params: {"boardId":"605892a8-440c-437c-978a-a9a5357a26c9"}
+     fullUrl: http://localhost:4000/boards/d069181f-a131-472f-a169-11175f7d2678/tasks
+     Request params: {"boardId":"d069181f-a131-472f-a169-11175f7d2678"}
      Request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:47
      Method: GET
      Url: /
-     fullUrl: http://localhost:4000/boards/605892a8-440c-437c-978a-a9a5357a26c9/tasks
-     Request params: {"boardId":"605892a8-440c-437c-978a-a9a5357a26c9"}
+     fullUrl: http://localhost:4000/boards/d069181f-a131-472f-a169-11175f7d2678/tasks
+     Request params: {"boardId":"d069181f-a131-472f-a169-11175f7d2678"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:47
      Method: GET
      Url: /
-     fullUrl: http://localhost:4000/boards/605892a8-440c-437c-978a-a9a5357a26c9/tasks
-     Request params: {"boardId":"605892a8-440c-437c-978a-a9a5357a26c9"}
+     fullUrl: http://localhost:4000/boards/d069181f-a131-472f-a169-11175f7d2678/tasks
+     Request params: {"boardId":"d069181f-a131-472f-a169-11175f7d2678"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:47
      Method: GET
-     Url: /dbbf072c-5ac8-4846-a9c2-69937b966827
-     fullUrl: http://localhost:4000/boards/605892a8-440c-437c-978a-a9a5357a26c9/tasks/dbbf072c-5ac8-4846-a9c2-69937b966827
-     Request params: {"boardId":"605892a8-440c-437c-978a-a9a5357a26c9","id":"dbbf072c-5ac8-4846-a9c2-69937b966827"}
+     Url: /0244e6eb-73cb-4236-8905-066485bca8db
+     fullUrl: http://localhost:4000/boards/d069181f-a131-472f-a169-11175f7d2678/tasks/0244e6eb-73cb-4236-8905-066485bca8db
+     Request params: {"boardId":"d069181f-a131-472f-a169-11175f7d2678","id":"0244e6eb-73cb-4236-8905-066485bca8db"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:47
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/605892a8-440c-437c-978a-a9a5357a26c9/tasks
-     Request params: {"boardId":"605892a8-440c-437c-978a-a9a5357a26c9"}
+     fullUrl: http://localhost:4000/boards/d069181f-a131-472f-a169-11175f7d2678/tasks
+     Request params: {"boardId":"d069181f-a131-472f-a169-11175f7d2678"}
      Request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:47
      Method: DELETE
-     Url: /ba60db2d-9db3-4e30-9cef-ef5e37a6b9eb
-     fullUrl: http://localhost:4000/boards/605892a8-440c-437c-978a-a9a5357a26c9/tasks/ba60db2d-9db3-4e30-9cef-ef5e37a6b9eb
-     Request params: {"boardId":"605892a8-440c-437c-978a-a9a5357a26c9","id":"ba60db2d-9db3-4e30-9cef-ef5e37a6b9eb"}
+     Url: /5adb1166-610b-4812-9c9b-14e7e536ff98
+     fullUrl: http://localhost:4000/boards/d069181f-a131-472f-a169-11175f7d2678/tasks/5adb1166-610b-4812-9c9b-14e7e536ff98
+     Request params: {"boardId":"d069181f-a131-472f-a169-11175f7d2678","id":"5adb1166-610b-4812-9c9b-14e7e536ff98"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:47
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/605892a8-440c-437c-978a-a9a5357a26c9/tasks
-     Request params: {"boardId":"605892a8-440c-437c-978a-a9a5357a26c9"}
+     fullUrl: http://localhost:4000/boards/d069181f-a131-472f-a169-11175f7d2678/tasks
+     Request params: {"boardId":"d069181f-a131-472f-a169-11175f7d2678"}
      Request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:47
      Method: PUT
-     Url: /c309a9aa-6e78-4eb9-9ef7-0562e275d729
-     fullUrl: http://localhost:4000/boards/605892a8-440c-437c-978a-a9a5357a26c9/tasks/c309a9aa-6e78-4eb9-9ef7-0562e275d729
-     Request params: {"boardId":"605892a8-440c-437c-978a-a9a5357a26c9","id":"c309a9aa-6e78-4eb9-9ef7-0562e275d729"}
-     Request body: {"id":"c309a9aa-6e78-4eb9-9ef7-0562e275d729","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"605892a8-440c-437c-978a-a9a5357a26c9","columnId":null}
+     Url: /c17aede2-19b4-4a90-a4fb-fb42dc96bc19
+     fullUrl: http://localhost:4000/boards/d069181f-a131-472f-a169-11175f7d2678/tasks/c17aede2-19b4-4a90-a4fb-fb42dc96bc19
+     Request params: {"boardId":"d069181f-a131-472f-a169-11175f7d2678","id":"c17aede2-19b4-4a90-a4fb-fb42dc96bc19"}
+     Request body: {"id":"c17aede2-19b4-4a90-a4fb-fb42dc96bc19","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"d069181f-a131-472f-a169-11175f7d2678","columnId":null}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:47
      Method: GET
-     Url: /c309a9aa-6e78-4eb9-9ef7-0562e275d729
-     fullUrl: http://localhost:4000/boards/605892a8-440c-437c-978a-a9a5357a26c9/tasks/c309a9aa-6e78-4eb9-9ef7-0562e275d729
-     Request params: {"boardId":"605892a8-440c-437c-978a-a9a5357a26c9","id":"c309a9aa-6e78-4eb9-9ef7-0562e275d729"}
+     Url: /c17aede2-19b4-4a90-a4fb-fb42dc96bc19
+     fullUrl: http://localhost:4000/boards/d069181f-a131-472f-a169-11175f7d2678/tasks/c17aede2-19b4-4a90-a4fb-fb42dc96bc19
+     Request params: {"boardId":"d069181f-a131-472f-a169-11175f7d2678","id":"c17aede2-19b4-4a90-a4fb-fb42dc96bc19"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:47
      Method: GET
-     Url: /dbbf072c-5ac8-4846-a9c2-69937b966827
-     fullUrl: http://localhost:4000/boards/605892a8-440c-437c-978a-a9a5357a26c9/tasks/dbbf072c-5ac8-4846-a9c2-69937b966827
-     Request params: {"boardId":"605892a8-440c-437c-978a-a9a5357a26c9","id":"dbbf072c-5ac8-4846-a9c2-69937b966827"}
+     Url: /0244e6eb-73cb-4236-8905-066485bca8db
+     fullUrl: http://localhost:4000/boards/d069181f-a131-472f-a169-11175f7d2678/tasks/0244e6eb-73cb-4236-8905-066485bca8db
+     Request params: {"boardId":"d069181f-a131-472f-a169-11175f7d2678","id":"0244e6eb-73cb-4236-8905-066485bca8db"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:47
      Method: DELETE
-     Url: /dbbf072c-5ac8-4846-a9c2-69937b966827
-     fullUrl: http://localhost:4000/boards/605892a8-440c-437c-978a-a9a5357a26c9/tasks/dbbf072c-5ac8-4846-a9c2-69937b966827
-     Request params: {"boardId":"605892a8-440c-437c-978a-a9a5357a26c9","id":"dbbf072c-5ac8-4846-a9c2-69937b966827"}
+     Url: /0244e6eb-73cb-4236-8905-066485bca8db
+     fullUrl: http://localhost:4000/boards/d069181f-a131-472f-a169-11175f7d2678/tasks/0244e6eb-73cb-4236-8905-066485bca8db
+     Request params: {"boardId":"d069181f-a131-472f-a169-11175f7d2678","id":"0244e6eb-73cb-4236-8905-066485bca8db"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:47
      Method: GET
-     Url: /dbbf072c-5ac8-4846-a9c2-69937b966827
-     fullUrl: http://localhost:4000/boards/605892a8-440c-437c-978a-a9a5357a26c9/tasks/dbbf072c-5ac8-4846-a9c2-69937b966827
-     Request params: {"boardId":"605892a8-440c-437c-978a-a9a5357a26c9","id":"dbbf072c-5ac8-4846-a9c2-69937b966827"}
+     Url: /0244e6eb-73cb-4236-8905-066485bca8db
+     fullUrl: http://localhost:4000/boards/d069181f-a131-472f-a169-11175f7d2678/tasks/0244e6eb-73cb-4236-8905-066485bca8db
+     Request params: {"boardId":"d069181f-a131-472f-a169-11175f7d2678","id":"0244e6eb-73cb-4236-8905-066485bca8db"}
      Request body: {}
      Request query: {}
      Responded with status 404
      Agent: undefined
-Time: 21:12:59
+Time: 22:50:47
      Method: DELETE
-     Url: /605892a8-440c-437c-978a-a9a5357a26c9
-     fullUrl: http://localhost:4000/boards/605892a8-440c-437c-978a-a9a5357a26c9
-     Request params: {"id":"605892a8-440c-437c-978a-a9a5357a26c9"}
+     Url: /d069181f-a131-472f-a169-11175f7d2678
+     fullUrl: http://localhost:4000/boards/d069181f-a131-472f-a169-11175f7d2678
+     Request params: {"id":"d069181f-a131-472f-a169-11175f7d2678"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:14:0
-     Method: GET
-     Url: /456
-     fullUrl: http://localhost:4000/users/456
-     Request params: {"id":"456"}
-     Request body: {}
-     Request query: {}
-     Responded with status 404
-     Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36
-Time: 21:14:40
-     Method: GET
-     Url: /456
-     fullUrl: http://localhost:4000/users/456
-     Request params: {"id":"456"}
-     Request body: {}
-     Request query: {}
-     Responded with status 404
-     Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36
-Time: 21:44:13
+Time: 22:52:36
      Method: GET
      Url: /users
      fullUrl: http://localhost:4000/users
@@ -538,7 +618,7 @@ Time: 21:44:13
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/users
@@ -547,25 +627,25 @@ Time: 21:44:13
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: GET
-     Url: /e3a30203-c265-4795-a65a-357d8f0c2b7c
-     fullUrl: http://localhost:4000/users/e3a30203-c265-4795-a65a-357d8f0c2b7c
-     Request params: {"id":"e3a30203-c265-4795-a65a-357d8f0c2b7c"}
+     Url: /89f51db8-54d3-4d9b-9f6b-6fe6a09948af
+     fullUrl: http://localhost:4000/users/89f51db8-54d3-4d9b-9f6b-6fe6a09948af
+     Request params: {"id":"89f51db8-54d3-4d9b-9f6b-6fe6a09948af"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: DELETE
-     Url: /e3a30203-c265-4795-a65a-357d8f0c2b7c
-     fullUrl: http://localhost:4000/users/e3a30203-c265-4795-a65a-357d8f0c2b7c
-     Request params: {"id":"e3a30203-c265-4795-a65a-357d8f0c2b7c"}
+     Url: /89f51db8-54d3-4d9b-9f6b-6fe6a09948af
+     fullUrl: http://localhost:4000/users/89f51db8-54d3-4d9b-9f6b-6fe6a09948af
+     Request params: {"id":"89f51db8-54d3-4d9b-9f6b-6fe6a09948af"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/users
@@ -574,16 +654,16 @@ Time: 21:44:13
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: DELETE
-     Url: /44421577-6be8-4fc8-9e99-c451662c3f13
-     fullUrl: http://localhost:4000/users/44421577-6be8-4fc8-9e99-c451662c3f13
-     Request params: {"id":"44421577-6be8-4fc8-9e99-c451662c3f13"}
+     Url: /ba6d6694-7886-4cb1-8e21-5998f04d4df2
+     fullUrl: http://localhost:4000/users/ba6d6694-7886-4cb1-8e21-5998f04d4df2
+     Request params: {"id":"ba6d6694-7886-4cb1-8e21-5998f04d4df2"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/users
@@ -592,34 +672,34 @@ Time: 21:44:13
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: PUT
-     Url: /ce8854a7-68f4-40b2-8c1c-be7bb32c8de4
-     fullUrl: http://localhost:4000/users/ce8854a7-68f4-40b2-8c1c-be7bb32c8de4
-     Request params: {"id":"ce8854a7-68f4-40b2-8c1c-be7bb32c8de4"}
-     Request body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"ce8854a7-68f4-40b2-8c1c-be7bb32c8de4"}
+     Url: /26645b83-e54d-44e6-8278-d22ac5defc01
+     fullUrl: http://localhost:4000/users/26645b83-e54d-44e6-8278-d22ac5defc01
+     Request params: {"id":"26645b83-e54d-44e6-8278-d22ac5defc01"}
+     Request body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"26645b83-e54d-44e6-8278-d22ac5defc01"}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: GET
-     Url: /ce8854a7-68f4-40b2-8c1c-be7bb32c8de4
-     fullUrl: http://localhost:4000/users/ce8854a7-68f4-40b2-8c1c-be7bb32c8de4
-     Request params: {"id":"ce8854a7-68f4-40b2-8c1c-be7bb32c8de4"}
+     Url: /26645b83-e54d-44e6-8278-d22ac5defc01
+     fullUrl: http://localhost:4000/users/26645b83-e54d-44e6-8278-d22ac5defc01
+     Request params: {"id":"26645b83-e54d-44e6-8278-d22ac5defc01"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: DELETE
-     Url: /ce8854a7-68f4-40b2-8c1c-be7bb32c8de4
-     fullUrl: http://localhost:4000/users/ce8854a7-68f4-40b2-8c1c-be7bb32c8de4
-     Request params: {"id":"ce8854a7-68f4-40b2-8c1c-be7bb32c8de4"}
+     Url: /26645b83-e54d-44e6-8278-d22ac5defc01
+     fullUrl: http://localhost:4000/users/26645b83-e54d-44e6-8278-d22ac5defc01
+     Request params: {"id":"26645b83-e54d-44e6-8278-d22ac5defc01"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/users
@@ -628,16 +708,16 @@ Time: 21:44:13
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: DELETE
-     Url: /bb47b256-2979-4c27-8178-b494155c9260
-     fullUrl: http://localhost:4000/users/bb47b256-2979-4c27-8178-b494155c9260
-     Request params: {"id":"bb47b256-2979-4c27-8178-b494155c9260"}
+     Url: /99eb173f-b66f-4a72-96e9-4e0b68962bcb
+     fullUrl: http://localhost:4000/users/99eb173f-b66f-4a72-96e9-4e0b68962bcb
+     Request params: {"id":"99eb173f-b66f-4a72-96e9-4e0b68962bcb"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/users
@@ -646,7 +726,7 @@ Time: 21:44:13
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/boards
@@ -655,115 +735,79 @@ Time: 21:44:13
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/3299fe17-ab9f-45ed-a03a-59ca062f6baf/tasks
-     Request params: {"boardId":"3299fe17-ab9f-45ed-a03a-59ca062f6baf"}
-     Request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"517c24ca-2fa9-40ae-b8a7-b2613e334a32","boardId":"3299fe17-ab9f-45ed-a03a-59ca062f6baf"}
+     fullUrl: http://localhost:4000/boards/59952dcf-f536-470f-8e02-ec1cfb69fdb7/tasks
+     Request params: {"boardId":"59952dcf-f536-470f-8e02-ec1cfb69fdb7"}
+     Request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"1530345e-94a3-47ae-9ad0-b7570fae15e2","boardId":"59952dcf-f536-470f-8e02-ec1cfb69fdb7"}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/3299fe17-ab9f-45ed-a03a-59ca062f6baf/tasks
-     Request params: {"boardId":"3299fe17-ab9f-45ed-a03a-59ca062f6baf"}
-     Request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"517c24ca-2fa9-40ae-b8a7-b2613e334a32","boardId":"3299fe17-ab9f-45ed-a03a-59ca062f6baf"}
+     fullUrl: http://localhost:4000/boards/59952dcf-f536-470f-8e02-ec1cfb69fdb7/tasks
+     Request params: {"boardId":"59952dcf-f536-470f-8e02-ec1cfb69fdb7"}
+     Request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"1530345e-94a3-47ae-9ad0-b7570fae15e2","boardId":"59952dcf-f536-470f-8e02-ec1cfb69fdb7"}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: DELETE
-     Url: /517c24ca-2fa9-40ae-b8a7-b2613e334a32
-     fullUrl: http://localhost:4000/users/517c24ca-2fa9-40ae-b8a7-b2613e334a32
-     Request params: {"id":"517c24ca-2fa9-40ae-b8a7-b2613e334a32"}
+     Url: /1530345e-94a3-47ae-9ad0-b7570fae15e2
+     fullUrl: http://localhost:4000/users/1530345e-94a3-47ae-9ad0-b7570fae15e2
+     Request params: {"id":"1530345e-94a3-47ae-9ad0-b7570fae15e2"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: GET
-     Url: /805a91f3-26a2-4e75-8801-8b427a8a63ef
-     fullUrl: http://localhost:4000/boards/3299fe17-ab9f-45ed-a03a-59ca062f6baf/tasks/805a91f3-26a2-4e75-8801-8b427a8a63ef
-     Request params: {"boardId":"3299fe17-ab9f-45ed-a03a-59ca062f6baf","id":"805a91f3-26a2-4e75-8801-8b427a8a63ef"}
+     Url: /a3ae32c8-b72a-4c6e-b625-47b26abb36ca
+     fullUrl: http://localhost:4000/boards/59952dcf-f536-470f-8e02-ec1cfb69fdb7/tasks/a3ae32c8-b72a-4c6e-b625-47b26abb36ca
+     Request params: {"boardId":"59952dcf-f536-470f-8e02-ec1cfb69fdb7","id":"a3ae32c8-b72a-4c6e-b625-47b26abb36ca"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: GET
-     Url: /764b2a7f-f8d8-4b12-9534-237c4ba96642
-     fullUrl: http://localhost:4000/boards/3299fe17-ab9f-45ed-a03a-59ca062f6baf/tasks/764b2a7f-f8d8-4b12-9534-237c4ba96642
-     Request params: {"boardId":"3299fe17-ab9f-45ed-a03a-59ca062f6baf","id":"764b2a7f-f8d8-4b12-9534-237c4ba96642"}
+     Url: /2ddf7619-b7d5-4312-9c90-5aef24c7f0e2
+     fullUrl: http://localhost:4000/boards/59952dcf-f536-470f-8e02-ec1cfb69fdb7/tasks/2ddf7619-b7d5-4312-9c90-5aef24c7f0e2
+     Request params: {"boardId":"59952dcf-f536-470f-8e02-ec1cfb69fdb7","id":"2ddf7619-b7d5-4312-9c90-5aef24c7f0e2"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: DELETE
-     Url: /805a91f3-26a2-4e75-8801-8b427a8a63ef
-     fullUrl: http://localhost:4000/boards/3299fe17-ab9f-45ed-a03a-59ca062f6baf/tasks/805a91f3-26a2-4e75-8801-8b427a8a63ef
-     Request params: {"boardId":"3299fe17-ab9f-45ed-a03a-59ca062f6baf","id":"805a91f3-26a2-4e75-8801-8b427a8a63ef"}
+     Url: /a3ae32c8-b72a-4c6e-b625-47b26abb36ca
+     fullUrl: http://localhost:4000/boards/59952dcf-f536-470f-8e02-ec1cfb69fdb7/tasks/a3ae32c8-b72a-4c6e-b625-47b26abb36ca
+     Request params: {"boardId":"59952dcf-f536-470f-8e02-ec1cfb69fdb7","id":"a3ae32c8-b72a-4c6e-b625-47b26abb36ca"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: DELETE
-     Url: /764b2a7f-f8d8-4b12-9534-237c4ba96642
-     fullUrl: http://localhost:4000/boards/3299fe17-ab9f-45ed-a03a-59ca062f6baf/tasks/764b2a7f-f8d8-4b12-9534-237c4ba96642
-     Request params: {"boardId":"3299fe17-ab9f-45ed-a03a-59ca062f6baf","id":"764b2a7f-f8d8-4b12-9534-237c4ba96642"}
+     Url: /2ddf7619-b7d5-4312-9c90-5aef24c7f0e2
+     fullUrl: http://localhost:4000/boards/59952dcf-f536-470f-8e02-ec1cfb69fdb7/tasks/2ddf7619-b7d5-4312-9c90-5aef24c7f0e2
+     Request params: {"boardId":"59952dcf-f536-470f-8e02-ec1cfb69fdb7","id":"2ddf7619-b7d5-4312-9c90-5aef24c7f0e2"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: DELETE
-     Url: /3299fe17-ab9f-45ed-a03a-59ca062f6baf
-     fullUrl: http://localhost:4000/boards/3299fe17-ab9f-45ed-a03a-59ca062f6baf
-     Request params: {"id":"3299fe17-ab9f-45ed-a03a-59ca062f6baf"}
+     Url: /59952dcf-f536-470f-8e02-ec1cfb69fdb7
+     fullUrl: http://localhost:4000/boards/59952dcf-f536-470f-8e02-ec1cfb69fdb7
+     Request params: {"id":"59952dcf-f536-470f-8e02-ec1cfb69fdb7"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:44:13
-     Method: POST
-     Url: /
-     fullUrl: http://localhost:4000/boards
-     Request params: {}
-     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-     Request query: {}
-     Responded with status 201
-     Agent: undefined
-Time: 21:44:13
-     Method: GET
-     Url: /
-     fullUrl: http://localhost:4000/boards
-     Request params: {}
-     Request body: {}
-     Request query: {}
-     Responded with status 200
-     Agent: undefined
-Time: 21:44:13
-     Method: GET
-     Url: /
-     fullUrl: http://localhost:4000/boards
-     Request params: {}
-     Request body: {}
-     Request query: {}
-     Responded with status 200
-     Agent: undefined
-Time: 21:44:13
-     Method: GET
-     Url: /513f9789-51d8-4ecc-954f-759939923ef2
-     fullUrl: http://localhost:4000/boards/513f9789-51d8-4ecc-954f-759939923ef2
-     Request params: {"id":"513f9789-51d8-4ecc-954f-759939923ef2"}
-     Request body: {}
-     Request query: {}
-     Responded with status 200
-     Agent: undefined
-Time: 21:44:13
+Time: 22:52:36
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/boards
@@ -772,16 +816,34 @@ Time: 21:44:13
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
-     Method: DELETE
-     Url: /d815bffd-0c00-4cd9-85f4-cdd9fa1e486a
-     fullUrl: http://localhost:4000/boards/d815bffd-0c00-4cd9-85f4-cdd9fa1e486a
-     Request params: {"id":"d815bffd-0c00-4cd9-85f4-cdd9fa1e486a"}
+Time: 22:52:36
+     Method: GET
+     Url: /
+     fullUrl: http://localhost:4000/boards
+     Request params: {}
      Request body: {}
      Request query: {}
-     Responded with status 204
+     Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
+     Method: GET
+     Url: /
+     fullUrl: http://localhost:4000/boards
+     Request params: {}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:52:37
+     Method: GET
+     Url: /9a33a20e-2022-4dce-b181-85e64287c38f
+     fullUrl: http://localhost:4000/boards/9a33a20e-2022-4dce-b181-85e64287c38f
+     Request params: {"id":"9a33a20e-2022-4dce-b181-85e64287c38f"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:52:37
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/boards
@@ -790,34 +852,52 @@ Time: 21:44:13
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
+     Method: DELETE
+     Url: /f1373e0e-448e-4ea5-ae33-5d8809de943d
+     fullUrl: http://localhost:4000/boards/f1373e0e-448e-4ea5-ae33-5d8809de943d
+     Request params: {"id":"f1373e0e-448e-4ea5-ae33-5d8809de943d"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:52:37
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:52:37
      Method: PUT
-     Url: /2e89feb5-b440-46af-889f-9725a2eb46a4
-     fullUrl: http://localhost:4000/boards/2e89feb5-b440-46af-889f-9725a2eb46a4
-     Request params: {"id":"2e89feb5-b440-46af-889f-9725a2eb46a4"}
-     Request body: {"id":"2e89feb5-b440-46af-889f-9725a2eb46a4","title":"Autotest updated board","columns":[{"id":"4f23299d-86c9-4a5d-a425-80d1aee9e391","title":"Backlog","order":1},{"id":"095d1e0f-c1c9-4787-ae9c-05091931cbc2","title":"Sprint","order":2}]}
+     Url: /6d38cf7a-8f2f-4fcd-a4dc-d878ed89856e
+     fullUrl: http://localhost:4000/boards/6d38cf7a-8f2f-4fcd-a4dc-d878ed89856e
+     Request params: {"id":"6d38cf7a-8f2f-4fcd-a4dc-d878ed89856e"}
+     Request body: {"id":"6d38cf7a-8f2f-4fcd-a4dc-d878ed89856e","title":"Autotest updated board","columns":[{"id":"f5233b2e-42d9-463c-9dc2-83ac8482acf1","title":"Backlog","order":1},{"id":"9a40ca02-f166-4393-979a-6326c8331846","title":"Sprint","order":2}]}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
-     Url: /2e89feb5-b440-46af-889f-9725a2eb46a4
-     fullUrl: http://localhost:4000/boards/2e89feb5-b440-46af-889f-9725a2eb46a4
-     Request params: {"id":"2e89feb5-b440-46af-889f-9725a2eb46a4"}
+     Url: /6d38cf7a-8f2f-4fcd-a4dc-d878ed89856e
+     fullUrl: http://localhost:4000/boards/6d38cf7a-8f2f-4fcd-a4dc-d878ed89856e
+     Request params: {"id":"6d38cf7a-8f2f-4fcd-a4dc-d878ed89856e"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: DELETE
-     Url: /2e89feb5-b440-46af-889f-9725a2eb46a4
-     fullUrl: http://localhost:4000/boards/2e89feb5-b440-46af-889f-9725a2eb46a4
-     Request params: {"id":"2e89feb5-b440-46af-889f-9725a2eb46a4"}
+     Url: /6d38cf7a-8f2f-4fcd-a4dc-d878ed89856e
+     fullUrl: http://localhost:4000/boards/6d38cf7a-8f2f-4fcd-a4dc-d878ed89856e
+     Request params: {"id":"6d38cf7a-8f2f-4fcd-a4dc-d878ed89856e"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/boards
@@ -826,25 +906,25 @@ Time: 21:44:13
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: DELETE
-     Url: /1ce58574-8387-4762-b2d5-979c8ee0d177
-     fullUrl: http://localhost:4000/boards/1ce58574-8387-4762-b2d5-979c8ee0d177
-     Request params: {"id":"1ce58574-8387-4762-b2d5-979c8ee0d177"}
+     Url: /70ed91a2-f7f0-4299-86c8-d90587a3a95b
+     fullUrl: http://localhost:4000/boards/70ed91a2-f7f0-4299-86c8-d90587a3a95b
+     Request params: {"id":"70ed91a2-f7f0-4299-86c8-d90587a3a95b"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
-     Url: /1ce58574-8387-4762-b2d5-979c8ee0d177
-     fullUrl: http://localhost:4000/boards/1ce58574-8387-4762-b2d5-979c8ee0d177
-     Request params: {"id":"1ce58574-8387-4762-b2d5-979c8ee0d177"}
+     Url: /70ed91a2-f7f0-4299-86c8-d90587a3a95b
+     fullUrl: http://localhost:4000/boards/70ed91a2-f7f0-4299-86c8-d90587a3a95b
+     Request params: {"id":"70ed91a2-f7f0-4299-86c8-d90587a3a95b"}
      Request body: {}
      Request query: {}
      Responded with status 404
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/boards
@@ -853,160 +933,160 @@ Time: 21:44:13
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/84fdb63d-1938-4145-8011-101b92361769/tasks
-     Request params: {"boardId":"84fdb63d-1938-4145-8011-101b92361769"}
-     Request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"84fdb63d-1938-4145-8011-101b92361769","userId":null,"columnId":null}
+     fullUrl: http://localhost:4000/boards/0d41ca06-65d8-4ee3-9bac-8414dee5227b/tasks
+     Request params: {"boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b"}
+     Request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b","userId":null,"columnId":null}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/84fdb63d-1938-4145-8011-101b92361769/tasks
-     Request params: {"boardId":"84fdb63d-1938-4145-8011-101b92361769"}
-     Request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"84fdb63d-1938-4145-8011-101b92361769","userId":null,"columnId":null}
+     fullUrl: http://localhost:4000/boards/0d41ca06-65d8-4ee3-9bac-8414dee5227b/tasks
+     Request params: {"boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b"}
+     Request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b","userId":null,"columnId":null}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/84fdb63d-1938-4145-8011-101b92361769/tasks
-     Request params: {"boardId":"84fdb63d-1938-4145-8011-101b92361769"}
-     Request body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"84fdb63d-1938-4145-8011-101b92361769","userId":null,"columnId":null}
+     fullUrl: http://localhost:4000/boards/0d41ca06-65d8-4ee3-9bac-8414dee5227b/tasks
+     Request params: {"boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b"}
+     Request body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b","userId":null,"columnId":null}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/84fdb63d-1938-4145-8011-101b92361769/tasks
-     Request params: {"boardId":"84fdb63d-1938-4145-8011-101b92361769"}
-     Request body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"84fdb63d-1938-4145-8011-101b92361769","userId":null,"columnId":null}
+     fullUrl: http://localhost:4000/boards/0d41ca06-65d8-4ee3-9bac-8414dee5227b/tasks
+     Request params: {"boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b"}
+     Request body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b","userId":null,"columnId":null}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/84fdb63d-1938-4145-8011-101b92361769/tasks
-     Request params: {"boardId":"84fdb63d-1938-4145-8011-101b92361769"}
-     Request body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"84fdb63d-1938-4145-8011-101b92361769","userId":null,"columnId":null}
+     fullUrl: http://localhost:4000/boards/0d41ca06-65d8-4ee3-9bac-8414dee5227b/tasks
+     Request params: {"boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b"}
+     Request body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b","userId":null,"columnId":null}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
-     Url: /3f4d1ac7-cca2-4dd1-8396-d14f6dac6552
-     fullUrl: http://localhost:4000/boards/84fdb63d-1938-4145-8011-101b92361769/tasks/3f4d1ac7-cca2-4dd1-8396-d14f6dac6552
-     Request params: {"boardId":"84fdb63d-1938-4145-8011-101b92361769","id":"3f4d1ac7-cca2-4dd1-8396-d14f6dac6552"}
+     Url: /19f4837b-7707-40ed-9d99-85072a162bb8
+     fullUrl: http://localhost:4000/boards/0d41ca06-65d8-4ee3-9bac-8414dee5227b/tasks/19f4837b-7707-40ed-9d99-85072a162bb8
+     Request params: {"boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b","id":"19f4837b-7707-40ed-9d99-85072a162bb8"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
-     Url: /73718ba6-c1f2-4649-bd0f-5e440dd89aa2
-     fullUrl: http://localhost:4000/boards/84fdb63d-1938-4145-8011-101b92361769/tasks/73718ba6-c1f2-4649-bd0f-5e440dd89aa2
-     Request params: {"boardId":"84fdb63d-1938-4145-8011-101b92361769","id":"73718ba6-c1f2-4649-bd0f-5e440dd89aa2"}
+     Url: /894646a1-7c51-4315-ae9b-4b259fab35db
+     fullUrl: http://localhost:4000/boards/0d41ca06-65d8-4ee3-9bac-8414dee5227b/tasks/894646a1-7c51-4315-ae9b-4b259fab35db
+     Request params: {"boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b","id":"894646a1-7c51-4315-ae9b-4b259fab35db"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
-     Url: /76d9db5f-4f4e-4677-b6dc-5aeb6e10bb57
-     fullUrl: http://localhost:4000/boards/84fdb63d-1938-4145-8011-101b92361769/tasks/76d9db5f-4f4e-4677-b6dc-5aeb6e10bb57
-     Request params: {"boardId":"84fdb63d-1938-4145-8011-101b92361769","id":"76d9db5f-4f4e-4677-b6dc-5aeb6e10bb57"}
+     Url: /a5cd6685-f2f9-47df-9b62-7dfc36daae08
+     fullUrl: http://localhost:4000/boards/0d41ca06-65d8-4ee3-9bac-8414dee5227b/tasks/a5cd6685-f2f9-47df-9b62-7dfc36daae08
+     Request params: {"boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b","id":"a5cd6685-f2f9-47df-9b62-7dfc36daae08"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
-     Url: /7082e243-8f12-4e12-ba03-a5a21a434a8f
-     fullUrl: http://localhost:4000/boards/84fdb63d-1938-4145-8011-101b92361769/tasks/7082e243-8f12-4e12-ba03-a5a21a434a8f
-     Request params: {"boardId":"84fdb63d-1938-4145-8011-101b92361769","id":"7082e243-8f12-4e12-ba03-a5a21a434a8f"}
+     Url: /3df5a795-1fa5-4b75-b146-ccb17ae9f2b8
+     fullUrl: http://localhost:4000/boards/0d41ca06-65d8-4ee3-9bac-8414dee5227b/tasks/3df5a795-1fa5-4b75-b146-ccb17ae9f2b8
+     Request params: {"boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b","id":"3df5a795-1fa5-4b75-b146-ccb17ae9f2b8"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
-     Url: /bcc6da49-62c6-45c2-945b-c671edde464c
-     fullUrl: http://localhost:4000/boards/84fdb63d-1938-4145-8011-101b92361769/tasks/bcc6da49-62c6-45c2-945b-c671edde464c
-     Request params: {"boardId":"84fdb63d-1938-4145-8011-101b92361769","id":"bcc6da49-62c6-45c2-945b-c671edde464c"}
+     Url: /58dcee2f-a300-4d3c-9944-95436aa5d7c7
+     fullUrl: http://localhost:4000/boards/0d41ca06-65d8-4ee3-9bac-8414dee5227b/tasks/58dcee2f-a300-4d3c-9944-95436aa5d7c7
+     Request params: {"boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b","id":"58dcee2f-a300-4d3c-9944-95436aa5d7c7"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: DELETE
-     Url: /84fdb63d-1938-4145-8011-101b92361769
-     fullUrl: http://localhost:4000/boards/84fdb63d-1938-4145-8011-101b92361769
-     Request params: {"id":"84fdb63d-1938-4145-8011-101b92361769"}
+     Url: /0d41ca06-65d8-4ee3-9bac-8414dee5227b
+     fullUrl: http://localhost:4000/boards/0d41ca06-65d8-4ee3-9bac-8414dee5227b
+     Request params: {"id":"0d41ca06-65d8-4ee3-9bac-8414dee5227b"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
-     Url: /3f4d1ac7-cca2-4dd1-8396-d14f6dac6552
-     fullUrl: http://localhost:4000/boards/84fdb63d-1938-4145-8011-101b92361769/tasks/3f4d1ac7-cca2-4dd1-8396-d14f6dac6552
-     Request params: {"boardId":"84fdb63d-1938-4145-8011-101b92361769","id":"3f4d1ac7-cca2-4dd1-8396-d14f6dac6552"}
+     Url: /19f4837b-7707-40ed-9d99-85072a162bb8
+     fullUrl: http://localhost:4000/boards/0d41ca06-65d8-4ee3-9bac-8414dee5227b/tasks/19f4837b-7707-40ed-9d99-85072a162bb8
+     Request params: {"boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b","id":"19f4837b-7707-40ed-9d99-85072a162bb8"}
      Request body: {}
      Request query: {}
      Responded with status 404
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
-     Url: /73718ba6-c1f2-4649-bd0f-5e440dd89aa2
-     fullUrl: http://localhost:4000/boards/84fdb63d-1938-4145-8011-101b92361769/tasks/73718ba6-c1f2-4649-bd0f-5e440dd89aa2
-     Request params: {"boardId":"84fdb63d-1938-4145-8011-101b92361769","id":"73718ba6-c1f2-4649-bd0f-5e440dd89aa2"}
+     Url: /894646a1-7c51-4315-ae9b-4b259fab35db
+     fullUrl: http://localhost:4000/boards/0d41ca06-65d8-4ee3-9bac-8414dee5227b/tasks/894646a1-7c51-4315-ae9b-4b259fab35db
+     Request params: {"boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b","id":"894646a1-7c51-4315-ae9b-4b259fab35db"}
      Request body: {}
      Request query: {}
      Responded with status 404
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
-     Url: /76d9db5f-4f4e-4677-b6dc-5aeb6e10bb57
-     fullUrl: http://localhost:4000/boards/84fdb63d-1938-4145-8011-101b92361769/tasks/76d9db5f-4f4e-4677-b6dc-5aeb6e10bb57
-     Request params: {"boardId":"84fdb63d-1938-4145-8011-101b92361769","id":"76d9db5f-4f4e-4677-b6dc-5aeb6e10bb57"}
+     Url: /58dcee2f-a300-4d3c-9944-95436aa5d7c7
+     fullUrl: http://localhost:4000/boards/0d41ca06-65d8-4ee3-9bac-8414dee5227b/tasks/58dcee2f-a300-4d3c-9944-95436aa5d7c7
+     Request params: {"boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b","id":"58dcee2f-a300-4d3c-9944-95436aa5d7c7"}
      Request body: {}
      Request query: {}
      Responded with status 404
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
-     Url: /7082e243-8f12-4e12-ba03-a5a21a434a8f
-     fullUrl: http://localhost:4000/boards/84fdb63d-1938-4145-8011-101b92361769/tasks/7082e243-8f12-4e12-ba03-a5a21a434a8f
-     Request params: {"boardId":"84fdb63d-1938-4145-8011-101b92361769","id":"7082e243-8f12-4e12-ba03-a5a21a434a8f"}
+     Url: /3df5a795-1fa5-4b75-b146-ccb17ae9f2b8
+     fullUrl: http://localhost:4000/boards/0d41ca06-65d8-4ee3-9bac-8414dee5227b/tasks/3df5a795-1fa5-4b75-b146-ccb17ae9f2b8
+     Request params: {"boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b","id":"3df5a795-1fa5-4b75-b146-ccb17ae9f2b8"}
      Request body: {}
      Request query: {}
      Responded with status 404
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
-     Url: /bcc6da49-62c6-45c2-945b-c671edde464c
-     fullUrl: http://localhost:4000/boards/84fdb63d-1938-4145-8011-101b92361769/tasks/bcc6da49-62c6-45c2-945b-c671edde464c
-     Request params: {"boardId":"84fdb63d-1938-4145-8011-101b92361769","id":"bcc6da49-62c6-45c2-945b-c671edde464c"}
+     Url: /a5cd6685-f2f9-47df-9b62-7dfc36daae08
+     fullUrl: http://localhost:4000/boards/0d41ca06-65d8-4ee3-9bac-8414dee5227b/tasks/a5cd6685-f2f9-47df-9b62-7dfc36daae08
+     Request params: {"boardId":"0d41ca06-65d8-4ee3-9bac-8414dee5227b","id":"a5cd6685-f2f9-47df-9b62-7dfc36daae08"}
      Request body: {}
      Request query: {}
      Responded with status 404
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: DELETE
-     Url: /513f9789-51d8-4ecc-954f-759939923ef2
-     fullUrl: http://localhost:4000/boards/513f9789-51d8-4ecc-954f-759939923ef2
-     Request params: {"id":"513f9789-51d8-4ecc-954f-759939923ef2"}
+     Url: /9a33a20e-2022-4dce-b181-85e64287c38f
+     fullUrl: http://localhost:4000/boards/9a33a20e-2022-4dce-b181-85e64287c38f
+     Request params: {"id":"9a33a20e-2022-4dce-b181-85e64287c38f"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: POST
      Url: /
      fullUrl: http://localhost:4000/boards
@@ -1015,124 +1095,142 @@ Time: 21:44:13
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/2d74abb9-c092-4853-8c26-d6594f7f413f/tasks
-     Request params: {"boardId":"2d74abb9-c092-4853-8c26-d6594f7f413f"}
+     fullUrl: http://localhost:4000/boards/f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a/tasks
+     Request params: {"boardId":"f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a"}
      Request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
      Url: /
-     fullUrl: http://localhost:4000/boards/2d74abb9-c092-4853-8c26-d6594f7f413f/tasks
-     Request params: {"boardId":"2d74abb9-c092-4853-8c26-d6594f7f413f"}
+     fullUrl: http://localhost:4000/boards/f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a/tasks
+     Request params: {"boardId":"f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
      Url: /
-     fullUrl: http://localhost:4000/boards/2d74abb9-c092-4853-8c26-d6594f7f413f/tasks
-     Request params: {"boardId":"2d74abb9-c092-4853-8c26-d6594f7f413f"}
+     fullUrl: http://localhost:4000/boards/f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a/tasks
+     Request params: {"boardId":"f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
-     Url: /f894a165-5540-484c-8741-4298fb6817d1
-     fullUrl: http://localhost:4000/boards/2d74abb9-c092-4853-8c26-d6594f7f413f/tasks/f894a165-5540-484c-8741-4298fb6817d1
-     Request params: {"boardId":"2d74abb9-c092-4853-8c26-d6594f7f413f","id":"f894a165-5540-484c-8741-4298fb6817d1"}
+     Url: /2ffdc756-0257-45c1-92e0-772e68275472
+     fullUrl: http://localhost:4000/boards/f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a/tasks/2ffdc756-0257-45c1-92e0-772e68275472
+     Request params: {"boardId":"f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a","id":"2ffdc756-0257-45c1-92e0-772e68275472"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/2d74abb9-c092-4853-8c26-d6594f7f413f/tasks
-     Request params: {"boardId":"2d74abb9-c092-4853-8c26-d6594f7f413f"}
+     fullUrl: http://localhost:4000/boards/f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a/tasks
+     Request params: {"boardId":"f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a"}
      Request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: DELETE
-     Url: /c442229c-07ae-46d2-9fb8-271b3ff9f2ec
-     fullUrl: http://localhost:4000/boards/2d74abb9-c092-4853-8c26-d6594f7f413f/tasks/c442229c-07ae-46d2-9fb8-271b3ff9f2ec
-     Request params: {"boardId":"2d74abb9-c092-4853-8c26-d6594f7f413f","id":"c442229c-07ae-46d2-9fb8-271b3ff9f2ec"}
+     Url: /2da87f31-8bfa-44dd-a177-67c322f21e7f
+     fullUrl: http://localhost:4000/boards/f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a/tasks/2da87f31-8bfa-44dd-a177-67c322f21e7f
+     Request params: {"boardId":"f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a","id":"2da87f31-8bfa-44dd-a177-67c322f21e7f"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: POST
      Url: /
-     fullUrl: http://localhost:4000/boards/2d74abb9-c092-4853-8c26-d6594f7f413f/tasks
-     Request params: {"boardId":"2d74abb9-c092-4853-8c26-d6594f7f413f"}
+     fullUrl: http://localhost:4000/boards/f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a/tasks
+     Request params: {"boardId":"f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a"}
      Request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
      Request query: {}
      Responded with status 201
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: PUT
-     Url: /5993bba0-b9e7-4397-933f-8687448bc5f6
-     fullUrl: http://localhost:4000/boards/2d74abb9-c092-4853-8c26-d6594f7f413f/tasks/5993bba0-b9e7-4397-933f-8687448bc5f6
-     Request params: {"boardId":"2d74abb9-c092-4853-8c26-d6594f7f413f","id":"5993bba0-b9e7-4397-933f-8687448bc5f6"}
-     Request body: {"id":"5993bba0-b9e7-4397-933f-8687448bc5f6","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"2d74abb9-c092-4853-8c26-d6594f7f413f","columnId":null}
+     Url: /58d6f273-748f-4f6a-9a10-d5fc70e7e5cf
+     fullUrl: http://localhost:4000/boards/f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a/tasks/58d6f273-748f-4f6a-9a10-d5fc70e7e5cf
+     Request params: {"boardId":"f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a","id":"58d6f273-748f-4f6a-9a10-d5fc70e7e5cf"}
+     Request body: {"id":"58d6f273-748f-4f6a-9a10-d5fc70e7e5cf","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a","columnId":null}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
-     Url: /5993bba0-b9e7-4397-933f-8687448bc5f6
-     fullUrl: http://localhost:4000/boards/2d74abb9-c092-4853-8c26-d6594f7f413f/tasks/5993bba0-b9e7-4397-933f-8687448bc5f6
-     Request params: {"boardId":"2d74abb9-c092-4853-8c26-d6594f7f413f","id":"5993bba0-b9e7-4397-933f-8687448bc5f6"}
+     Url: /58d6f273-748f-4f6a-9a10-d5fc70e7e5cf
+     fullUrl: http://localhost:4000/boards/f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a/tasks/58d6f273-748f-4f6a-9a10-d5fc70e7e5cf
+     Request params: {"boardId":"f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a","id":"58d6f273-748f-4f6a-9a10-d5fc70e7e5cf"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
-     Url: /f894a165-5540-484c-8741-4298fb6817d1
-     fullUrl: http://localhost:4000/boards/2d74abb9-c092-4853-8c26-d6594f7f413f/tasks/f894a165-5540-484c-8741-4298fb6817d1
-     Request params: {"boardId":"2d74abb9-c092-4853-8c26-d6594f7f413f","id":"f894a165-5540-484c-8741-4298fb6817d1"}
+     Url: /2ffdc756-0257-45c1-92e0-772e68275472
+     fullUrl: http://localhost:4000/boards/f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a/tasks/2ffdc756-0257-45c1-92e0-772e68275472
+     Request params: {"boardId":"f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a","id":"2ffdc756-0257-45c1-92e0-772e68275472"}
      Request body: {}
      Request query: {}
      Responded with status 200
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: DELETE
-     Url: /f894a165-5540-484c-8741-4298fb6817d1
-     fullUrl: http://localhost:4000/boards/2d74abb9-c092-4853-8c26-d6594f7f413f/tasks/f894a165-5540-484c-8741-4298fb6817d1
-     Request params: {"boardId":"2d74abb9-c092-4853-8c26-d6594f7f413f","id":"f894a165-5540-484c-8741-4298fb6817d1"}
+     Url: /2ffdc756-0257-45c1-92e0-772e68275472
+     fullUrl: http://localhost:4000/boards/f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a/tasks/2ffdc756-0257-45c1-92e0-772e68275472
+     Request params: {"boardId":"f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a","id":"2ffdc756-0257-45c1-92e0-772e68275472"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: GET
-     Url: /f894a165-5540-484c-8741-4298fb6817d1
-     fullUrl: http://localhost:4000/boards/2d74abb9-c092-4853-8c26-d6594f7f413f/tasks/f894a165-5540-484c-8741-4298fb6817d1
-     Request params: {"boardId":"2d74abb9-c092-4853-8c26-d6594f7f413f","id":"f894a165-5540-484c-8741-4298fb6817d1"}
+     Url: /2ffdc756-0257-45c1-92e0-772e68275472
+     fullUrl: http://localhost:4000/boards/f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a/tasks/2ffdc756-0257-45c1-92e0-772e68275472
+     Request params: {"boardId":"f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a","id":"2ffdc756-0257-45c1-92e0-772e68275472"}
      Request body: {}
      Request query: {}
      Responded with status 404
      Agent: undefined
-Time: 21:44:13
+Time: 22:52:37
      Method: DELETE
-     Url: /2d74abb9-c092-4853-8c26-d6594f7f413f
-     fullUrl: http://localhost:4000/boards/2d74abb9-c092-4853-8c26-d6594f7f413f
-     Request params: {"id":"2d74abb9-c092-4853-8c26-d6594f7f413f"}
+     Url: /f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a
+     fullUrl: http://localhost:4000/boards/f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a
+     Request params: {"id":"f14d38a4-6cc9-4f13-8acf-bfb3ebaad87a"}
      Request body: {}
      Request query: {}
      Responded with status 204
      Agent: undefined
-Time: 21:44:19
+Time: 22:53:25
+     Method: GET
+     Url: /users
+     fullUrl: http://localhost:4000/users
+     Request params: {}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36
+Time: 22:53:26
+     Method: GET
+     Url: /users
+     fullUrl: http://localhost:4000/users
+     Request params: {}
+     Request body: {}
+     Request query: {}
+     Responded with status 304
+     Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36
+Time: 22:53:49
      Method: GET
      Url: /456
      fullUrl: http://localhost:4000/users/456
@@ -1141,3 +1239,656 @@ Time: 21:44:19
      Request query: {}
      Responded with status 404
      Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36
+Time: 22:49:14
+      uncaughtException:
+     err: Error: Oops!
+     err stack: Error: Oops!
+    at Object.<anonymous> (C:\Users\Юрий\Desktop\Github\nodeV2\nodejs-course\src\app.ts:43:7)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Module.m._compile (C:\Users\Юрий\Desktop\Github\nodeV2\nodejs-course\node_modules\ts-node\src\index.ts:1295:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\Юрий\Desktop\Github\nodeV2\nodejs-course\node_modules\ts-node\src\index.ts:1298:12)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\Юрий\Desktop\Github\nodeV2\nodejs-course\src\server.ts:1:1)
+Time: 22:49:58
+      uncaughtException:
+     err: Error: Oops!
+     err stack: Error: Oops!
+    at Object.<anonymous> (C:\Users\Юрий\Desktop\Github\nodeV2\nodejs-course\src\app.ts:45:7)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Module.m._compile (C:\Users\Юрий\Desktop\Github\nodeV2\nodejs-course\node_modules\ts-node\src\index.ts:1295:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\Юрий\Desktop\Github\nodeV2\nodejs-course\node_modules\ts-node\src\index.ts:1298:12)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\Юрий\Desktop\Github\nodeV2\nodejs-course\src\server.ts:1:1)
+Time: 22:51:10
+     unhandledRejection:
+     reason: Error: Oops!
+
+Time: 22:54:58
+      uncaughtException:
+     err: Error: Oops!
+     err stack: Error: Oops!
+    at Object.<anonymous> (C:\Users\Юрий\Desktop\Github\nodeV2\nodejs-course\src\app.ts:45:7)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Module.m._compile (C:\Users\Юрий\Desktop\Github\nodeV2\nodejs-course\node_modules\ts-node\src\index.ts:1295:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\Юрий\Desktop\Github\nodeV2\nodejs-course\node_modules\ts-node\src\index.ts:1298:12)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\Юрий\Desktop\Github\nodeV2\nodejs-course\src\server.ts:1:1)
+Time: 22:55:43
+     unhandledRejection:
+     reason: Error: Oops!
+
+Time: 22:56:19
+     Method: GET
+     Url: /users
+     fullUrl: http://localhost:4000/users
+     Request params: {}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/users
+     Request params: {}
+     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /f8355f93-e87e-4b51-8d76-16ff16902bbe
+     fullUrl: http://localhost:4000/users/f8355f93-e87e-4b51-8d76-16ff16902bbe
+     Request params: {"id":"f8355f93-e87e-4b51-8d76-16ff16902bbe"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:19
+     Method: DELETE
+     Url: /f8355f93-e87e-4b51-8d76-16ff16902bbe
+     fullUrl: http://localhost:4000/users/f8355f93-e87e-4b51-8d76-16ff16902bbe
+     Request params: {"id":"f8355f93-e87e-4b51-8d76-16ff16902bbe"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/users
+     Request params: {}
+     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: DELETE
+     Url: /ce445e55-67c7-477e-89d5-6a2dd32a6ae2
+     fullUrl: http://localhost:4000/users/ce445e55-67c7-477e-89d5-6a2dd32a6ae2
+     Request params: {"id":"ce445e55-67c7-477e-89d5-6a2dd32a6ae2"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/users
+     Request params: {}
+     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: PUT
+     Url: /16a3abca-661c-4d48-8776-1c2e6716cef6
+     fullUrl: http://localhost:4000/users/16a3abca-661c-4d48-8776-1c2e6716cef6
+     Request params: {"id":"16a3abca-661c-4d48-8776-1c2e6716cef6"}
+     Request body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"16a3abca-661c-4d48-8776-1c2e6716cef6"}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /16a3abca-661c-4d48-8776-1c2e6716cef6
+     fullUrl: http://localhost:4000/users/16a3abca-661c-4d48-8776-1c2e6716cef6
+     Request params: {"id":"16a3abca-661c-4d48-8776-1c2e6716cef6"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:19
+     Method: DELETE
+     Url: /16a3abca-661c-4d48-8776-1c2e6716cef6
+     fullUrl: http://localhost:4000/users/16a3abca-661c-4d48-8776-1c2e6716cef6
+     Request params: {"id":"16a3abca-661c-4d48-8776-1c2e6716cef6"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/users
+     Request params: {}
+     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: DELETE
+     Url: /a0ec5ecc-dd88-476c-a887-9b4f79781fc7
+     fullUrl: http://localhost:4000/users/a0ec5ecc-dd88-476c-a887-9b4f79781fc7
+     Request params: {"id":"a0ec5ecc-dd88-476c-a887-9b4f79781fc7"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/users
+     Request params: {}
+     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards/7bc00a60-9a06-434d-824f-c5512454ae7d/tasks
+     Request params: {"boardId":"7bc00a60-9a06-434d-824f-c5512454ae7d"}
+     Request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"d8acd947-7f85-4d1d-ac16-e8ceab5b71e4","boardId":"7bc00a60-9a06-434d-824f-c5512454ae7d"}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards/7bc00a60-9a06-434d-824f-c5512454ae7d/tasks
+     Request params: {"boardId":"7bc00a60-9a06-434d-824f-c5512454ae7d"}
+     Request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"d8acd947-7f85-4d1d-ac16-e8ceab5b71e4","boardId":"7bc00a60-9a06-434d-824f-c5512454ae7d"}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: DELETE
+     Url: /d8acd947-7f85-4d1d-ac16-e8ceab5b71e4
+     fullUrl: http://localhost:4000/users/d8acd947-7f85-4d1d-ac16-e8ceab5b71e4
+     Request params: {"id":"d8acd947-7f85-4d1d-ac16-e8ceab5b71e4"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /c12df0f2-0d37-4249-abb2-915aaaf3ab21
+     fullUrl: http://localhost:4000/boards/7bc00a60-9a06-434d-824f-c5512454ae7d/tasks/c12df0f2-0d37-4249-abb2-915aaaf3ab21
+     Request params: {"boardId":"7bc00a60-9a06-434d-824f-c5512454ae7d","id":"c12df0f2-0d37-4249-abb2-915aaaf3ab21"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /d59045c7-0d20-4e25-879c-921b6f38ed4d
+     fullUrl: http://localhost:4000/boards/7bc00a60-9a06-434d-824f-c5512454ae7d/tasks/d59045c7-0d20-4e25-879c-921b6f38ed4d
+     Request params: {"boardId":"7bc00a60-9a06-434d-824f-c5512454ae7d","id":"d59045c7-0d20-4e25-879c-921b6f38ed4d"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:19
+     Method: DELETE
+     Url: /c12df0f2-0d37-4249-abb2-915aaaf3ab21
+     fullUrl: http://localhost:4000/boards/7bc00a60-9a06-434d-824f-c5512454ae7d/tasks/c12df0f2-0d37-4249-abb2-915aaaf3ab21
+     Request params: {"boardId":"7bc00a60-9a06-434d-824f-c5512454ae7d","id":"c12df0f2-0d37-4249-abb2-915aaaf3ab21"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:56:19
+     Method: DELETE
+     Url: /d59045c7-0d20-4e25-879c-921b6f38ed4d
+     fullUrl: http://localhost:4000/boards/7bc00a60-9a06-434d-824f-c5512454ae7d/tasks/d59045c7-0d20-4e25-879c-921b6f38ed4d
+     Request params: {"boardId":"7bc00a60-9a06-434d-824f-c5512454ae7d","id":"d59045c7-0d20-4e25-879c-921b6f38ed4d"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:56:19
+     Method: DELETE
+     Url: /7bc00a60-9a06-434d-824f-c5512454ae7d
+     fullUrl: http://localhost:4000/boards/7bc00a60-9a06-434d-824f-c5512454ae7d
+     Request params: {"id":"7bc00a60-9a06-434d-824f-c5512454ae7d"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /
+     fullUrl: http://localhost:4000/boards
+     Request params: {}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /
+     fullUrl: http://localhost:4000/boards
+     Request params: {}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /d46eda27-2aaa-4f24-98b2-c8ec7b9980d0
+     fullUrl: http://localhost:4000/boards/d46eda27-2aaa-4f24-98b2-c8ec7b9980d0
+     Request params: {"id":"d46eda27-2aaa-4f24-98b2-c8ec7b9980d0"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: DELETE
+     Url: /23b1848d-ef65-42aa-b3be-5f4676e26eac
+     fullUrl: http://localhost:4000/boards/23b1848d-ef65-42aa-b3be-5f4676e26eac
+     Request params: {"id":"23b1848d-ef65-42aa-b3be-5f4676e26eac"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: PUT
+     Url: /9584c83c-0404-4b69-b1a9-39a96a290096
+     fullUrl: http://localhost:4000/boards/9584c83c-0404-4b69-b1a9-39a96a290096
+     Request params: {"id":"9584c83c-0404-4b69-b1a9-39a96a290096"}
+     Request body: {"id":"9584c83c-0404-4b69-b1a9-39a96a290096","title":"Autotest updated board","columns":[{"id":"364b6864-5b4e-4df3-abd7-64b5b4ac7962","title":"Backlog","order":1},{"id":"ad14921e-2d69-4832-923e-c47ad9768d27","title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /9584c83c-0404-4b69-b1a9-39a96a290096
+     fullUrl: http://localhost:4000/boards/9584c83c-0404-4b69-b1a9-39a96a290096
+     Request params: {"id":"9584c83c-0404-4b69-b1a9-39a96a290096"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:19
+     Method: DELETE
+     Url: /9584c83c-0404-4b69-b1a9-39a96a290096
+     fullUrl: http://localhost:4000/boards/9584c83c-0404-4b69-b1a9-39a96a290096
+     Request params: {"id":"9584c83c-0404-4b69-b1a9-39a96a290096"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: DELETE
+     Url: /223ad420-f039-4775-96db-44e7c10c9329
+     fullUrl: http://localhost:4000/boards/223ad420-f039-4775-96db-44e7c10c9329
+     Request params: {"id":"223ad420-f039-4775-96db-44e7c10c9329"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /223ad420-f039-4775-96db-44e7c10c9329
+     fullUrl: http://localhost:4000/boards/223ad420-f039-4775-96db-44e7c10c9329
+     Request params: {"id":"223ad420-f039-4775-96db-44e7c10c9329"}
+     Request body: {}
+     Request query: {}
+     Responded with status 404
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards/a80fe4ab-5d12-4757-a255-1f67f9d91feb/tasks
+     Request params: {"boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb"}
+     Request body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb","userId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards/a80fe4ab-5d12-4757-a255-1f67f9d91feb/tasks
+     Request params: {"boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb"}
+     Request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb","userId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards/a80fe4ab-5d12-4757-a255-1f67f9d91feb/tasks
+     Request params: {"boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb"}
+     Request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb","userId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards/a80fe4ab-5d12-4757-a255-1f67f9d91feb/tasks
+     Request params: {"boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb"}
+     Request body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb","userId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards/a80fe4ab-5d12-4757-a255-1f67f9d91feb/tasks
+     Request params: {"boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb"}
+     Request body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb","userId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /14ed3d61-876a-43fd-920b-7b13e5b97284
+     fullUrl: http://localhost:4000/boards/a80fe4ab-5d12-4757-a255-1f67f9d91feb/tasks/14ed3d61-876a-43fd-920b-7b13e5b97284
+     Request params: {"boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb","id":"14ed3d61-876a-43fd-920b-7b13e5b97284"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /0e28e04f-5db3-419b-8ce0-a19f9c8a92d9
+     fullUrl: http://localhost:4000/boards/a80fe4ab-5d12-4757-a255-1f67f9d91feb/tasks/0e28e04f-5db3-419b-8ce0-a19f9c8a92d9
+     Request params: {"boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb","id":"0e28e04f-5db3-419b-8ce0-a19f9c8a92d9"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /156c856e-62da-487d-8fa9-9e7f21b41960
+     fullUrl: http://localhost:4000/boards/a80fe4ab-5d12-4757-a255-1f67f9d91feb/tasks/156c856e-62da-487d-8fa9-9e7f21b41960
+     Request params: {"boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb","id":"156c856e-62da-487d-8fa9-9e7f21b41960"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /d0e3299e-3707-4d63-b99b-75d652682ca9
+     fullUrl: http://localhost:4000/boards/a80fe4ab-5d12-4757-a255-1f67f9d91feb/tasks/d0e3299e-3707-4d63-b99b-75d652682ca9
+     Request params: {"boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb","id":"d0e3299e-3707-4d63-b99b-75d652682ca9"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /6e546865-185a-4149-a42a-3276a82f20db
+     fullUrl: http://localhost:4000/boards/a80fe4ab-5d12-4757-a255-1f67f9d91feb/tasks/6e546865-185a-4149-a42a-3276a82f20db
+     Request params: {"boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb","id":"6e546865-185a-4149-a42a-3276a82f20db"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:19
+     Method: DELETE
+     Url: /a80fe4ab-5d12-4757-a255-1f67f9d91feb
+     fullUrl: http://localhost:4000/boards/a80fe4ab-5d12-4757-a255-1f67f9d91feb
+     Request params: {"id":"a80fe4ab-5d12-4757-a255-1f67f9d91feb"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /14ed3d61-876a-43fd-920b-7b13e5b97284
+     fullUrl: http://localhost:4000/boards/a80fe4ab-5d12-4757-a255-1f67f9d91feb/tasks/14ed3d61-876a-43fd-920b-7b13e5b97284
+     Request params: {"boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb","id":"14ed3d61-876a-43fd-920b-7b13e5b97284"}
+     Request body: {}
+     Request query: {}
+     Responded with status 404
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /0e28e04f-5db3-419b-8ce0-a19f9c8a92d9
+     fullUrl: http://localhost:4000/boards/a80fe4ab-5d12-4757-a255-1f67f9d91feb/tasks/0e28e04f-5db3-419b-8ce0-a19f9c8a92d9
+     Request params: {"boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb","id":"0e28e04f-5db3-419b-8ce0-a19f9c8a92d9"}
+     Request body: {}
+     Request query: {}
+     Responded with status 404
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /156c856e-62da-487d-8fa9-9e7f21b41960
+     fullUrl: http://localhost:4000/boards/a80fe4ab-5d12-4757-a255-1f67f9d91feb/tasks/156c856e-62da-487d-8fa9-9e7f21b41960
+     Request params: {"boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb","id":"156c856e-62da-487d-8fa9-9e7f21b41960"}
+     Request body: {}
+     Request query: {}
+     Responded with status 404
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /6e546865-185a-4149-a42a-3276a82f20db
+     fullUrl: http://localhost:4000/boards/a80fe4ab-5d12-4757-a255-1f67f9d91feb/tasks/6e546865-185a-4149-a42a-3276a82f20db
+     Request params: {"boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb","id":"6e546865-185a-4149-a42a-3276a82f20db"}
+     Request body: {}
+     Request query: {}
+     Responded with status 404
+     Agent: undefined
+Time: 22:56:19
+     Method: GET
+     Url: /d0e3299e-3707-4d63-b99b-75d652682ca9
+     fullUrl: http://localhost:4000/boards/a80fe4ab-5d12-4757-a255-1f67f9d91feb/tasks/d0e3299e-3707-4d63-b99b-75d652682ca9
+     Request params: {"boardId":"a80fe4ab-5d12-4757-a255-1f67f9d91feb","id":"d0e3299e-3707-4d63-b99b-75d652682ca9"}
+     Request body: {}
+     Request query: {}
+     Responded with status 404
+     Agent: undefined
+Time: 22:56:19
+     Method: DELETE
+     Url: /d46eda27-2aaa-4f24-98b2-c8ec7b9980d0
+     fullUrl: http://localhost:4000/boards/d46eda27-2aaa-4f24-98b2-c8ec7b9980d0
+     Request params: {"id":"d46eda27-2aaa-4f24-98b2-c8ec7b9980d0"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:56:20
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:20
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards/8d02d3e1-89a6-41ac-b124-1ac73fc20f11/tasks
+     Request params: {"boardId":"8d02d3e1-89a6-41ac-b124-1ac73fc20f11"}
+     Request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:20
+     Method: GET
+     Url: /
+     fullUrl: http://localhost:4000/boards/8d02d3e1-89a6-41ac-b124-1ac73fc20f11/tasks
+     Request params: {"boardId":"8d02d3e1-89a6-41ac-b124-1ac73fc20f11"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:20
+     Method: GET
+     Url: /
+     fullUrl: http://localhost:4000/boards/8d02d3e1-89a6-41ac-b124-1ac73fc20f11/tasks
+     Request params: {"boardId":"8d02d3e1-89a6-41ac-b124-1ac73fc20f11"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:20
+     Method: GET
+     Url: /4c1adc20-0389-423a-8c50-94aed32222b5
+     fullUrl: http://localhost:4000/boards/8d02d3e1-89a6-41ac-b124-1ac73fc20f11/tasks/4c1adc20-0389-423a-8c50-94aed32222b5
+     Request params: {"boardId":"8d02d3e1-89a6-41ac-b124-1ac73fc20f11","id":"4c1adc20-0389-423a-8c50-94aed32222b5"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:20
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards/8d02d3e1-89a6-41ac-b124-1ac73fc20f11/tasks
+     Request params: {"boardId":"8d02d3e1-89a6-41ac-b124-1ac73fc20f11"}
+     Request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:20
+     Method: DELETE
+     Url: /2169c602-c36a-44ce-bf95-687ab48975ff
+     fullUrl: http://localhost:4000/boards/8d02d3e1-89a6-41ac-b124-1ac73fc20f11/tasks/2169c602-c36a-44ce-bf95-687ab48975ff
+     Request params: {"boardId":"8d02d3e1-89a6-41ac-b124-1ac73fc20f11","id":"2169c602-c36a-44ce-bf95-687ab48975ff"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:56:20
+     Method: POST
+     Url: /
+     fullUrl: http://localhost:4000/boards/8d02d3e1-89a6-41ac-b124-1ac73fc20f11/tasks
+     Request params: {"boardId":"8d02d3e1-89a6-41ac-b124-1ac73fc20f11"}
+     Request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+     Agent: undefined
+Time: 22:56:20
+     Method: PUT
+     Url: /32c1b516-f307-47e2-a5c9-08fd2a751c89
+     fullUrl: http://localhost:4000/boards/8d02d3e1-89a6-41ac-b124-1ac73fc20f11/tasks/32c1b516-f307-47e2-a5c9-08fd2a751c89
+     Request params: {"boardId":"8d02d3e1-89a6-41ac-b124-1ac73fc20f11","id":"32c1b516-f307-47e2-a5c9-08fd2a751c89"}
+     Request body: {"id":"32c1b516-f307-47e2-a5c9-08fd2a751c89","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"8d02d3e1-89a6-41ac-b124-1ac73fc20f11","columnId":null}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:20
+     Method: GET
+     Url: /32c1b516-f307-47e2-a5c9-08fd2a751c89
+     fullUrl: http://localhost:4000/boards/8d02d3e1-89a6-41ac-b124-1ac73fc20f11/tasks/32c1b516-f307-47e2-a5c9-08fd2a751c89
+     Request params: {"boardId":"8d02d3e1-89a6-41ac-b124-1ac73fc20f11","id":"32c1b516-f307-47e2-a5c9-08fd2a751c89"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:20
+     Method: GET
+     Url: /4c1adc20-0389-423a-8c50-94aed32222b5
+     fullUrl: http://localhost:4000/boards/8d02d3e1-89a6-41ac-b124-1ac73fc20f11/tasks/4c1adc20-0389-423a-8c50-94aed32222b5
+     Request params: {"boardId":"8d02d3e1-89a6-41ac-b124-1ac73fc20f11","id":"4c1adc20-0389-423a-8c50-94aed32222b5"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+     Agent: undefined
+Time: 22:56:20
+     Method: DELETE
+     Url: /4c1adc20-0389-423a-8c50-94aed32222b5
+     fullUrl: http://localhost:4000/boards/8d02d3e1-89a6-41ac-b124-1ac73fc20f11/tasks/4c1adc20-0389-423a-8c50-94aed32222b5
+     Request params: {"boardId":"8d02d3e1-89a6-41ac-b124-1ac73fc20f11","id":"4c1adc20-0389-423a-8c50-94aed32222b5"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined
+Time: 22:56:20
+     Method: GET
+     Url: /4c1adc20-0389-423a-8c50-94aed32222b5
+     fullUrl: http://localhost:4000/boards/8d02d3e1-89a6-41ac-b124-1ac73fc20f11/tasks/4c1adc20-0389-423a-8c50-94aed32222b5
+     Request params: {"boardId":"8d02d3e1-89a6-41ac-b124-1ac73fc20f11","id":"4c1adc20-0389-423a-8c50-94aed32222b5"}
+     Request body: {}
+     Request query: {}
+     Responded with status 404
+     Agent: undefined
+Time: 22:56:20
+     Method: DELETE
+     Url: /8d02d3e1-89a6-41ac-b124-1ac73fc20f11
+     fullUrl: http://localhost:4000/boards/8d02d3e1-89a6-41ac-b124-1ac73fc20f11
+     Request params: {"id":"8d02d3e1-89a6-41ac-b124-1ac73fc20f11"}
+     Request body: {}
+     Request query: {}
+     Responded with status 204
+     Agent: undefined

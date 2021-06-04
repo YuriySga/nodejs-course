@@ -18,7 +18,7 @@ userRouter.route('/').get(async (_req: Request, res: Response, next: NextFunctio
 
 userRouter.route('/:id').get<GetParams>(async (req: Request, res: Response, /* next */) => {
   const user = await usersService.get(req.params['id']!);
- if (user) { 
+  if (user) { 
     res.json(User.toResponse(user));
 
   } else {    
