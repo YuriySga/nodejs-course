@@ -1,0 +1,6 @@
+src
+out
+doc
+node_modules
+.vscode
+server.log
