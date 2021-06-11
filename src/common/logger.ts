@@ -9,7 +9,7 @@ export const logger = (req: Request, res: Response, next: NextFunction): void =>
       const seconds = now.getSeconds();
       const data = `Time: ${hour}:${minutes}:${seconds}\n     Method: ${req.method}\n     Url: ${req.url}\n     fullUrl: ${req.protocol}://${req.get('host')}${req.originalUrl}\n     Request params: ${JSON.stringify(req.params)}\n     Request body: ${JSON.stringify(req.body)}\n     Request query: ${JSON.stringify(req.query)}\n     Responded with status ${res.statusCode}\n     Agent: ${req.get("user-agent")}`;
       fs.appendFile("server.log", `${data  }\n`, () => {});
-      console.error(data);
+      // console.error(data);
   });
   
   next();
@@ -22,7 +22,7 @@ export const loggerUnhandledRejection = (reason: string): void => {
   const seconds = now.getSeconds();
   const data = `Time: ${hour}:${minutes}:${seconds}\n     unhandledRejection:\n     reason: ${reason}\n`;
   fs.appendFile("server.log", `${data  }\n`, () => {});
-  console.error(data);
+  // console.error(data);
 };
 
 export const uncaughtException = (err: Error): void =>  {
@@ -32,6 +32,6 @@ export const uncaughtException = (err: Error): void =>  {
   const seconds = now.getSeconds();
   const data = `Time: ${hour}:${minutes}:${seconds}\n      uncaughtException:\n     err: ${err}\n     err stack: ${err.stack}`;
   fs.appendFile("server.log", `${data  }\n`, () => {});
-  console.error(data);
+  // console.error(data);
 };
 
