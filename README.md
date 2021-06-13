@@ -1,5 +1,7 @@
 # RS School REST service
 
+## 
+
 ## Prerequisites
 
 - Git - [Download & Install Git](https://git-scm.com/downloads).
@@ -20,12 +22,12 @@ npm install
 ## Running application
 
 ```
-npm start
+1. Для загрузки образов:
+    - docker pull yuriysga/docker-basics-express:yuriysga
+    - docker pull yuriysga/docker-basics-postgres:yuriysga
+2. Для запуска compose: 
+    - docker compose up
 ```
-
-After starting the app on port (4000 as default) you can open
-in your browser OpenAPI documentation by typing http://localhost:4000/doc/.
-For more information about OpenAPI/Swagger please visit https://swagger.io/.
 
 ## Testing
 

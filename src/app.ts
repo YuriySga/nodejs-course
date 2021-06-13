@@ -36,8 +36,11 @@ app.use('/boards/:boardId/tasks', taskRouter);
 app.use((_err: Errback, _req: Request, res: Response, next: NextFunction): void => {
   res.status(500);
   next();
+ 
 });
 
 process.on('uncaughtException', uncaughtException);
 
 process.on('unhandledRejection', loggerUnhandledRejection);
+
+
