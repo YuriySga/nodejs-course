@@ -27,6 +27,7 @@
   ],
   "include": [
     "./src/common/*.ts",
+    "./src/helpers/*.ts",
     "./src/*.ts"
   ],
 }
