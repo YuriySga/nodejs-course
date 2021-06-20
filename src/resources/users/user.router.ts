@@ -34,19 +34,24 @@ userRouter.route('/').post(async (req: Request, res: Response) => {
 });
 
 userRouter.route('/:id').put(async (req: Request, res: Response) => {
-  const user = await usersService.update({
-      id: req.params['id'],
-      login: req.body.login,
-      password: req.body.password,
-      name: req.body.name,
-  });
+  try {
+    const user = await usersService.update({
+        id: req.params['id'],
+        login: req.body.login,
+        password: req.body.password,
+        name: req.body.name,
+    });
 
-  if (user) {    
-    res.status(200).send(user);
+    if (user) {
+      res.status(200).send(user);
 
-   } else {
-     res.status(400).send('Bad request');
-   }
+    } else {
+      res.status(400).send('Bad request');
+    }
+  } catch (err) {
+    console.error(err.message);
+    res.status(400).send(err.message);
+  }
 });
 
 userRouter.route('/:id').delete(async (req: Request, res: Response) => {  

@@ -4,6 +4,9 @@ import { ConnectionOptions } from 'typeorm';
 import dotenv from 'dotenv';
 import path from 'path';
 import { User } from '../entities/User';
+import { Board } from '../entities/Board';
+import { BoardColumn } from '../entities/BoardColumn';
+import { BoardTask } from '../entities/BoardTask';
 
 dotenv.config({
   path: path.join(__dirname, '../../.env')
@@ -30,7 +33,7 @@ export const config = {
     autoReconnect: true,
     reconnectTries: 10,
     reconnectInterval: 1000,
-    entities: [User]
+    entities: [User, Board, BoardColumn, BoardTask]
 } as ConnectionOptions;
 
 

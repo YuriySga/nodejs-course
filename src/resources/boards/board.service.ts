@@ -1,8 +1,13 @@
-import { Board, IBoard } from './board.model';
+import { DeleteResult } from 'typeorm';
+import { IBoard } from '../../common/types';
+import { Board } from '../../entities/Board';
 import * as boardsRepo from './board.memory.repository';
 
 export const getAll = async (): Promise<Board[]> => boardsRepo.getAll();
-export const create = async (board: IBoard): Promise<Board | undefined> => boardsRepo.create(board);
 export const get = async (id: string): Promise<Board | undefined> => boardsRepo.get(id);
-export const del = async (id: string): Promise<number> => boardsRepo.del(id);
-export const update = async (board: Board): Promise<undefined | Board>  => boardsRepo.update(board);
+export const create = async (board: IBoard): Promise<IBoard | undefined> => boardsRepo.create(board);
+export const update = async (board: IBoard): Promise<undefined | IBoard>  => boardsRepo.update(board);
+export const del = async (id: string): Promise<DeleteResult> => boardsRepo.del(id);
+
+
+ 

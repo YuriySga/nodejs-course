@@ -1,42 +1,53 @@
-import { Column } from "../columns/column.model";
-import { Board, IBoard } from './board.model';
-import * as taskService from '../tasks/task.service';
-import {boardDB} from '../../common/inMemoryDb';
+import { DeleteResult, getRepository } from "typeorm";
+import { BoardTask } from "../../entities/BoardTask";
+import { IBoard } from "../../common/types";
+import { Board } from "../../entities/Board";
+import * as columnRepository from "../columns/column.memory.repository";
 
-export const getAll = async (): Promise<Board[]> => boardDB;
-export const get = async (id: string): Promise<Board | undefined> => boardDB.find(board=>board.id === id);
-export const create = async (board: IBoard): Promise<Board | undefined> => {
-  const newBoard = new Board(
-    {
-      ...board, columns: board.columns.map(item => new Column(item))
-    }
-  );
-
-  boardDB.push(newBoard);
-  return get(newBoard.id!);
-}
-
-export const del = async (id: string): Promise<number> => {
-  const boardIndex = boardDB.findIndex(board => board.id === id);
-  if (boardIndex !== -1) {
-    const deletedBoard = boardDB.splice(boardIndex, 1);
-    const boardTasks = await taskService.getAll(deletedBoard[0]!.id!);
-
-    if (boardTasks) {
-      boardTasks.map(task=>taskService.del(task.id));
-    }
-
-    return 204;
-  }
-
-  return 404;  
+export const getAll = async (): Promise<Board[]> => {
+  const boardRepository = getRepository(Board);
+  const boards = await boardRepository.find();
+  return boards;
 };
 
-export const update = async (board: Board): Promise<undefined | Board> => del(board.id!)
-  .then(status => {
-    if (status === 404) {
-      return undefined;
-    }  
+export const get = async (id: string): Promise<Board | undefined> => {
+  const boardRepository = getRepository(Board);
+  const boards = await boardRepository.findOne(id);
+  return boards;
+}
 
-    return create(board);
-  });
+export const create = async (board: IBoard): Promise<any> => {
+  const boardRepository = getRepository(Board);
+  const newBoard = boardRepository.create(board);
+  const results = await boardRepository.save(newBoard);
+  return results;
+}
+
+export const update = async (board: IBoard): Promise<undefined | Board> => {
+  const boardRepository = getRepository(Board);
+  const oldBoard = await boardRepository.findOne(board.id);  
+  if (oldBoard) {
+    boardRepository.merge(oldBoard, board);
+    const results = await boardRepository.save(oldBoard)
+    return results;
+  }
+
+  return undefined;
+}
+
+export const del = async (id: string): Promise<DeleteResult> => {
+  const taskRepository = getRepository(BoardTask);
+  const tasksToDel = await taskRepository.find({where: {boardId: `${id}`}});
+  if (tasksToDel) {
+    tasksToDel.map(async task => {
+      await taskRepository.delete(task.id);      
+    })    
+  };
+
+  await columnRepository.del(id);
+
+  const boardRepository = getRepository(Board);
+  const result = await boardRepository.delete(id);
+  return result;
+};
+

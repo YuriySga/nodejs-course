@@ -7,13 +7,13 @@ export class User extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
     id: string;
 
-  @Column('varchar', {length: 25})
+  @Column('varchar')
     name: string
 
-  @Column('varchar', {length: 25})
+  @Column('varchar')
     login: string
 
-  @Column('varchar', {length: 25})
+  @Column('varchar')
     password: string
 
   static toResponse(user: User): IUser {

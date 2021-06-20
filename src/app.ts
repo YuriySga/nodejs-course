@@ -6,7 +6,7 @@ import YAML from 'yamljs';
 import boardRouter from "./resources/boards/board.router";
 import taskRouter from './resources/tasks/task.router';
 import userRouter from './resources/users/user.router'; 
-import { logger, loggerUnhandledRejection, uncaughtException } from "./common/logger";
+import { logger/* , loggerUnhandledRejection, uncaughtException */ } from "./common/logger";
 
 interface IReqParams {
   originalUrl: string
@@ -39,8 +39,8 @@ app.use((_err: Errback, _req: Request, res: Response, next: NextFunction): void 
  
 });
 
-process.on('uncaughtException', uncaughtException);
+/* process.on('uncaughtException', uncaughtException);
 
-process.on('unhandledRejection', loggerUnhandledRejection);
+process.on('unhandledRejection', loggerUnhandledRejection); */
 
 
