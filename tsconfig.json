@@ -20,14 +20,13 @@
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false
   },
   "exclude": [
     "./node_modules"
   ],
   "include": [
-    "./src/common/*.ts",
-    "./src/helpers/*.ts",
-    "./src/*.ts"
+    "./src/**/*.ts"
   ],
 }

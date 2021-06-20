@@ -1,32 +1,45 @@
-import { userDB } from "../../common/inMemoryDb";
-import { clearTaskUser } from "../tasks/task.service";
-import { User, IUser } from "./user.model";
+import { DeleteResult, getRepository } from 'typeorm';
+import { IUser } from "../../common/types";
 
-export const getAll = async (): Promise<User[]> => userDB;
-export const get = async (id: string): Promise<User | undefined> => userDB.find(user => user.id === id);
-export const create = async (user: IUser): Promise<User | undefined> => {
-  const newUser = new User(user);
-  userDB.push(newUser);
+// import { clearTaskUser } from "../tasks/task.service";
+import { User } from '../../entities/User';
+
+export const getAll = async (): Promise<IUser[]> =>  {    
+  const userRepository = getRepository(User);
+  const users = await userRepository.find();
+  return users.map(user => User.toResponse(user));
+} 
+ 
+export const get = async (id: string): Promise<IUser | undefined> => {
+  const userRepository = getRepository(User);
+  const user = await userRepository.findOne(id);;
+  return user ? User.toResponse(user) : undefined;
+  };
+
+export const create = async (user: IUser): Promise<IUser | undefined> => {
+  const userRepository = getRepository(User);
+  const newUser = userRepository.create(user);
+  const results = await userRepository.save(newUser);
+  console.log(results);
   return get(newUser.id);
 };
 
-export const del = async (id: string): Promise<number> => {
-  const userIndex = userDB.findIndex((user) => user.id === id);
-  if (userIndex !== -1) {
-    userDB.splice(userIndex, 1);
-    await clearTaskUser(id);
-    return 204;
+export const update = async (user: IUser): Promise<undefined | User> => {
+  const userRepository = getRepository(User);
+  const oldUser = await userRepository.findOne(user.id);  
+  if (oldUser) {
+    userRepository.merge(oldUser, user);
+    const results = await userRepository.save(oldUser)
+    return results;
   }
 
-  return 404;  
+  return undefined;
+} 
+
+export const del = async (id: string): Promise<DeleteResult> => {
+  const userRepository = getRepository(User);
+  const result = await userRepository.delete(id);
+  return result;
 };
 
-export const update = async (user: IUser): Promise<undefined | User> => del(user.id!)
-  .then(status => {    
-    if (status === 204) {
-      const newUser = new User(user);
-      return create(newUser);
-    }
 
-    return undefined;
-  });

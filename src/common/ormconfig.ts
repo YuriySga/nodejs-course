@@ -3,6 +3,7 @@
 import { ConnectionOptions } from 'typeorm';
 import dotenv from 'dotenv';
 import path from 'path';
+import { User } from '../entities/User';
 
 dotenv.config({
   path: path.join(__dirname, '../../.env')
@@ -20,6 +21,7 @@ const __dirname = dirname(__filename); */
 export const config = {
     type: 'postgres',
     synchronize: true,
+    logging: true,
     host: process.env['POSTGRES_HOST'],
     port: process.env['POSTGRES_PORT'],
     username: process.env['POSTGRES_USER'],
@@ -27,7 +29,8 @@ export const config = {
     database: process.env['POSTGRES_DB'],   
     autoReconnect: true,
     reconnectTries: 10,
-    reconnectInterval: 1000
+    reconnectInterval: 1000,
+    entities: [User]
 } as ConnectionOptions;
 
 
