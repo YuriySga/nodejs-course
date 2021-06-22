@@ -3,7 +3,7 @@ services:
     node:
         networks:
             - net
-        image: yuriysga/docker-basics-express:yuriysga
+        image: yuriysga/docker-express-typeorm:yuriysga
         ports:
             - ${PORT}:${PORT}
         depends_on: 
@@ -15,14 +15,12 @@ services:
             - ./src:/usr/app/src
             - ./logs:/usr/app/logs
     postgres:
-        image: yuriysga/docker-basics-postgres:yuriysga
+        image: yuriysga/docker-postgres:yuriysga
         networks:
             - net
         ports: 
-            - ${POSTGRES_PORT}:${POSTGRES_PORT}
-        environment:
-            POSTGRES_HOST: ${P_HOST}
-            POSTGRES_PORT: ${P_PORT}
+            - ${P_PORT}:${P_PORT}
+        environment:            
             POSTGRES_USER: ${P_USER}
             POSTGRES_PASSWORD: ${P_PASSWORD}
             POSTGRES_DB: ${P_DB}
