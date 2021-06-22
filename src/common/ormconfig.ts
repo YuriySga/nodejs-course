@@ -7,7 +7,7 @@ import { BoardTask } from '../entities/BoardTask';
 
 export const config = {
     type: 'postgres',
-    synchronize: true,
+    synchronize: false,
     logging: true,
     host: process.env['P_HOST'],
     port: process.env['P_PORT'],
@@ -17,7 +17,11 @@ export const config = {
     autoReconnect: true,
     reconnectTries: 10,
     reconnectInterval: 1000,
-    entities: [User, Board, BoardColumn, BoardTask]
+    entities: [User, Board, BoardColumn, BoardTask],
+    migrations: ["migration/*.ts"],
+    cli: {
+        "migrationsDir": "migration"
+    }
 } as ConnectionOptions;
 
 
