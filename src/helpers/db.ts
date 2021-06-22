@@ -24,34 +24,6 @@ const connectToDB = async () => {
     } catch(err) {
         console.log('error2 ', err);
     }; 
-
-    /* if (connection) {
-        console.log('users');
-
-    const userRepository = connection.getRepository(User);
-    const users = await userRepository.find()
-    console.log(users);
-    } */
-
-    
-
-
-
-/*     if (connection.isConnected) {
-        console.log('succesfully connected');
-        
-    
-    const userRepository = connection.getRepository(User);
-    const users = await userRepository.find()
-    console.log(users);
-
-
-    } else {
-        console.log('not connected');
-    } */
-       
-
- 
 };
 
 export const TryDBConnect = async ( cb: () => void ) => {

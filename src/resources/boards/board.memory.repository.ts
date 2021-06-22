@@ -2,7 +2,6 @@ import { DeleteResult, getRepository } from "typeorm";
 import { BoardTask } from "../../entities/BoardTask";
 import { IBoard } from "../../common/types";
 import { Board } from "../../entities/Board";
-import * as columnRepository from "../columns/column.memory.repository";
 
 export const getAll = async (): Promise<Board[]> => {
   const boardRepository = getRepository(Board);
@@ -16,7 +15,7 @@ export const get = async (id: string): Promise<Board | undefined> => {
   return boards;
 }
 
-export const create = async (board: IBoard): Promise<any> => {
+export const create = async (board: IBoard): Promise<Board> => {
   const boardRepository = getRepository(Board);
   const newBoard = boardRepository.create(board);
   const results = await boardRepository.save(newBoard);
@@ -43,8 +42,6 @@ export const del = async (id: string): Promise<DeleteResult> => {
       await taskRepository.delete(task.id);      
     })    
   };
-
-  await columnRepository.del(id);
 
   const boardRepository = getRepository(Board);
   const result = await boardRepository.delete(id);

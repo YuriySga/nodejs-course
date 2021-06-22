@@ -47,32 +47,3 @@ export const clearTaskUser = async (userId: string): Promise<void> => {
     await taskRepository.save(task);
   });
 };
-
-
-/*
-
-export const del = async (id: string): Promise<number> => {
-  const taskIndex = taskDB.findIndex((task) => task.id === id);
-  if (taskIndex !== -1) {
-    taskDB.splice(taskIndex, 1);
-    return 204;
-  }
-
-  return 404;  
-};
-
-export const update = async (taskData: ITask): Promise<undefined | Task> => 
-   del(taskData.id!)
-    .then(status => {    
-      if (status === 204) {
-        return create(new Task(taskData));
-      } 
-
-      return undefined;
-    });
-
-export const clearTaskUser = async (userId: string): Promise<void> => {
-  const userTasks = taskDB.filter(task => task.userId === userId);
-  userTasks.map(task => update({...task, userId: null}));
-};
-*/
