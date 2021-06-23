@@ -7,10 +7,10 @@ import { BoardTask } from '../entities/BoardTask';
 
 export const config = {
     type: 'postgres',
-    synchronize: false,
+    synchronize: true,
     logging: true,
-    host: process.env['P_HOST'],
-    port: process.env['P_PORT'],
+    host: process.env['PLOCAL_HOST'],
+    port: process.env['PLOCAL_PORT'],
     username: process.env['P_USER'],
     password: process.env['P_PASSWORD'],
     database: process.env['P_DB'],   

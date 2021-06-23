@@ -37,3 +37,7 @@ export interface ITaskIds {
   taskId: string | undefined,
   boardId: string | undefined
 }
+
+export interface IAuthorization {
+  user: string,
+}

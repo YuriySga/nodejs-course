@@ -13,7 +13,10 @@ export class User extends BaseEntity {
   @Column('varchar')
     login: string
 
-  @Column('varchar')
+/*   @Column('varchar')
+    password: string */
+
+  @Column({type: 'varchar'})
     password: string
 
   static toResponse(user: User): IUser {

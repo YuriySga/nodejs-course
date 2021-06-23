@@ -4,7 +4,6 @@ import * as usersService from './user.service';
 
 const userRouter = express.Router();
 
-
 userRouter.route('/').get(async (_req: Request, res: Response, next: NextFunction) => {
   const users = await usersService.getAll();
    res.json(users);
