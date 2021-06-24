@@ -37,9 +37,9 @@ export const update = async (user: IUser): Promise<undefined | User> => {
 };
 
 export const del = async (id: string): Promise<DeleteResult> => {
-  const userRepository = getRepository(User);
-  const result = await userRepository.delete(id);
   await taskService.clearTaskUser(id);
+  const userRepository = getRepository(User);
+  const result = await userRepository.delete(id);  
   return result;
 };
 

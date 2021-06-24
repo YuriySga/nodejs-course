@@ -47,3 +47,14 @@ export const clearTaskUser = async (userId: string): Promise<void> => {
     await taskRepository.save(task);
   });
 };
+
+
+
+
+
+export const clearTaskBoard = async (boardId: string): Promise<void> => {
+  const taskRepository = getRepository(BoardTask);
+  await taskRepository.delete({boardId: `${boardId}`});
+};
+
+

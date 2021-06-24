@@ -56,11 +56,22 @@ userRouter.route('/:id').put(async (req: Request, res: Response) => {
 userRouter.route('/:id').delete(async (req: Request, res: Response) => {  
   const result = await usersService.del(req.params['id']!);
   if ( result.affected && result.affected > 0 ) {    
-    res.sendStatus(200);
-    return
-  }  
+    console.log('200---------------del------------------------');
+    console.log('200---------------del------------------------');
+    console.log('200---------------del------------------------');
+    console.log('200---------------del------------------------');
+    console.log('200---------------del------------------------');
+    res.sendStatus(200);    
+  } else {
 
-  res.sendStatus(404)     
+  console.log('404---------------del------------------------');
+  console.log('404---------------del------------------------');
+  console.log('404---------------del------------------------');
+  console.log('404---------------del------------------------');
+  console.log('404---------------del------------------------');
+  console.log('404---------------del------------------------');
+  res.sendStatus(404);
+  }
 }); 
 
 export default userRouter;

@@ -9,3 +9,5 @@ export const create = async (task: ITask): Promise<BoardTask | undefined> => tas
 export const update = async (taskData: ITask): Promise<undefined | BoardTask> => taskRepo.update(taskData);
 export const del = async (id: string): Promise<DeleteResult> => taskRepo.del(id);
 export const clearTaskUser = async (userId: string): Promise<void> => taskRepo.clearTaskUser(userId);
+export const clearTaskBoard = async (boardId: string): Promise<void> => taskRepo.clearTaskBoard(boardId);
+

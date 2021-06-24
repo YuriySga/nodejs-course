@@ -1,3 +1,7 @@
+import { Request } from "express";
+// eslint-disable-next-line import/no-cycle
+import { User } from "../entities/User";
+
 export interface IUser {
   id?: string;
   name: string;
@@ -40,4 +44,8 @@ export interface ITaskIds {
 
 export interface IAuthorization {
   user: string,
+}
+
+export interface IValideteRequest extends Request {
+  user?: User | undefined;
 }

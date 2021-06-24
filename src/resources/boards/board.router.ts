@@ -47,13 +47,14 @@ boardRouter.route('/:id').put(async (req: Request, res: Response) => {
 });
 
 boardRouter.route('/:id').delete(async (req: Request, res: Response) => {
-  const result = await boardsService.del(req.params['id']!);
+  const result = await boardsService.del(req.params['id']!);  
   if ( result.affected && result.affected > 0 ) {    
     res.sendStatus(200);
-    return
-  }  
+    
+  }  else {
 
-  res.sendStatus(404)  
+    res.sendStatus(404);  
+  }
 });
 
 export default boardRouter;

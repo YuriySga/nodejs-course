@@ -2,7 +2,6 @@ import { ConnectionOptions } from 'typeorm';
 
 import { User } from '../entities/User';
 import { Board } from '../entities/Board';
-import { BoardColumn } from '../entities/BoardColumn';
 import { BoardTask } from '../entities/BoardTask';
 
 export const config = {
@@ -17,7 +16,7 @@ export const config = {
     autoReconnect: true,
     reconnectTries: 10,
     reconnectInterval: 1000,
-    entities: [User, Board, BoardColumn, BoardTask],
+    entities: [User, Board, BoardTask],
     migrations: ["migration/*.ts"],
     cli: {
         "migrationsDir": "migration"
