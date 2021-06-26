@@ -1,32 +1,35 @@
 import { NextFunction, Request, Response } from 'express';
-import jwt from 'jsonwebtoken';
+import jwt, {  } from 'jsonwebtoken';
 import { IValideteRequest } from '../common/types';
-import { User } from '../entities/User';
 
-export const validate = (expressRequest: Request, res: Response, next: NextFunction): void => {
-    const tokenKey = '1a2b-3c4d-5e6f-7g8h';
-    const req = expressRequest as IValideteRequest;
-    const sessionToken = req.headers.authorization;
+
+export const validate = async (expressRequest: Request, res: Response, next: NextFunction): Promise<void> => {
+  const tokenKey: string = process.env['JWT_SECRET_KEY'] as string;  
+  const req = expressRequest as IValideteRequest;
+  const {authorization} = req.headers;
+
+  if (authorization) {
+    const sessionToken: string | undefined = authorization.split(' ')[1];
+
     if (!sessionToken) {
+      res.status(401).send({ auth: false, message: "No token provided." }); 
+      return;
+    }
+
+    jwt.verify(sessionToken, tokenKey, (err: jwt.VerifyErrors | null) => {
+
+      if (err) {
+        console.log('err');
         res.status(401).send({ auth: false, message: "No token provided." });  
+        return;
+      };
 
-    } else {      
-      jwt.verify(sessionToken, tokenKey, (err: jwt.VerifyErrors | null, payload: any) => {
-        if (err) next();
-        else if (payload) {
-          User.findOne({ where: { id: payload.id } })
-            .then(user => {
-              req.user = user;
-              console.log(`user: ${user}`)
-              next();
-            },
-            () => {
-              res.status(401).send({ error: "not authorized" });
-          });
-        } else {
-          res.status(401).send({ error: "not authorized" })
-        };        
-      });      
-    }  
-
+      next();
+    });
+  } else {
+    res.status(401).send({ auth: false, message: "No token provided." });
+  };
 };
+
+
+     

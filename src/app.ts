@@ -8,9 +8,7 @@ import taskRouter from './resources/tasks/task.router';
 import userRouter from './resources/users/user.router'; 
 import { logger,loggerUnhandledRejection, uncaughtException} from "./common/logger";
 import loginRouter from "./resources/login/login.router";
-import docRouter from './resources/doc/doc.router';
 import { validate } from "./middleware/validate";
-// import {validate} from './middleware/validate';
 
 export const app: Application = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
@@ -29,39 +27,9 @@ app.use('/', (req: Request, res: Response, next: NextFunction) => {
   next();
 });
 
-
 app.use('/login', loginRouter);
-app.use('/doc', docRouter);
 
 app.use(validate);
-
-/* app.use('/', (expressRequest: Request, res: Response, next: NextFunction): void => {
-  const tokenKey = '1a2b-3c4d-5e6f-7g8h';
-  const req = expressRequest as IValideteRequest;
-  const sessionToken = req.headers.authorization;
-  if (!sessionToken) {
-      res.status(401).send({ auth: false, message: "No token provided." });  
-
-  } else {      
-    jwt.verify(sessionToken, tokenKey, (err: jwt.VerifyErrors | null, payload: any) => {
-      if (err) next();
-      else if (payload) {
-        User.findOne({ where: { id: payload.id } })
-          .then(user => {
-            req.user = user;
-            console.log(`user: ${user}`)
-            next();
-          },
-          () => {
-            res.status(401).send({ error: "not authorized" });
-        });
-      } else {
-        res.status(401).send({ error: "not authorized" })
-      };        
-    });      
-  } 
-}
-) */
 
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);

@@ -2,6 +2,8 @@ import dotenv from 'dotenv';
 import path from 'path';
 
 export const { PORT } = process.env;
+export const { TOKENJWT } = process.env;
+export const { P_PASSWORD } = process.env;
 
 dotenv.config({
   path: path.join(__dirname, '../../.env')

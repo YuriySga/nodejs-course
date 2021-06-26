@@ -9,6 +9,11 @@ export interface IUser {
   password?: string;
 }
 
+export interface ILogin {
+  login: string;
+  password: string | undefined;
+}
+
 export interface IBoard {
   id?: string;
   title: string ;

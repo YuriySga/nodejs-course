@@ -2,6 +2,8 @@ import express, { NextFunction, Request, Response/* , NextFunction  */} from "ex
 import { IUser } from "../../common/types";
 import * as usersService from './user.service';
 
+
+
 const userRouter = express.Router();
 
 userRouter.route('/').get(async (_req: Request, res: Response, next: NextFunction) => {
@@ -20,7 +22,7 @@ userRouter.route('/:id').get(async (req: Request, res: Response) => {
   }
 });
 
-userRouter.route('/').post(async (req: Request, res: Response) => {
+userRouter.route('/').post(async (req: Request, res: Response) => {  
   const user = await usersService.create(
     {      
       name: req.body.name,
@@ -56,20 +58,10 @@ userRouter.route('/:id').put(async (req: Request, res: Response) => {
 userRouter.route('/:id').delete(async (req: Request, res: Response) => {  
   const result = await usersService.del(req.params['id']!);
   if ( result.affected && result.affected > 0 ) {    
-    console.log('200---------------del------------------------');
-    console.log('200---------------del------------------------');
-    console.log('200---------------del------------------------');
-    console.log('200---------------del------------------------');
-    console.log('200---------------del------------------------');
-    res.sendStatus(200);    
+    res.sendStatus(200);  
+
   } else {
 
-  console.log('404---------------del------------------------');
-  console.log('404---------------del------------------------');
-  console.log('404---------------del------------------------');
-  console.log('404---------------del------------------------');
-  console.log('404---------------del------------------------');
-  console.log('404---------------del------------------------');
   res.sendStatus(404);
   }
 }); 

@@ -1,4 +1,5 @@
 import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+// eslint-disable-next-line import/no-cycle
 import { IUser } from '../common/types';
 
 @Entity({ name: 'users' })
@@ -12,9 +13,6 @@ export class User extends BaseEntity {
 
   @Column('varchar')
     login: string
-
-/*   @Column('varchar')
-    password: string */
 
   @Column({type: 'varchar'})
     password: string
