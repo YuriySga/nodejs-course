@@ -11,6 +11,10 @@ export class User extends BaseEntity {
   @Column('varchar')
   login: string;
 
-  @Column({ type: 'varchar' })
+  @Column({ type: 'varchar', select: false })
   password: string;
+
+  /* validatePassword(password: string) {    
+    return comparedToHashed(password, this.password, this.passwordSalt);
+  } */
 }

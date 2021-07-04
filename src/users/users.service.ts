@@ -1,36 +1,66 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
+import { Task } from 'src/tasks/entities/task.entity';
+import { DeleteResult, Repository } from 'typeorm';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { UserDto } from './dto/user.dto';
-import InMemoryUserStorage from './entities/store/user.storage';
 import { User } from './entities/user.entity';
 
 @Injectable()
 export class UsersService {
   constructor(
     @InjectRepository(User)
-    private usersRepository: Repository<User>, //private storage: InMemoryUserStorage
+    private usersRepository: Repository<User>,
+    @InjectRepository(Task)
+    private tasksRepository: Repository<Task>
   ) {}
 
-  create(createUserDto: CreateUserDto) {
-    return 'This action adds a new user';
+  async create(createUserDto: CreateUserDto) {
+    const newUser = await this.usersRepository.save(createUserDto);
+    return { ...newUser, password: undefined };
   }
 
-  findAll(): Promise<User[]> {
-    return this.usersRepository.find();
+  async findAll(): Promise<UserDto[]> {
+    return await this.usersRepository.find();
   }
 
-  findOne(id: string): Promise<UserDto> {
-    return this.usersRepository.findOne({ id: id });
+  async findByLogPas(login, password): Promise<any> {
+    return await this.usersRepository.findOne({
+      login: login,
+      password: password,
+    });
   }
 
-  update(id: number, updateUserDto: UpdateUserDto) {
-    return `This action updates a #${id} user`;
+  async findOne(id: string): Promise<UserDto> {
+    return await this.usersRepository.findOne({ id: id });
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} user`;
+  async update(
+    id: string,
+    updateUserDto: UpdateUserDto
+  ): Promise<undefined | UserDto> {
+    const oldUser = await this.findOne(id);
+
+    if (!oldUser) {
+      return undefined;
+    }
+
+    this.usersRepository.merge(oldUser, updateUserDto);
+
+    return await this.usersRepository.save(oldUser);
+  }
+
+  async remove(id: string): Promise<DeleteResult> {
+    const usersTasks = await this.tasksRepository.find({
+      where: { userId: id },
+    });
+
+    await usersTasks.map(async (task) => {
+      this.tasksRepository.merge(task, { userId: null });
+      await this.tasksRepository.save(task);
+    });
+
+    return await this.usersRepository.delete(id);
   }
 }
