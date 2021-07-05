@@ -9,16 +9,19 @@ import {
   Res,
   HttpStatus,
   Put,
+  UseGuards,
 } from '@nestjs/common';
 import { TasksService } from './tasks.service';
 import { CreateTaskDto } from './dto/create-task.dto';
 import { UpdateTaskDto } from './dto/update-task.dto';
 import { Response } from 'express';
+import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
 
 @Controller('/boards/:boardId/tasks')
 export class TasksController {
   constructor(private readonly tasksService: TasksService) {}
 
+  @UseGuards(JwtAuthGuard)
   @Post()
   async create(
     @Body() createTaskDto: CreateTaskDto,
@@ -39,6 +42,7 @@ export class TasksController {
     }
   }
 
+  @UseGuards(JwtAuthGuard)
   @Get()
   async findAll(
     @Param('boardId') boardId: string,
@@ -48,6 +52,7 @@ export class TasksController {
     res.status(HttpStatus.OK).json(result);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Get(':id')
   async findOne(
     @Param('id') id: string,
@@ -65,6 +70,7 @@ export class TasksController {
     res.status(HttpStatus.OK).json(task);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Put(':id')
   async update(
     @Param('id') id: string,
@@ -87,6 +93,7 @@ export class TasksController {
     }
   }
 
+  @UseGuards(JwtAuthGuard)
   @Delete(':id')
   async remove(
     @Param('id') id: string,

@@ -25,11 +25,8 @@ export class UsersService {
     return await this.usersRepository.find();
   }
 
-  async findByLogPas(login, password): Promise<any> {
-    return await this.usersRepository.findOne({
-      login: login,
-      password: password,
-    });
+  async findByLogPas(login, pass): Promise<any> {
+    return await this.usersRepository.findOne({ login: login, password: pass });
   }
 
   async findOne(id: string): Promise<UserDto> {
@@ -63,4 +60,12 @@ export class UsersService {
 
     return await this.usersRepository.delete(id);
   }
+
+  /*  async createAdmin(user) {
+    const admin = await this.findByLogPas(user.password, user.login);
+
+    if (!admin) {
+      this.create(user);
+    }
+  } */
 }

@@ -1,4 +1,4 @@
-import { HttpStatus, Put, Res } from '@nestjs/common';
+import { HttpStatus, Put, Res, UseGuards } from '@nestjs/common';
 import {
   Controller,
   Get,
@@ -9,6 +9,7 @@ import {
   Delete,
 } from '@nestjs/common';
 import { Response } from 'express';
+import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
 import { BoardsService } from './boards.service';
 import { CreateBoardDto } from './dto/create-board.dto';
 import { UpdateBoardDto } from './dto/update-board.dto';
@@ -17,6 +18,7 @@ import { UpdateBoardDto } from './dto/update-board.dto';
 export class BoardsController {
   constructor(private readonly boardsService: BoardsService) {}
 
+  @UseGuards(JwtAuthGuard)
   @Post()
   async create(
     @Body() createBoardDto: CreateBoardDto,
@@ -31,12 +33,14 @@ export class BoardsController {
     }
   }
 
+  @UseGuards(JwtAuthGuard)
   @Get()
   async findAll(@Res() res: Response): Promise<void> {
     const result = await this.boardsService.findAll();
     res.status(HttpStatus.OK).json(result);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Get(':id')
   async findOne(@Param('id') id: string, @Res() res: Response) {
     try {
@@ -50,6 +54,7 @@ export class BoardsController {
     res.status(HttpStatus.NOT_FOUND).json('Not found');
   }
 
+  @UseGuards(JwtAuthGuard)
   @Put(':id')
   async update(
     @Param('id') id: string,
@@ -65,6 +70,7 @@ export class BoardsController {
     }
   }
 
+  @UseGuards(JwtAuthGuard)
   @Delete(':id')
   async remove(@Param('id') id: string, @Res() res: Response): Promise<void> {
     const result = await this.boardsService.remove(id);

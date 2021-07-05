@@ -23,6 +23,7 @@ export class UsersController {
     private readonly usersService: UsersService /* private readonly authService: AuthService */
   ) {}
 
+  @UseGuards(JwtAuthGuard)
   @Post()
   async create(
     @Body() createUserDto: CreateUserDto,
@@ -39,6 +40,7 @@ export class UsersController {
     res.status(HttpStatus.OK).json(result);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Get(':id')
   async findOne(@Param('id') id: string, @Res() res: Response) {
     try {
@@ -52,6 +54,7 @@ export class UsersController {
     res.status(HttpStatus.NOT_FOUND).json('User not found');
   }
 
+  @UseGuards(JwtAuthGuard)
   @Put(':id')
   async update(
     @Param('id') id: string,
@@ -66,6 +69,7 @@ export class UsersController {
     }
   }
 
+  @UseGuards(JwtAuthGuard)
   @Delete(':id')
   async remove(@Param('id') id: string, @Res() res: Response): Promise<void> {
     const result = await this.usersService.remove(id);
