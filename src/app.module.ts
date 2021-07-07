@@ -11,6 +11,9 @@ import { UsersModule } from './users/users.module';
 import { TasksModule } from './tasks/tasks.module';
 import { Task } from './tasks/entities/task.entity';
 import { AuthModule } from './auth/auth.module';
+import { APP_FILTER, APP_INTERCEPTOR } from '@nestjs/core';
+import { LoggingInterceptor } from './common/logging.interceptor';
+import { AllExceptionsFilter } from './common/all-exceptions.filter';
 
 @Module({
   imports: [
@@ -34,7 +37,17 @@ import { AuthModule } from './auth/auth.module';
     AuthModule,
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [
+    AppService,
+    {
+      provide: APP_INTERCEPTOR,
+      useClass: LoggingInterceptor,
+    },
+    /*  {
+      provide: APP_FILTER,
+      useClass: AllExceptionsFilter,
+    }, */
+  ],
 })
 export class AppModule {
   constructor(private connection: Connection) {}
