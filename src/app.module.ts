@@ -43,10 +43,10 @@ import { AllExceptionsFilter } from './common/all-exceptions.filter';
       provide: APP_INTERCEPTOR,
       useClass: LoggingInterceptor,
     },
-    /*  {
+    {
       provide: APP_FILTER,
       useClass: AllExceptionsFilter,
-    }, */
+    },
   ],
 })
 export class AppModule {

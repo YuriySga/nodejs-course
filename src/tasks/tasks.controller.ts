@@ -35,7 +35,7 @@ export class TasksController {
       };
 
       const task = await this.tasksService.create(taskData);
-      res.status(HttpStatus.CREATED).json(task);
+      res.status(HttpStatus.CREATED).send(task);
     } catch (err) {
       console.log(err.msg);
       res.status(HttpStatus.BAD_REQUEST);
@@ -49,7 +49,7 @@ export class TasksController {
     @Res() res: Response
   ): Promise<void> {
     const result = await this.tasksService.findAll(boardId);
-    res.status(HttpStatus.OK).json(result);
+    res.status(HttpStatus.OK).send(result);
   }
 
   @UseGuards(JwtAuthGuard)
@@ -65,9 +65,9 @@ export class TasksController {
     });
 
     if (!task) {
-      res.status(HttpStatus.NOT_FOUND).json('Not found');
+      res.status(HttpStatus.NOT_FOUND).send('Not found');
     }
-    res.status(HttpStatus.OK).json(task);
+    res.status(HttpStatus.OK).send(task);
   }
 
   @UseGuards(JwtAuthGuard)
@@ -87,9 +87,9 @@ export class TasksController {
     const task = await this.tasksService.update(taskData);
 
     if (task) {
-      res.status(HttpStatus.OK).json(task);
+      res.status(HttpStatus.OK).send(task);
     } else {
-      res.status(HttpStatus.BAD_REQUEST).json('Bad request');
+      res.status(HttpStatus.BAD_REQUEST).send('Bad request');
     }
   }
 
@@ -105,9 +105,9 @@ export class TasksController {
     console.log(result);
 
     if (result.affected && result.affected > 0) {
-      res.status(HttpStatus.OK).json('OK');
+      res.status(HttpStatus.OK).send('OK');
     } else {
-      res.status(HttpStatus.NOT_FOUND).json('Not found');
+      res.status(HttpStatus.NOT_FOUND).send('Not found');
     }
   }
 }

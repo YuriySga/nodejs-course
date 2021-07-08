@@ -18,17 +18,13 @@ export class LoggingInterceptor implements NestInterceptor {
     const seconds = now.getSeconds();
     const data = `Time: ${hour}:${minutes}:${seconds}\n     Method: ${
       req.method
-    }\n     Url: ${req.url}\n     fullUrl: ${req.protocol}://${req.get(
-      'host'
-    )}${req.originalUrl}\n     Request params: ${JSON.stringify(
+    }\n     Url: ${req.url}\n     Request params: ${JSON.stringify(
       req.params
     )}\n     Request body: ${JSON.stringify(
       req.body
     )}\n     Request query: ${JSON.stringify(
       req.query
-    )}\n     Responded with status ${res.statusCode}\n     Agent: ${req.get(
-      'user-agent'
-    )}`;
+    )}\n     Responded with status ${res.statusCode}\n`;
 
     fs.appendFile('./logs/server.log', `${data}\n`, () => {});
 

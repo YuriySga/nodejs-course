@@ -26,10 +26,10 @@ export class BoardsController {
   ): Promise<void> {
     try {
       const board = await this.boardsService.create(createBoardDto);
-      res.status(HttpStatus.CREATED).json(board);
+      res.status(HttpStatus.CREATED).send(board);
     } catch (err) {
       console.error(err.message);
-      res.status(HttpStatus.BAD_REQUEST).json(err.message);
+      res.status(HttpStatus.BAD_REQUEST).send(err.message);
     }
   }
 
@@ -37,7 +37,7 @@ export class BoardsController {
   @Get()
   async findAll(@Res() res: Response): Promise<void> {
     const result = await this.boardsService.findAll();
-    res.status(HttpStatus.OK).json(result);
+    res.status(HttpStatus.OK).send(result);
   }
 
   @UseGuards(JwtAuthGuard)
@@ -46,12 +46,12 @@ export class BoardsController {
     try {
       const board = await this.boardsService.findOne(id);
       if (board) {
-        res.status(HttpStatus.OK).json(board);
+        res.status(HttpStatus.OK).send(board);
       }
     } catch (err) {
-      res.status(HttpStatus.NOT_FOUND).json(err);
+      res.status(HttpStatus.NOT_FOUND).send(err);
     }
-    res.status(HttpStatus.NOT_FOUND).json('Not found');
+    res.status(HttpStatus.NOT_FOUND).send('Not found');
   }
 
   @UseGuards(JwtAuthGuard)
@@ -64,9 +64,9 @@ export class BoardsController {
     const board = await this.boardsService.update(id, updateBoardDto);
 
     if (board) {
-      res.status(HttpStatus.OK).json(board);
+      res.status(HttpStatus.OK).send(board);
     } else {
-      res.status(HttpStatus.BAD_REQUEST).json('Bad request');
+      res.status(HttpStatus.BAD_REQUEST).send('Bad request');
     }
   }
 
@@ -76,9 +76,9 @@ export class BoardsController {
     const result = await this.boardsService.remove(id);
 
     if (result.affected && result.affected > 0) {
-      res.status(HttpStatus.OK).json();
+      res.status(HttpStatus.OK).send();
     } else {
-      res.status(HttpStatus.NOT_FOUND).json();
+      res.status(HttpStatus.NOT_FOUND).send();
     }
   }
 }

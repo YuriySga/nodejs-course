@@ -14,14 +14,11 @@ import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { Response } from 'express';
-import { AuthService } from 'src/auth/auth.service';
 import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
 
 @Controller('users')
 export class UsersController {
-  constructor(
-    private readonly usersService: UsersService /* private readonly authService: AuthService */
-  ) {}
+  constructor(private readonly usersService: UsersService) {}
 
   @UseGuards(JwtAuthGuard)
   @Post()
@@ -30,14 +27,14 @@ export class UsersController {
     @Res() res: Response
   ): Promise<void> {
     const user = await this.usersService.create(createUserDto);
-    res.status(HttpStatus.CREATED).json(user);
+    res.status(HttpStatus.CREATED).send(user);
   }
 
   @UseGuards(JwtAuthGuard)
   @Get()
-  async findAll(@Res() res: Response): Promise<void> {
+  async findAll(@Res() res: Response) {
     const result = await this.usersService.findAll();
-    res.status(HttpStatus.OK).json(result);
+    res.status(HttpStatus.OK).send(result);
   }
 
   @UseGuards(JwtAuthGuard)
@@ -46,12 +43,12 @@ export class UsersController {
     try {
       const user = await this.usersService.findOne(id);
       if (user) {
-        res.status(HttpStatus.OK).json(user);
+        res.status(HttpStatus.OK).send(user);
       }
     } catch (err) {
-      res.status(HttpStatus.NOT_FOUND).json('User not found');
+      res.status(HttpStatus.NOT_FOUND).send('User not found');
     }
-    res.status(HttpStatus.NOT_FOUND).json('User not found');
+    res.status(HttpStatus.NOT_FOUND).send('User not found');
   }
 
   @UseGuards(JwtAuthGuard)
@@ -63,9 +60,9 @@ export class UsersController {
   ) {
     const user = await this.usersService.update(id, updateUserDto);
     if (user) {
-      res.status(HttpStatus.OK).json(user);
+      res.status(HttpStatus.OK).send(user);
     } else {
-      res.status(HttpStatus.BAD_REQUEST).json('Bad request');
+      res.status(HttpStatus.BAD_REQUEST).send('Bad request');
     }
   }
 
@@ -75,9 +72,9 @@ export class UsersController {
     const result = await this.usersService.remove(id);
 
     if (result.affected && result.affected > 0) {
-      res.status(HttpStatus.OK).json('Ok');
+      res.status(HttpStatus.OK).send('Ok');
     } else {
-      res.status(HttpStatus.NOT_FOUND).json('Not found');
+      res.status(HttpStatus.NOT_FOUND).send('Not found');
     }
   }
 }
