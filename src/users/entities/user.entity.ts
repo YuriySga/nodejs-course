@@ -11,7 +11,7 @@ export class User extends BaseEntity {
   @Column('varchar')
   login: string;
 
-  @Column({ type: 'varchar', select: false })
+  @Column({ type: 'varchar' })
   password: string;
 
   /* validatePassword(password: string) {    

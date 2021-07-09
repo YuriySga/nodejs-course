@@ -1,0 +1,16 @@
+config:
+  target: 'http://localhost:4000'
+  phases:
+    - duration: 20
+      arrivalRate: 15
+scenarios:
+  - flow:
+      - log: 'post request'
+      - post:
+          url: '/users'
+          json:
+            name: aaa
+            login: bbbb
+            password: ccc
+          headers:
+            Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluIiwiaWQiOiI0ZTk1ODc4ZC1iMzkxLTQ2NmQtOGVlOS05MjQyNmM2N2I2ZDciLCJpYXQiOjE2MjU4MzQzNjUsImV4cCI6MTYyNTgzNDk2NX0.6Y2uy9GD-pZ0EjbnmN5A--Rtz0qkzHelRV1iCRD5LX0'

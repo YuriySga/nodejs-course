@@ -9,6 +9,7 @@ import {
   Res,
   HttpStatus,
   UseGuards,
+  Patch,
 } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
@@ -19,6 +20,15 @@ import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
 @Controller('users')
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
+
+  @Patch()
+  async createAdmin(
+    @Body() createUserDto: CreateUserDto,
+    @Res() res: Response
+  ): Promise<void> {
+    const user = await this.usersService.create(createUserDto);
+    res.status(HttpStatus.CREATED).send(user);
+  }
 
   @UseGuards(JwtAuthGuard)
   @Post()

@@ -7,6 +7,9 @@ import { UpdateUserDto } from './dto/update-user.dto';
 import { UserDto } from './dto/user.dto';
 import { User } from './entities/user.entity';
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const bcrypt = require('bcrypt');
+
 @Injectable()
 export class UsersService {
   constructor(
@@ -14,11 +17,26 @@ export class UsersService {
     private usersRepository: Repository<User>,
     @InjectRepository(Task)
     private tasksRepository: Repository<Task>
-  ) {}
+  ) {
+    if (this.findByLogPas('admin', 'admin')) {
+      this.create({
+        name: 'admin',
+        login: 'admin',
+        password: 'admin',
+      });
+    }
+  }
 
   async create(createUserDto: CreateUserDto) {
-    const newUser = await this.usersRepository.save(createUserDto);
-    return { ...newUser, password: undefined };
+    const newUser = await this.usersRepository.save({
+      ...createUserDto,
+      password: await bcrypt.hash(createUserDto.password, 10),
+    });
+
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { password, ...result } = newUser;
+
+    return result;
   }
 
   async findAll(): Promise<UserDto[]> {
@@ -26,7 +44,15 @@ export class UsersService {
   }
 
   async findByLogPas(login, pass): Promise<any> {
-    return await this.usersRepository.findOne({ login: login, password: pass });
+    const user = await this.usersRepository.findOne({ login: login });
+
+    if (!user) {
+      return undefined;
+    }
+
+    const compare = await bcrypt.compare(pass, user.password);
+
+    return compare ? user : undefined;
   }
 
   async findOne(id: string): Promise<UserDto> {
