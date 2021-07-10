@@ -5,32 +5,21 @@ import { Connection } from 'typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { BoardsModule } from './boards/boards.module';
-import { Board } from './boards/entities/board.entity';
-import { User } from './users/entities/user.entity';
 import { UsersModule } from './users/users.module';
 import { TasksModule } from './tasks/tasks.module';
-import { Task } from './tasks/entities/task.entity';
 import { AuthModule } from './auth/auth.module';
 import { APP_FILTER, APP_INTERCEPTOR } from '@nestjs/core';
 import { LoggingInterceptor } from './common/logging.interceptor';
 import { AllExceptionsFilter } from './common/all-exceptions.filter';
+import ormConf from 'src/config/ormConf';
 
 @Module({
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
+      cache: true,
     }),
-    TypeOrmModule.forRoot({
-      type: 'postgres',
-      host: process.env['PLOCAL_HOST'],
-      port: Number(process.env['PLOCAL_PORT']),
-      username: process.env['P_USER'],
-      password: process.env['P_PASSWORD'],
-      database: process.env['P_DB'],
-      entities: [User, Board, Task],
-      synchronize: true,
-      logging: true,
-    }),
+    TypeOrmModule.forRoot(ormConf),
     UsersModule,
     BoardsModule,
     TasksModule,

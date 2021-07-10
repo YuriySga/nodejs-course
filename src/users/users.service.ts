@@ -18,13 +18,13 @@ export class UsersService {
     @InjectRepository(Task)
     private tasksRepository: Repository<Task>
   ) {
-    if (this.findByLogPas('admin', 'admin')) {
+    /*   if (this.findByLogPas('admin', 'admin')) {
       this.create({
         name: 'admin',
         login: 'admin',
         password: 'admin',
       });
-    }
+    } */
   }
 
   async create(createUserDto: CreateUserDto) {

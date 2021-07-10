@@ -13,8 +13,4 @@ export class User extends BaseEntity {
 
   @Column({ type: 'varchar' })
   password: string;
-
-  /* validatePassword(password: string) {    
-    return comparedToHashed(password, this.password, this.passwordSalt);
-  } */
 }
