@@ -21,15 +21,6 @@ import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
 
-  @Patch()
-  async createAdmin(
-    @Body() createUserDto: CreateUserDto,
-    @Res() res: Response
-  ): Promise<void> {
-    const user = await this.usersService.create(createUserDto);
-    res.status(HttpStatus.CREATED).send(user);
-  }
-
   @UseGuards(JwtAuthGuard)
   @Post()
   async create(

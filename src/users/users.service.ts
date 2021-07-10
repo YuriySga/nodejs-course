@@ -17,15 +17,7 @@ export class UsersService {
     private usersRepository: Repository<User>,
     @InjectRepository(Task)
     private tasksRepository: Repository<Task>
-  ) {
-    /*   if (this.findByLogPas('admin', 'admin')) {
-      this.create({
-        name: 'admin',
-        login: 'admin',
-        password: 'admin',
-      });
-    } */
-  }
+  ) {}
 
   async create(createUserDto: CreateUserDto) {
     const newUser = await this.usersRepository.save({
@@ -40,7 +32,8 @@ export class UsersService {
   }
 
   async findAll(): Promise<UserDto[]> {
-    return await this.usersRepository.find();
+    const users = await this.usersRepository.find();
+    return users;
   }
 
   async findByLogPas(login, pass): Promise<any> {
