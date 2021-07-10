@@ -123034,3 +123034,51 @@ Time: 17:55:28
      Request query: {}
      Responded with status 200
 
+Time: 18:15:24
+     Method: GET
+     Url: /
+     Request params: {}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 18:15:24
+     unhandledRejection:
+     reason: Error: Cannot GET /favicon.ico
+
+Time: 18:15:52
+     Method: GET
+     Url: /
+     Request params: {}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 18:16:51
+     unhandledRejection:
+     reason: Error: Cannot GET /api/
+
+Time: 18:16:57
+     unhandledRejection:
+     reason: Error: Cannot GET /api/
+
+Time: 18:16:59
+     Method: GET
+     Url: /
+     Request params: {}
+     Request body: null
+     Request query: {}
+     Responded with status 200
+
+Time: 18:17:4
+     unhandledRejection:
+     reason: Error: Cannot GET /api/
+
+Time: 18:18:35
+     Method: GET
+     Url: /
+     Request params: {}
+     Request body: null
+     Request query: {}
+     Responded with status 200
+
