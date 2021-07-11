@@ -3,23 +3,23 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity({ name: 'tasks' })
 export class Task extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  id: string;
+  id!: string;
 
   @Column('uuid')
-  boardId: string;
+  boardId!: string;
 
   @Column({ type: 'uuid', nullable: true })
-  columnId: string | null;
+  columnId!: string | null;
 
   @Column({ type: 'uuid', nullable: true })
-  userId: string | null;
+  userId!: string | null;
 
   @Column('varchar')
-  description: string;
+  description!: string;
 
   @Column({ type: 'varchar', nullable: true })
-  title: string;
+  title!: string;
 
   @Column('integer')
-  order: number;
+  order!: number;
 }

@@ -17,7 +17,13 @@ export class BoardsService {
   ) {}
 
   async create(createBoardDto: CreateBoardDto) {
-    const newBoard = this.boardsRepository.create(createBoardDto);
+    const board = {
+      id: createBoardDto.id,
+      title: createBoardDto.title,
+      columns: createBoardDto.columns,
+    };
+
+    const newBoard = this.boardsRepository.create(board);
     const results = await this.boardsRepository.save(newBoard);
     return results;
   }
@@ -26,7 +32,7 @@ export class BoardsService {
     return await this.boardsRepository.find();
   }
 
-  async findOne(id: string): Promise<BoardDto> {
+  async findOne(id: string): Promise<BoardDto | undefined> {
     return await this.boardsRepository.findOne({ id: id });
   }
 
@@ -46,18 +52,7 @@ export class BoardsService {
   }
 
   async remove(id: string): Promise<DeleteResult> {
-    /* const tasksToDel = await this.tasksRepository.find({
-      where: { boardId: id },
-    });
-
-    if (tasksToDel) {
-      tasksToDel.map(async (task) => {
-        await this.tasksRepository.delete(task.id);
-      });
-    } */
-
     await this.tasksRepository.delete({ boardId: id });
-
     return await this.boardsRepository.delete(id);
   }
 }

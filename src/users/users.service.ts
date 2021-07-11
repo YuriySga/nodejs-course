@@ -36,7 +36,7 @@ export class UsersService {
     return users;
   }
 
-  async findByLogPas(login, pass): Promise<any> {
+  async findByLogPas(login: string, pass: string): Promise<any> {
     const user = await this.usersRepository.findOne({ login: login });
 
     if (!user) {
@@ -48,7 +48,7 @@ export class UsersService {
     return compare ? user : undefined;
   }
 
-  async findOne(id: string): Promise<UserDto> {
+  async findOne(id: string): Promise<UserDto | undefined> {
     return await this.usersRepository.findOne({ id: id });
   }
 
@@ -62,7 +62,12 @@ export class UsersService {
       return undefined;
     }
 
-    this.usersRepository.merge(oldUser, updateUserDto);
+    const newUser = {
+      ...updateUserDto,
+      password: await bcrypt.hash(updateUserDto.password, 10),
+    };
+
+    this.usersRepository.merge(oldUser, await newUser);
 
     return await this.usersRepository.save(oldUser);
   }
@@ -79,12 +84,4 @@ export class UsersService {
 
     return await this.usersRepository.delete(id);
   }
-
-  /*  async createAdmin(user) {
-    const admin = await this.findByLogPas(user.password, user.login);
-
-    if (!admin) {
-      this.create(user);
-    }
-  } */
 }

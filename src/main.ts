@@ -2,6 +2,9 @@ import { NestFactory } from '@nestjs/core';
 import { FastifyAdapter } from '@nestjs/platform-fastify';
 import { AppModule } from './app.module';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 async function bootstrap() {
   if (String(process.env['USE_FASTIFY']) === 'false') {
@@ -16,7 +19,7 @@ async function bootstrap() {
     const document = SwaggerModule.createDocument(app, config);
     SwaggerModule.setup('api', app, document);
 
-    await app.listen(process.env['PORT']);
+    await app.listen(Number(process.env['PORT']));
     console.log(`Application is running on: ${await app.getUrl()}`);
     console.log(`Application is running with Express`);
   } else {
@@ -31,7 +34,7 @@ async function bootstrap() {
     const document = SwaggerModule.createDocument(app, config);
     SwaggerModule.setup('api', app, document);
 
-    await app.listen(process.env['PORT']);
+    await app.listen(Number(process.env['PORT']));
     console.log(`Application is running on: ${await app.getUrl()}`);
     console.log(`Application is running with Fastify`);
   }

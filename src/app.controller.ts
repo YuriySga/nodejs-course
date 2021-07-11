@@ -1,7 +1,12 @@
+import { UserDto } from './users/dto/user.dto';
 import { Controller, Get, Post, UseGuards, Request } from '@nestjs/common';
 import { AppService } from './app.service';
 import { AuthService } from './auth/auth.service';
 import { LocalAuthGuard } from './auth/guards/local-auth.guard';
+
+interface IReq {
+  user: UserDto;
+}
 
 @Controller()
 export class AppController {
@@ -17,7 +22,7 @@ export class AppController {
 
   @UseGuards(LocalAuthGuard)
   @Post('login')
-  async login(@Request() req) {
+  async login(@Request() req: IReq) {
     const result = await this.authService.login(req.user);
     const { access_token } = result;
     return { token: access_token };

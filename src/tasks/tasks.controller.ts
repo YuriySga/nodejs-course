@@ -3,7 +3,6 @@ import {
   Get,
   Post,
   Body,
-  Patch,
   Param,
   Delete,
   Res,
@@ -101,8 +100,6 @@ export class TasksController {
     @Res() res: Response
   ): Promise<void> {
     const result = await this.tasksService.remove(id, boardId);
-
-    console.log(result);
 
     if (result.affected && result.affected > 0) {
       res.status(HttpStatus.OK).send('OK');
