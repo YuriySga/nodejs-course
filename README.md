@@ -1,72 +1,52 @@
-# RS School REST service
+# Artillery test
 
-## Prerequisites
+Тесты хранятся в корне репозитория:
+report-Express2.json
+report-Fastify2.json
 
-- Git - [Download & Install Git](https://git-scm.com/downloads).
-- Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager.
 
-## Downloading
+Common data:
+ "scenariosCreated": 800,
+  "scenariosCompleted": 800,
+  "requestsCompleted": 4000,
+  "duration": 40,
+  "arrivalRate": 20,
+    "codes": {
+      "200": 3200,
+      "201": 800
+    },
 
-```
-git clone {repository URL}
-```
 
-## Installing NPM modules
+| 55555   |  latency    |   rps          |scenarioDuration |
+| :---:   |  :---:      |    :---:       | :---:           |
+| Fastify |    min: 2   | count: 4000    | min: 745.1      |
+|         | max: 4503   |  mean: 93      | max: 6245       |
+| Express |    min: 2   | count: 4000    | min: 1396.5      |
+|         | max: 3635   |  mean: 87.83   | max: 7110.1       |
 
-```
-npm install
-```
+## Test
 
-## Running application
+```bash
+# unit tests
+$ npm run test
 
-```
-npm start
-```
+# e2e tests
+$ npm run test:e2e
 
-After starting the app on port (4000 as default) you can open
-in your browser OpenAPI documentation by typing http://localhost:4000/doc/.
-For more information about OpenAPI/Swagger please visit https://swagger.io/.
-
-## Testing
-
-After application running open new terminal and enter:
-
-To run all tests without authorization
-
-```
-npm test
-```
-
-To run only one of all test suites (users, boards or tasks)
-
-```
-npm test <suite name>
+# test coverage
+$ npm run test:cov
 ```
 
-To run all test with authorization
+## Support
 
-```
-npm run test:auth
-```
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-To run only specific test suite with authorization (users, boards or tasks)
+## Stay in touch
 
-```
-npm run test:auth <suite name>
-```
+- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
 
-## Development
+## License
 
-If you're using VSCode, you can get a better developer experience from integration with [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extensions.
-
-### Auto-fix and format
-
-```
-npm run lint
-```
-
-### Debugging in VSCode
-
-Press <kbd>F5</kbd> to debug.
-
-For more information, visit: https://code.visualstudio.com/docs/editor/debugging
+Nest is [MIT licensed](LICENSE).

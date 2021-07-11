@@ -1,0 +1,47 @@
+config:
+  target: 'http://localhost:4000'
+  phases:
+    - duration: 40
+      arrivalRate: 20
+scenarios:
+  - flow:
+      - log: 'post create User'
+      - post:
+          url: '/users'
+          json:
+            name: aaa
+            login: bbbb
+            password: ccc
+          headers:
+            Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluIiwiaWQiOiI5OWE5Y2M3ZC1iM2M3LTRkZjItOTY4OC1lZmRkNDZlYWU1YTIiLCJpYXQiOjE2MjU5OTg5MjEsImV4cCI6MTYyNjAwNzkyMX0.BvGC_ETEzAT59DhJPO03zcXhwb33SCZCLYldG9axsHw'
+          capture:
+            json: "$.id"
+            as: "id"
+
+      - log: 'get findAll Users'
+      - get:
+          url: '/users'         
+          headers:
+            Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluIiwiaWQiOiI5OWE5Y2M3ZC1iM2M3LTRkZjItOTY4OC1lZmRkNDZlYWU1YTIiLCJpYXQiOjE2MjU5OTg5MjEsImV4cCI6MTYyNjAwNzkyMX0.BvGC_ETEzAT59DhJPO03zcXhwb33SCZCLYldG9axsHw'
+
+      - log: 'get id User'
+      - get:
+          url: '/users/{{ id }}'         
+          headers:
+            Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluIiwiaWQiOiI5OWE5Y2M3ZC1iM2M3LTRkZjItOTY4OC1lZmRkNDZlYWU1YTIiLCJpYXQiOjE2MjU5OTg5MjEsImV4cCI6MTYyNjAwNzkyMX0.BvGC_ETEzAT59DhJPO03zcXhwb33SCZCLYldG9axsHw'
+
+      - log: 'put id User'
+      - put:
+          url: '/users/{{ id }}'
+          json:
+            name: eeee11
+            login: eeee11
+            password: eeee11
+          headers:
+            Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluIiwiaWQiOiI5OWE5Y2M3ZC1iM2M3LTRkZjItOTY4OC1lZmRkNDZlYWU1YTIiLCJpYXQiOjE2MjU5OTg5MjEsImV4cCI6MTYyNjAwNzkyMX0.BvGC_ETEzAT59DhJPO03zcXhwb33SCZCLYldG9axsHw'
+
+      - log: 'delete id User'
+      - delete:
+          url: '/users/{{ id }}'  
+          headers:
+            Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluIiwiaWQiOiI5OWE5Y2M3ZC1iM2M3LTRkZjItOTY4OC1lZmRkNDZlYWU1YTIiLCJpYXQiOjE2MjU5OTg5MjEsImV4cCI6MTYyNjAwNzkyMX0.BvGC_ETEzAT59DhJPO03zcXhwb33SCZCLYldG9axsHw'

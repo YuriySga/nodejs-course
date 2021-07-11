@@ -1,0 +1,1272 @@
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:14:39
+     Method: POST
+     Url: /login
+     Request params: {}
+     Request body: {"login":"admin","password":"admin"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:39
+     Method: POST
+     Url: /login
+     Request params: {}
+     Request body: {"login":"admin","password":"admin"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:39
+     Method: POST
+     Url: /boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:39
+     Method: POST
+     Url: /login
+     Request params: {}
+     Request body: {"login":"admin","password":"admin"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:39
+     Method: GET
+     Url: /users
+     Request params: {}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:39
+     Method: POST
+     Url: /boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:39
+     Method: POST
+     Url: /users
+     Request params: {}
+     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:39
+     Method: GET
+     Url: /boards
+     Request params: {}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:39
+     Method: POST
+     Url: /boards/77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4/tasks
+     Request params: {"boardId":"77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4"}
+     Request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:39
+     Method: GET
+     Url: /boards
+     Request params: {}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:39
+     Method: GET
+     Url: /boards/77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4/tasks
+     Request params: {"boardId":"77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:39
+     Method: GET
+     Url: /boards/ec05b6d3-847c-4a7a-abcb-9ef8c33e8b5b
+     Request params: {"id":"ec05b6d3-847c-4a7a-abcb-9ef8c33e8b5b"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+
+Time: 15:14:39
+     Method: POST
+     Url: /boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:39
+     Method: GET
+     Url: /boards/77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4/tasks
+     Request params: {"boardId":"77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:39
+     Method: GET
+     Url: /boards/77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4/tasks/afe04e1d-16c9-4984-a7c1-280a409407fc
+     Request params: {"boardId":"77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4","id":"afe04e1d-16c9-4984-a7c1-280a409407fc"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:39
+     Method: DELETE
+     Url: /boards/3fdf1e12-2752-4db2-8da2-9e0910b90ffc
+     Request params: {"id":"3fdf1e12-2752-4db2-8da2-9e0910b90ffc"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:39
+     Method: POST
+     Url: /boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:39
+     Method: POST
+     Url: /boards/77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4/tasks
+     Request params: {"boardId":"77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4"}
+     Request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:39
+     Method: PUT
+     Url: /boards/92603708-99bc-4a2d-97c4-970b1f899e38
+     Request params: {"id":"92603708-99bc-4a2d-97c4-970b1f899e38"}
+     Request body: {"title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}],"id":"92603708-99bc-4a2d-97c4-970b1f899e38"}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:39
+     Method: DELETE
+     Url: /boards/77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4/tasks/56dcf20f-1ef6-40db-aac1-a9bad23ca047
+     Request params: {"boardId":"77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4","id":"56dcf20f-1ef6-40db-aac1-a9bad23ca047"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:39
+     Method: GET
+     Url: /users/f6e48348-1455-45c3-97a0-760a755544a6
+     Request params: {"id":"f6e48348-1455-45c3-97a0-760a755544a6"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:39
+     Method: POST
+     Url: /boards/77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4/tasks
+     Request params: {"boardId":"77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4"}
+     Request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+
+Time: 15:14:39
+     Method: DELETE
+     Url: /users/f6e48348-1455-45c3-97a0-760a755544a6
+     Request params: {"id":"f6e48348-1455-45c3-97a0-760a755544a6"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:39
+     Method: GET
+     Url: /boards/92603708-99bc-4a2d-97c4-970b1f899e38
+     Request params: {"id":"92603708-99bc-4a2d-97c4-970b1f899e38"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:39
+     unhandledRejection:
+     reason: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+
+Time: 15:14:39
+     Method: PUT
+     Url: /boards/77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4/tasks/72cf85ec-7ab4-449e-8103-c7f1348d339e
+     Request params: {"boardId":"77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4","id":"72cf85ec-7ab4-449e-8103-c7f1348d339e"}
+     Request body: {"boardId":"77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4","columnId":null,"userId":null,"description":"Lorem ipsum","title":"Autotest updated task","order":0,"id":"72cf85ec-7ab4-449e-8103-c7f1348d339e"}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:39
+     Method: DELETE
+     Url: /boards/92603708-99bc-4a2d-97c4-970b1f899e38
+     Request params: {"id":"92603708-99bc-4a2d-97c4-970b1f899e38"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: POST
+     Url: /users
+     Request params: {}
+     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:40
+     Method: POST
+     Url: /boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:40
+     Method: GET
+     Url: /boards/77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4/tasks/72cf85ec-7ab4-449e-8103-c7f1348d339e
+     Request params: {"boardId":"77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4","id":"72cf85ec-7ab4-449e-8103-c7f1348d339e"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: DELETE
+     Url: /boards/3b2c185b-e960-4661-b8e8-325e9b256707
+     Request params: {"id":"3b2c185b-e960-4661-b8e8-325e9b256707"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: GET
+     Url: /boards/77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4/tasks/afe04e1d-16c9-4984-a7c1-280a409407fc
+     Request params: {"boardId":"77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4","id":"afe04e1d-16c9-4984-a7c1-280a409407fc"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: DELETE
+     Url: /boards/77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4/tasks/afe04e1d-16c9-4984-a7c1-280a409407fc
+     Request params: {"boardId":"77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4","id":"afe04e1d-16c9-4984-a7c1-280a409407fc"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: GET
+     Url: /boards/3b2c185b-e960-4661-b8e8-325e9b256707
+     Request params: {"id":"3b2c185b-e960-4661-b8e8-325e9b256707"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: GET
+     Url: /boards/77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4/tasks/afe04e1d-16c9-4984-a7c1-280a409407fc
+     Request params: {"boardId":"77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4","id":"afe04e1d-16c9-4984-a7c1-280a409407fc"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: POST
+     Url: /boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:40
+     Method: DELETE
+     Url: /boards/77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4
+     Request params: {"id":"77c115e7-6ef2-4d3c-8366-a1ac4ccd28e4"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: POST
+     Url: /boards/c935b82c-a0a7-405b-9340-ef93cf8fcd56/tasks
+     Request params: {"boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56"}
+     Request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56","userId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:40
+     Method: POST
+     Url: /boards/c935b82c-a0a7-405b-9340-ef93cf8fcd56/tasks
+     Request params: {"boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56"}
+     Request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56","userId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:40
+     Method: POST
+     Url: /boards/c935b82c-a0a7-405b-9340-ef93cf8fcd56/tasks
+     Request params: {"boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56"}
+     Request body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56","userId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:40
+     Method: POST
+     Url: /boards/c935b82c-a0a7-405b-9340-ef93cf8fcd56/tasks
+     Request params: {"boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56"}
+     Request body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56","userId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:40
+     Method: POST
+     Url: /boards/c935b82c-a0a7-405b-9340-ef93cf8fcd56/tasks
+     Request params: {"boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56"}
+     Request body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56","userId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:40
+     Method: DELETE
+     Url: /users/73365835-abec-4168-9f88-df82a3538221
+     Request params: {"id":"73365835-abec-4168-9f88-df82a3538221"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: POST
+     Url: /users
+     Request params: {}
+     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:40
+     Method: GET
+     Url: /boards/c935b82c-a0a7-405b-9340-ef93cf8fcd56/tasks/40ddc4a7-4d16-42a7-952c-ce15f51b8186
+     Request params: {"boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56","id":"40ddc4a7-4d16-42a7-952c-ce15f51b8186"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: GET
+     Url: /boards/c935b82c-a0a7-405b-9340-ef93cf8fcd56/tasks/cf5a1cf6-6d01-4adc-aba2-d0352b7ea51b
+     Request params: {"boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56","id":"cf5a1cf6-6d01-4adc-aba2-d0352b7ea51b"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: GET
+     Url: /boards/c935b82c-a0a7-405b-9340-ef93cf8fcd56/tasks/dac00153-5072-4acf-b58c-0b7d3377f173
+     Request params: {"boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56","id":"dac00153-5072-4acf-b58c-0b7d3377f173"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: GET
+     Url: /boards/c935b82c-a0a7-405b-9340-ef93cf8fcd56/tasks/4fc615f1-d000-45b3-9063-b6d340b7f159
+     Request params: {"boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56","id":"4fc615f1-d000-45b3-9063-b6d340b7f159"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: GET
+     Url: /boards/c935b82c-a0a7-405b-9340-ef93cf8fcd56/tasks/a17f3cef-7c0e-4acb-928b-669c23f82b72
+     Request params: {"boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56","id":"a17f3cef-7c0e-4acb-928b-669c23f82b72"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: DELETE
+     Url: /boards/c935b82c-a0a7-405b-9340-ef93cf8fcd56
+     Request params: {"id":"c935b82c-a0a7-405b-9340-ef93cf8fcd56"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: GET
+     Url: /boards/c935b82c-a0a7-405b-9340-ef93cf8fcd56/tasks/cf5a1cf6-6d01-4adc-aba2-d0352b7ea51b
+     Request params: {"boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56","id":"cf5a1cf6-6d01-4adc-aba2-d0352b7ea51b"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: GET
+     Url: /boards/c935b82c-a0a7-405b-9340-ef93cf8fcd56/tasks/40ddc4a7-4d16-42a7-952c-ce15f51b8186
+     Request params: {"boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56","id":"40ddc4a7-4d16-42a7-952c-ce15f51b8186"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: GET
+     Url: /boards/c935b82c-a0a7-405b-9340-ef93cf8fcd56/tasks/dac00153-5072-4acf-b58c-0b7d3377f173
+     Request params: {"boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56","id":"dac00153-5072-4acf-b58c-0b7d3377f173"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: GET
+     Url: /boards/c935b82c-a0a7-405b-9340-ef93cf8fcd56/tasks/4fc615f1-d000-45b3-9063-b6d340b7f159
+     Request params: {"boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56","id":"4fc615f1-d000-45b3-9063-b6d340b7f159"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: GET
+     Url: /boards/c935b82c-a0a7-405b-9340-ef93cf8fcd56/tasks/a17f3cef-7c0e-4acb-928b-669c23f82b72
+     Request params: {"boardId":"c935b82c-a0a7-405b-9340-ef93cf8fcd56","id":"a17f3cef-7c0e-4acb-928b-669c23f82b72"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: DELETE
+     Url: /boards/ec05b6d3-847c-4a7a-abcb-9ef8c33e8b5b
+     Request params: {"id":"ec05b6d3-847c-4a7a-abcb-9ef8c33e8b5b"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: PUT
+     Url: /users/212e1d22-0d1c-4539-a4d9-6d0ea6988e3f
+     Request params: {"id":"212e1d22-0d1c-4539-a4d9-6d0ea6988e3f"}
+     Request body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"212e1d22-0d1c-4539-a4d9-6d0ea6988e3f"}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: GET
+     Url: /users/212e1d22-0d1c-4539-a4d9-6d0ea6988e3f
+     Request params: {"id":"212e1d22-0d1c-4539-a4d9-6d0ea6988e3f"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     unhandledRejection:
+     reason: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+
+Time: 15:14:40
+     Method: DELETE
+     Url: /users/212e1d22-0d1c-4539-a4d9-6d0ea6988e3f
+     Request params: {"id":"212e1d22-0d1c-4539-a4d9-6d0ea6988e3f"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: POST
+     Url: /users
+     Request params: {}
+     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:40
+     Method: DELETE
+     Url: /users/34781347-9db3-4458-81cb-f002e8265b3f
+     Request params: {"id":"34781347-9db3-4458-81cb-f002e8265b3f"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: POST
+     Url: /users
+     Request params: {}
+     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:40
+     Method: POST
+     Url: /boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:40
+     Method: POST
+     Url: /boards/478c8a98-4d7d-478a-8775-7313c0a82ad7/tasks
+     Request params: {"boardId":"478c8a98-4d7d-478a-8775-7313c0a82ad7"}
+     Request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"60baa0d7-2d3f-4285-a715-6e75352eee9b","boardId":"478c8a98-4d7d-478a-8775-7313c0a82ad7"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:40
+     Method: POST
+     Url: /boards/478c8a98-4d7d-478a-8775-7313c0a82ad7/tasks
+     Request params: {"boardId":"478c8a98-4d7d-478a-8775-7313c0a82ad7"}
+     Request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"60baa0d7-2d3f-4285-a715-6e75352eee9b","boardId":"478c8a98-4d7d-478a-8775-7313c0a82ad7"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:14:40
+     Method: DELETE
+     Url: /users/60baa0d7-2d3f-4285-a715-6e75352eee9b
+     Request params: {"id":"60baa0d7-2d3f-4285-a715-6e75352eee9b"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: GET
+     Url: /boards/478c8a98-4d7d-478a-8775-7313c0a82ad7/tasks/d148cc9d-6070-46e0-b438-a239609ecbf0
+     Request params: {"boardId":"478c8a98-4d7d-478a-8775-7313c0a82ad7","id":"d148cc9d-6070-46e0-b438-a239609ecbf0"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: GET
+     Url: /boards/478c8a98-4d7d-478a-8775-7313c0a82ad7/tasks/657e8e52-0520-43f2-806c-19bdc828fc35
+     Request params: {"boardId":"478c8a98-4d7d-478a-8775-7313c0a82ad7","id":"657e8e52-0520-43f2-806c-19bdc828fc35"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: DELETE
+     Url: /boards/478c8a98-4d7d-478a-8775-7313c0a82ad7/tasks/d148cc9d-6070-46e0-b438-a239609ecbf0
+     Request params: {"boardId":"478c8a98-4d7d-478a-8775-7313c0a82ad7","id":"d148cc9d-6070-46e0-b438-a239609ecbf0"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: DELETE
+     Url: /boards/478c8a98-4d7d-478a-8775-7313c0a82ad7/tasks/657e8e52-0520-43f2-806c-19bdc828fc35
+     Request params: {"boardId":"478c8a98-4d7d-478a-8775-7313c0a82ad7","id":"657e8e52-0520-43f2-806c-19bdc828fc35"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:14:40
+     Method: DELETE
+     Url: /boards/478c8a98-4d7d-478a-8775-7313c0a82ad7
+     Request params: {"id":"478c8a98-4d7d-478a-8775-7313c0a82ad7"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error: Unauthorized
+
+Time: 15:34:45
+     Method: POST
+     Url: /login
+     Request params: {}
+     Request body: {"login":"admin","password":"admin"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: POST
+     Url: /login
+     Request params: {}
+     Request body: {"login":"admin","password":"admin"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: POST
+     Url: /login
+     Request params: {}
+     Request body: {"login":"admin","password":"admin"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: POST
+     Url: /boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: POST
+     Url: /boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: GET
+     Url: /users
+     Request params: {}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: POST
+     Url: /users
+     Request params: {}
+     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: POST
+     Url: /boards/81686e92-e578-4a41-aa20-7250c0ab849f/tasks
+     Request params: {"boardId":"81686e92-e578-4a41-aa20-7250c0ab849f"}
+     Request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: GET
+     Url: /boards
+     Request params: {}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: GET
+     Url: /boards/81686e92-e578-4a41-aa20-7250c0ab849f/tasks
+     Request params: {"boardId":"81686e92-e578-4a41-aa20-7250c0ab849f"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: GET
+     Url: /boards
+     Request params: {}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: GET
+     Url: /boards/d967faab-caec-4999-bc1f-81440ba75e23
+     Request params: {"id":"d967faab-caec-4999-bc1f-81440ba75e23"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: GET
+     Url: /boards/81686e92-e578-4a41-aa20-7250c0ab849f/tasks
+     Request params: {"boardId":"81686e92-e578-4a41-aa20-7250c0ab849f"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+
+Time: 15:34:45
+     Method: POST
+     Url: /boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: GET
+     Url: /boards/81686e92-e578-4a41-aa20-7250c0ab849f/tasks/dd6503ca-d0d9-4f9a-9f5b-8328e7c4aa8a
+     Request params: {"boardId":"81686e92-e578-4a41-aa20-7250c0ab849f","id":"dd6503ca-d0d9-4f9a-9f5b-8328e7c4aa8a"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: DELETE
+     Url: /boards/a285feac-a731-4c5d-ad4c-9665b55b9b23
+     Request params: {"id":"a285feac-a731-4c5d-ad4c-9665b55b9b23"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: POST
+     Url: /boards/81686e92-e578-4a41-aa20-7250c0ab849f/tasks
+     Request params: {"boardId":"81686e92-e578-4a41-aa20-7250c0ab849f"}
+     Request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: POST
+     Url: /boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: DELETE
+     Url: /boards/81686e92-e578-4a41-aa20-7250c0ab849f/tasks/3c76120b-01db-4f58-ac34-7df2d8fdb621
+     Request params: {"boardId":"81686e92-e578-4a41-aa20-7250c0ab849f","id":"3c76120b-01db-4f58-ac34-7df2d8fdb621"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: PUT
+     Url: /boards/ba5296e6-28cd-4062-93df-78e30cacc21b
+     Request params: {"id":"ba5296e6-28cd-4062-93df-78e30cacc21b"}
+     Request body: {"title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}],"id":"ba5296e6-28cd-4062-93df-78e30cacc21b"}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: POST
+     Url: /boards/81686e92-e578-4a41-aa20-7250c0ab849f/tasks
+     Request params: {"boardId":"81686e92-e578-4a41-aa20-7250c0ab849f"}
+     Request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: GET
+     Url: /users/9238fa21-6559-4d8b-8eb2-d30dc4f84add
+     Request params: {"id":"9238fa21-6559-4d8b-8eb2-d30dc4f84add"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+
+Time: 15:34:45
+     Method: DELETE
+     Url: /users/9238fa21-6559-4d8b-8eb2-d30dc4f84add
+     Request params: {"id":"9238fa21-6559-4d8b-8eb2-d30dc4f84add"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: GET
+     Url: /boards/ba5296e6-28cd-4062-93df-78e30cacc21b
+     Request params: {"id":"ba5296e6-28cd-4062-93df-78e30cacc21b"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     unhandledRejection:
+     reason: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+
+Time: 15:34:45
+     Method: PUT
+     Url: /boards/81686e92-e578-4a41-aa20-7250c0ab849f/tasks/a0b7bf62-72d8-401b-a7dc-2c34af0fe45f
+     Request params: {"boardId":"81686e92-e578-4a41-aa20-7250c0ab849f","id":"a0b7bf62-72d8-401b-a7dc-2c34af0fe45f"}
+     Request body: {"boardId":"81686e92-e578-4a41-aa20-7250c0ab849f","columnId":null,"userId":null,"description":"Lorem ipsum","title":"Autotest updated task","order":0,"id":"a0b7bf62-72d8-401b-a7dc-2c34af0fe45f"}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: DELETE
+     Url: /boards/ba5296e6-28cd-4062-93df-78e30cacc21b
+     Request params: {"id":"ba5296e6-28cd-4062-93df-78e30cacc21b"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: POST
+     Url: /users
+     Request params: {}
+     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: POST
+     Url: /boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: GET
+     Url: /boards/81686e92-e578-4a41-aa20-7250c0ab849f/tasks/a0b7bf62-72d8-401b-a7dc-2c34af0fe45f
+     Request params: {"boardId":"81686e92-e578-4a41-aa20-7250c0ab849f","id":"a0b7bf62-72d8-401b-a7dc-2c34af0fe45f"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: DELETE
+     Url: /boards/93abec67-4e94-4ceb-a129-dde368ac9a9c
+     Request params: {"id":"93abec67-4e94-4ceb-a129-dde368ac9a9c"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: GET
+     Url: /boards/81686e92-e578-4a41-aa20-7250c0ab849f/tasks/dd6503ca-d0d9-4f9a-9f5b-8328e7c4aa8a
+     Request params: {"boardId":"81686e92-e578-4a41-aa20-7250c0ab849f","id":"dd6503ca-d0d9-4f9a-9f5b-8328e7c4aa8a"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: DELETE
+     Url: /boards/81686e92-e578-4a41-aa20-7250c0ab849f/tasks/dd6503ca-d0d9-4f9a-9f5b-8328e7c4aa8a
+     Request params: {"boardId":"81686e92-e578-4a41-aa20-7250c0ab849f","id":"dd6503ca-d0d9-4f9a-9f5b-8328e7c4aa8a"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: GET
+     Url: /boards/93abec67-4e94-4ceb-a129-dde368ac9a9c
+     Request params: {"id":"93abec67-4e94-4ceb-a129-dde368ac9a9c"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: GET
+     Url: /boards/81686e92-e578-4a41-aa20-7250c0ab849f/tasks/dd6503ca-d0d9-4f9a-9f5b-8328e7c4aa8a
+     Request params: {"boardId":"81686e92-e578-4a41-aa20-7250c0ab849f","id":"dd6503ca-d0d9-4f9a-9f5b-8328e7c4aa8a"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: POST
+     Url: /boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: DELETE
+     Url: /boards/81686e92-e578-4a41-aa20-7250c0ab849f
+     Request params: {"id":"81686e92-e578-4a41-aa20-7250c0ab849f"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:45
+     Method: POST
+     Url: /boards/e082e874-d974-4c68-901b-d7829b642f6e/tasks
+     Request params: {"boardId":"e082e874-d974-4c68-901b-d7829b642f6e"}
+     Request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"e082e874-d974-4c68-901b-d7829b642f6e","userId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: POST
+     Url: /boards/e082e874-d974-4c68-901b-d7829b642f6e/tasks
+     Request params: {"boardId":"e082e874-d974-4c68-901b-d7829b642f6e"}
+     Request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"e082e874-d974-4c68-901b-d7829b642f6e","userId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: POST
+     Url: /boards/e082e874-d974-4c68-901b-d7829b642f6e/tasks
+     Request params: {"boardId":"e082e874-d974-4c68-901b-d7829b642f6e"}
+     Request body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"e082e874-d974-4c68-901b-d7829b642f6e","userId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: POST
+     Url: /boards/e082e874-d974-4c68-901b-d7829b642f6e/tasks
+     Request params: {"boardId":"e082e874-d974-4c68-901b-d7829b642f6e"}
+     Request body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"e082e874-d974-4c68-901b-d7829b642f6e","userId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:45
+     Method: POST
+     Url: /boards/e082e874-d974-4c68-901b-d7829b642f6e/tasks
+     Request params: {"boardId":"e082e874-d974-4c68-901b-d7829b642f6e"}
+     Request body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"e082e874-d974-4c68-901b-d7829b642f6e","userId":null,"columnId":null}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:46
+     Method: DELETE
+     Url: /users/6510dd03-c6a7-49e0-a9d0-8891897dbc48
+     Request params: {"id":"6510dd03-c6a7-49e0-a9d0-8891897dbc48"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: GET
+     Url: /boards/e082e874-d974-4c68-901b-d7829b642f6e/tasks/c2458950-da75-4156-a0e6-93237173aee9
+     Request params: {"boardId":"e082e874-d974-4c68-901b-d7829b642f6e","id":"c2458950-da75-4156-a0e6-93237173aee9"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: GET
+     Url: /boards/e082e874-d974-4c68-901b-d7829b642f6e/tasks/5bfd9bee-a039-4b27-b240-7cdf7677699d
+     Request params: {"boardId":"e082e874-d974-4c68-901b-d7829b642f6e","id":"5bfd9bee-a039-4b27-b240-7cdf7677699d"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: GET
+     Url: /boards/e082e874-d974-4c68-901b-d7829b642f6e/tasks/36189ef0-fc34-4bce-b29c-0bda15d7255c
+     Request params: {"boardId":"e082e874-d974-4c68-901b-d7829b642f6e","id":"36189ef0-fc34-4bce-b29c-0bda15d7255c"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: GET
+     Url: /boards/e082e874-d974-4c68-901b-d7829b642f6e/tasks/6843d393-9bca-43ec-931c-c8da9f5f0390
+     Request params: {"boardId":"e082e874-d974-4c68-901b-d7829b642f6e","id":"6843d393-9bca-43ec-931c-c8da9f5f0390"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: GET
+     Url: /boards/e082e874-d974-4c68-901b-d7829b642f6e/tasks/5a8ba5be-53aa-4a00-8f44-718a2311d470
+     Request params: {"boardId":"e082e874-d974-4c68-901b-d7829b642f6e","id":"5a8ba5be-53aa-4a00-8f44-718a2311d470"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: POST
+     Url: /users
+     Request params: {}
+     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:46
+     Method: DELETE
+     Url: /boards/e082e874-d974-4c68-901b-d7829b642f6e
+     Request params: {"id":"e082e874-d974-4c68-901b-d7829b642f6e"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: GET
+     Url: /boards/e082e874-d974-4c68-901b-d7829b642f6e/tasks/5bfd9bee-a039-4b27-b240-7cdf7677699d
+     Request params: {"boardId":"e082e874-d974-4c68-901b-d7829b642f6e","id":"5bfd9bee-a039-4b27-b240-7cdf7677699d"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: GET
+     Url: /boards/e082e874-d974-4c68-901b-d7829b642f6e/tasks/6843d393-9bca-43ec-931c-c8da9f5f0390
+     Request params: {"boardId":"e082e874-d974-4c68-901b-d7829b642f6e","id":"6843d393-9bca-43ec-931c-c8da9f5f0390"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: GET
+     Url: /boards/e082e874-d974-4c68-901b-d7829b642f6e/tasks/c2458950-da75-4156-a0e6-93237173aee9
+     Request params: {"boardId":"e082e874-d974-4c68-901b-d7829b642f6e","id":"c2458950-da75-4156-a0e6-93237173aee9"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: GET
+     Url: /boards/e082e874-d974-4c68-901b-d7829b642f6e/tasks/36189ef0-fc34-4bce-b29c-0bda15d7255c
+     Request params: {"boardId":"e082e874-d974-4c68-901b-d7829b642f6e","id":"36189ef0-fc34-4bce-b29c-0bda15d7255c"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: GET
+     Url: /boards/e082e874-d974-4c68-901b-d7829b642f6e/tasks/5a8ba5be-53aa-4a00-8f44-718a2311d470
+     Request params: {"boardId":"e082e874-d974-4c68-901b-d7829b642f6e","id":"5a8ba5be-53aa-4a00-8f44-718a2311d470"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: DELETE
+     Url: /boards/d967faab-caec-4999-bc1f-81440ba75e23
+     Request params: {"id":"d967faab-caec-4999-bc1f-81440ba75e23"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: PUT
+     Url: /users/1bb3c113-7b8a-4ec3-a9f3-1d6177ba5f9a
+     Request params: {"id":"1bb3c113-7b8a-4ec3-a9f3-1d6177ba5f9a"}
+     Request body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"1bb3c113-7b8a-4ec3-a9f3-1d6177ba5f9a"}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: GET
+     Url: /users/1bb3c113-7b8a-4ec3-a9f3-1d6177ba5f9a
+     Request params: {"id":"1bb3c113-7b8a-4ec3-a9f3-1d6177ba5f9a"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     unhandledRejection:
+     reason: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+
+Time: 15:34:46
+     Method: DELETE
+     Url: /users/1bb3c113-7b8a-4ec3-a9f3-1d6177ba5f9a
+     Request params: {"id":"1bb3c113-7b8a-4ec3-a9f3-1d6177ba5f9a"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: POST
+     Url: /users
+     Request params: {}
+     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:46
+     Method: DELETE
+     Url: /users/a18deed8-7572-40d5-bffa-df0480fb9028
+     Request params: {"id":"a18deed8-7572-40d5-bffa-df0480fb9028"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: POST
+     Url: /users
+     Request params: {}
+     Request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:46
+     Method: POST
+     Url: /boards
+     Request params: {}
+     Request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:46
+     Method: POST
+     Url: /boards/85bc6b0f-d97e-4562-b058-c0495f69edbc/tasks
+     Request params: {"boardId":"85bc6b0f-d97e-4562-b058-c0495f69edbc"}
+     Request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"41abf1eb-d198-453f-a5e8-4a9ae5e174cc","boardId":"85bc6b0f-d97e-4562-b058-c0495f69edbc"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:46
+     Method: POST
+     Url: /boards/85bc6b0f-d97e-4562-b058-c0495f69edbc/tasks
+     Request params: {"boardId":"85bc6b0f-d97e-4562-b058-c0495f69edbc"}
+     Request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"41abf1eb-d198-453f-a5e8-4a9ae5e174cc","boardId":"85bc6b0f-d97e-4562-b058-c0495f69edbc"}
+     Request query: {}
+     Responded with status 201
+
+Time: 15:34:46
+     Method: DELETE
+     Url: /users/41abf1eb-d198-453f-a5e8-4a9ae5e174cc
+     Request params: {"id":"41abf1eb-d198-453f-a5e8-4a9ae5e174cc"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: GET
+     Url: /boards/85bc6b0f-d97e-4562-b058-c0495f69edbc/tasks/32a13b8b-229f-42d6-93a6-39e552f34591
+     Request params: {"boardId":"85bc6b0f-d97e-4562-b058-c0495f69edbc","id":"32a13b8b-229f-42d6-93a6-39e552f34591"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: GET
+     Url: /boards/85bc6b0f-d97e-4562-b058-c0495f69edbc/tasks/16600e48-fa17-4c8c-8526-da80f0b9b7fb
+     Request params: {"boardId":"85bc6b0f-d97e-4562-b058-c0495f69edbc","id":"16600e48-fa17-4c8c-8526-da80f0b9b7fb"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: DELETE
+     Url: /boards/85bc6b0f-d97e-4562-b058-c0495f69edbc/tasks/32a13b8b-229f-42d6-93a6-39e552f34591
+     Request params: {"boardId":"85bc6b0f-d97e-4562-b058-c0495f69edbc","id":"32a13b8b-229f-42d6-93a6-39e552f34591"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: DELETE
+     Url: /boards/85bc6b0f-d97e-4562-b058-c0495f69edbc/tasks/16600e48-fa17-4c8c-8526-da80f0b9b7fb
+     Request params: {"boardId":"85bc6b0f-d97e-4562-b058-c0495f69edbc","id":"16600e48-fa17-4c8c-8526-da80f0b9b7fb"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
+Time: 15:34:46
+     Method: DELETE
+     Url: /boards/85bc6b0f-d97e-4562-b058-c0495f69edbc
+     Request params: {"id":"85bc6b0f-d97e-4562-b058-c0495f69edbc"}
+     Request body: {}
+     Request query: {}
+     Responded with status 200
+
